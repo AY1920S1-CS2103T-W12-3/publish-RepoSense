@@ -452,8 +452,8 @@
         ]
       },
       {
-        "insertions": 642,
-        "deletions": 156,
+        "insertions": 647,
+        "deletions": 161,
         "date": "2019-10-20",
         "commitResults": [
           {
@@ -525,6 +525,13 @@
             "messageBody": "",
             "insertions": 1,
             "deletions": 1
+          },
+          {
+            "hash": "36e9de6bd038e2ef85d646d66fc39f57fe56ce64",
+            "messageTitle": "Update displayName for RepoSense",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 5
           }
         ]
       }
@@ -1101,16 +1108,16 @@
   },
   "authorContributionVariance": {
     "yewon0303": 580.3788,
-    "joloong": 49210.516,
+    "joloong": 49667.184,
     "dingyuchen": 12939.419,
     "wallacelim97": 10362.063,
     "Berttwm": 1160.3826
   },
   "authorDisplayNameMap": {
-    "yewon0303": "Ye Won",
-    "joloong": "Joel",
-    "dingyuchen": "Ding",
-    "wallacelim97": "Wallace",
-    "Berttwm": "Bertrand"
+    "yewon0303": "PARK... E WON",
+    "joloong": "LOONG ...JOEL",
+    "dingyuchen": "DING... UCHEN",
+    "wallacelim97": "WALLA ... E LIM",
+    "Berttwm": "TAN W ... TRAND"
   }
 }
