@@ -1,0 +1,1116 @@
+{
+  "authorDailyContributionsMap": {
+    "yewon0303": [
+      {
+        "insertions": 50,
+        "deletions": 33,
+        "date": "2019-09-23",
+        "commitResults": [
+          {
+            "hash": "ac89616cc6ff311fdb51ffc5c36ad7d68b8f56f9",
+            "messageTitle": "Update README.adoc",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 9
+          },
+          {
+            "hash": "b54a9e126437ef9c8aa393dff76ea6d293271def",
+            "messageTitle": "Update README.adoc",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "4f8ad248412f205a2f5770a51ac3b43760cae4d5",
+            "messageTitle": "Update README.adoc",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "8fc37e59f793ac50b77155cbc495089fdc94f7ca",
+            "messageTitle": "Update DeveloperGuide.adoc",
+            "messageBody": "",
+            "insertions": 34,
+            "deletions": 17
+          },
+          {
+            "hash": "d492cfe63a7a62d42467900d3b0a966ca3a895f7",
+            "messageTitle": "Update DeveloperGuide.adoc",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 3
+          },
+          {
+            "hash": "1b3155b4a7aa7cbd949fd7a208837eb40aee8551",
+            "messageTitle": "Update UserGuide.adoc",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 67,
+        "deletions": 30,
+        "date": "2019-10-07",
+        "commitResults": [
+          {
+            "hash": "ae0c5002fda5debb4cf01ce2cc2c64f402e10173",
+            "messageTitle": "Add Amount class, Update BankAccount, Transaction classes, Delete Balance class",
+            "messageBody": "",
+            "insertions": 67,
+            "deletions": 30
+          }
+        ]
+      },
+      {
+        "insertions": 15,
+        "deletions": 11,
+        "date": "2019-10-12",
+        "commitResults": [
+          {
+            "hash": "88af422c18f2259702e16e68402c02197724b003",
+            "messageTitle": "Update SplitCommand, SplitTransaction, BankAccount.  adds txn to BankAccount.transactions.",
+            "messageBody": "",
+            "insertions": 15,
+            "deletions": 11
+          }
+        ]
+      },
+      {
+        "insertions": 35,
+        "deletions": 22,
+        "date": "2019-10-14",
+        "commitResults": [
+          {
+            "hash": "854a53a2c287364ad1abeb42f976e061e6273e29",
+            "messageTitle": "Update HelpWindow link, Modify InCommand MESSAGE_USAGE",
+            "messageBody": "",
+            "insertions": 22,
+            "deletions": 3
+          },
+          {
+            "hash": "a2880f71b7fce0031f4edfee60f324b01845b1b2",
+            "messageTitle": "Update InCommandParser to support addition of a new Transaction",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "133a7fa32b02b41f5566785766ce1cfb55c77188",
+            "messageTitle": "Update checkstyle to pass checkstyle Main test",
+            "messageBody": "",
+            "insertions": 12,
+            "deletions": 18
+          }
+        ]
+      }
+    ],
+    "joloong": [
+      {
+        "insertions": 14,
+        "deletions": 7,
+        "date": "2019-09-23",
+        "commitResults": [
+          {
+            "hash": "8ff3d798206d3b883d40054cbfe8ecc4f1405d25",
+            "messageTitle": "Update User Stories",
+            "messageBody": "",
+            "insertions": 12,
+            "deletions": 5
+          },
+          {
+            "hash": "6216615273961ba4137037c9f00148fa6317b906",
+            "messageTitle": "Remove trailing whitespaces",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 0,
+        "date": "2019-10-02",
+        "commitResults": [
+          {
+            "hash": "c0e6e77efccbef3af2e4dab213079c3e3a9f7273",
+            "messageTitle": "Add Netlify Status Badge",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 2,
+        "deletions": 3,
+        "date": "2019-10-08",
+        "commitResults": [
+          {
+            "hash": "dd4b9be0860e635e92d3f851630991c112d87a7f",
+            "messageTitle": "Update build.gradle to change site-name",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 3
+          }
+        ]
+      },
+      {
+        "insertions": 394,
+        "deletions": 69,
+        "date": "2019-10-13",
+        "commitResults": [
+          {
+            "hash": "ecbdcebcfb7381ff239b315e0c429816840d6644",
+            "messageTitle": "Fix checkstyleMain errors",
+            "messageBody": "",
+            "insertions": 97,
+            "deletions": 47
+          },
+          {
+            "hash": "6c2d84a243799309c4fff214f1603cde15f73627",
+            "messageTitle": "Fix gradle test error",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 0
+          },
+          {
+            "hash": "9f2d76e1b01276bdcb15c2b1caa09fb788673cbf",
+            "messageTitle": "Add 1 comment for addTransaction in Model",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 0
+          },
+          {
+            "hash": "c19b9aab7de209713288e88fa1dbf4df3ebcfcc8",
+            "messageTitle": "Implement equals method for transactions",
+            "messageBody": "",
+            "insertions": 47,
+            "deletions": 0
+          },
+          {
+            "hash": "e2a1f851fd5604f1287ab6ae646686894787fab7",
+            "messageTitle": "Add equals method for amount",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 0
+          },
+          {
+            "hash": "3087da4182da6362f2cc0fd868e8a2b4875d4459",
+            "messageTitle": "Fix storage errors (INCOMPLETE)",
+            "messageBody": "",
+            "insertions": 234,
+            "deletions": 22
+          }
+        ]
+      },
+      {
+        "insertions": 324,
+        "deletions": 70,
+        "date": "2019-10-14",
+        "commitResults": [
+          {
+            "hash": "87ada043255a192df36377766544f70cf1a42e09",
+            "messageTitle": "Try to fix ListCommand",
+            "messageBody": "",
+            "insertions": 32,
+            "deletions": 3
+          },
+          {
+            "hash": "334490378de3e22ef5b94e92d35282511ad1afcf",
+            "messageTitle": "Fix some checkstyleMain errors",
+            "messageBody": "",
+            "insertions": 41,
+            "deletions": 16
+          },
+          {
+            "hash": "68be0148e06f7c7b5ab0374c7e0ab3b2fc55ca8a",
+            "messageTitle": "Fix some errors in testutil",
+            "messageBody": "",
+            "insertions": 251,
+            "deletions": 51
+          }
+        ]
+      },
+      {
+        "insertions": 317,
+        "deletions": 294,
+        "date": "2019-10-15",
+        "commitResults": [
+          {
+            "hash": "fa7c3c8ef5cda7e174c626a5840489a2eaea4d99",
+            "messageTitle": "Resolve almost all gradle test errors",
+            "messageBody": "",
+            "insertions": 199,
+            "deletions": 139
+          },
+          {
+            "hash": "457aafab33dbdc2427f8ece45be67c922935b6bd",
+            "messageTitle": "Resolve some checkstyleTest errors",
+            "messageBody": "",
+            "insertions": 40,
+            "deletions": 41
+          },
+          {
+            "hash": "dc5fc638a44c135e48d5a7d2f62efb116dc4c71f",
+            "messageTitle": "Resolve all checkstyleMain errors in DeleteCommand, BankAccount and JsonAdapted Transaction",
+            "messageBody": "",
+            "insertions": 26,
+            "deletions": 20
+          },
+          {
+            "hash": "b33ded30ef2d608bd6bfbc3f13d2d6b99d25106d",
+            "messageTitle": "Comment out failing tests (Will fix it in the future)",
+            "messageBody": "",
+            "insertions": 46,
+            "deletions": 88
+          },
+          {
+            "hash": "6146912b34ce4a3e73944f74a367be65a703278e",
+            "messageTitle": "Fix simple checkstyle error",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "e4d00a2016254a70c5817ad8d6e2a40c3964c4ad",
+            "messageTitle": "Minor fix",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 3
+          },
+          {
+            "hash": "be2ecca2834e143495f8a479d47f0d6625358f9e",
+            "messageTitle": "Date is deprecated",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 586,
+        "deletions": 66,
+        "date": "2019-10-19",
+        "commitResults": [
+          {
+            "hash": "a5fe04cdf518c05becbe890a1b8e7f92d86523ad",
+            "messageTitle": "Build basic filter command",
+            "messageBody": "",
+            "insertions": 29,
+            "deletions": 0
+          },
+          {
+            "hash": "a5def51e63e39bc89b3f20d0674fede593f3dd15",
+            "messageTitle": "Add tag inside filter command",
+            "messageBody": "",
+            "insertions": 21,
+            "deletions": 1
+          },
+          {
+            "hash": "b1a0695b29ad14dbcba94dcc58d6bde6cf7e03d0",
+            "messageTitle": "Add equals method for InCommand",
+            "messageBody": "",
+            "insertions": 12,
+            "deletions": 0
+          },
+          {
+            "hash": "2f8383fd0e4b2247b9aaa898b5b880026b60f6a7",
+            "messageTitle": "Build basic TransactionContainsTagsPredicate",
+            "messageBody": "",
+            "insertions": 32,
+            "deletions": 0
+          },
+          {
+            "hash": "ad90b340828033418d7aa08952bfd13b5b64489a",
+            "messageTitle": "Use streams for test method",
+            "messageBody": "",
+            "insertions": 7,
+            "deletions": 6
+          },
+          {
+            "hash": "4b730bfa495c25733c4464d006b1882ac7444c62",
+            "messageTitle": "Add getTagName method for Tag",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 0
+          },
+          {
+            "hash": "f209bbb77a5ce3f08341b03408f5e0dd164f1e37",
+            "messageTitle": "Improve filter",
+            "messageBody": "",
+            "insertions": 16,
+            "deletions": 7
+          },
+          {
+            "hash": "501c50e49260d24ea8cbe251f9285010e752ac79",
+            "messageTitle": "Fix filter and add FilterCommandTest",
+            "messageBody": "",
+            "insertions": 92,
+            "deletions": 10
+          },
+          {
+            "hash": "ea8d61c4ea91388a1e86b64f36da5a46cfe5d538",
+            "messageTitle": "Temporary fix for Date bug",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 4
+          },
+          {
+            "hash": "f48dafdada6706226c4074a591d276b529f62482",
+            "messageTitle": "Add one more test case for FilterCommandTest",
+            "messageBody": "",
+            "insertions": 22,
+            "deletions": 0
+          },
+          {
+            "hash": "7dc03631c35201b3b29a9bfa837e4a4b7004577b",
+            "messageTitle": "Build FilterCommandParserTest",
+            "messageBody": "",
+            "insertions": 34,
+            "deletions": 0
+          },
+          {
+            "hash": "3dd17883fc2614f9b103d85fd3b506830f91f960",
+            "messageTitle": "Add MessagesTest",
+            "messageBody": "",
+            "insertions": 15,
+            "deletions": 0
+          },
+          {
+            "hash": "bbd1a66f17775a235ffcda2d9a9d0b33320f2afe",
+            "messageTitle": "Filter multiple tags",
+            "messageBody": "",
+            "insertions": 31,
+            "deletions": 15
+          },
+          {
+            "hash": "9285d5f239b7d92d317beddef599e2f1c7839f6e",
+            "messageTitle": "Require tag for in commands",
+            "messageBody": "",
+            "insertions": 24,
+            "deletions": 10
+          },
+          {
+            "hash": "d9f110926b892c525c69c354e1ba1cb3f9b1968d",
+            "messageTitle": "Make tag optional for InCommand",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "b84bd8c68de0017d1152892bbf253873fbe0b3ae",
+            "messageTitle": "Add test cases for TransactionContainsTagsPredicateTest",
+            "messageBody": "",
+            "insertions": 77,
+            "deletions": 1
+          },
+          {
+            "hash": "473be387867a28b6ab4eb81285304e48d446abb8",
+            "messageTitle": "Fix minor checkstyleTest error",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 4
+          },
+          {
+            "hash": "45bc503b42876c1f5791a8afd6d3e06869a4eecb",
+            "messageTitle": "Add test cases for Date",
+            "messageBody": "",
+            "insertions": 41,
+            "deletions": 1
+          },
+          {
+            "hash": "5b42abe0f5a016e09bee4524cf8f14d97ec11c2f",
+            "messageTitle": "Add test cases for Time",
+            "messageBody": "",
+            "insertions": 65,
+            "deletions": 3
+          },
+          {
+            "hash": "7a5922121f10b362feb31f06716d7c338e1a6998",
+            "messageTitle": "Minor change",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "2d44e05693afbf8ae26c18b3fe135ba43fc16fa8",
+            "messageTitle": "Add equals test for DateTest",
+            "messageBody": "",
+            "insertions": 24,
+            "deletions": 2
+          },
+          {
+            "hash": "2737308f28b0e40ac1843c2c1ddfefff74e832ff",
+            "messageTitle": "Add equals test for TagTest",
+            "messageBody": "",
+            "insertions": 23,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 642,
+        "deletions": 156,
+        "date": "2019-10-20",
+        "commitResults": [
+          {
+            "hash": "cc52ac83fe02a28709670e9de93346ea903da43b",
+            "messageTitle": "Make DeleteCommand great again",
+            "messageBody": "",
+            "insertions": 57,
+            "deletions": 25
+          },
+          {
+            "hash": "09f95e040976cb12d6dff12d4892d9b5ed023bd8",
+            "messageTitle": "Remove SOPL",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 7
+          },
+          {
+            "hash": "83ee2f76fb06eb6c1a7b536b86f9d584707e1a7f",
+            "messageTitle": "Improve testability",
+            "messageBody": "",
+            "insertions": 94,
+            "deletions": 69
+          },
+          {
+            "hash": "94f74023aa2aaeaa4f01f139a2dbe71aabf6e0bb",
+            "messageTitle": "Fix checkstyleTest errors",
+            "messageBody": "",
+            "insertions": 11,
+            "deletions": 11
+          },
+          {
+            "hash": "01b4340749695fd6299977dad1acb27718d27022",
+            "messageTitle": "Improve testability",
+            "messageBody": "",
+            "insertions": 35,
+            "deletions": 10
+          },
+          {
+            "hash": "a2fc5733254817dd6243ee1134cfc3e17cb7cfb0",
+            "messageTitle": "Enable undo",
+            "messageBody": "",
+            "insertions": 197,
+            "deletions": 24
+          },
+          {
+            "hash": "10b13886dad2565d07cc2d5c96fd928e66a58414",
+            "messageTitle": "Improve test cases for redo/undo",
+            "messageBody": "",
+            "insertions": 194,
+            "deletions": 8
+          },
+          {
+            "hash": "dfcd937d2b07eb183efe3ec0368c1c71f94aedad",
+            "messageTitle": "Resolve checkstyleMain error",
+            "messageBody": "",
+            "insertions": 11,
+            "deletions": 1
+          },
+          {
+            "hash": "356c0e73c861259c297f30545c6b458c3d3da58d",
+            "messageTitle": "Setup RepoSense",
+            "messageBody": "",
+            "insertions": 39,
+            "deletions": 0
+          },
+          {
+            "hash": "1dece095ccae9c39d6e6313b04ca14fcd58fa020",
+            "messageTitle": "Add new line at the end of file",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      }
+    ],
+    "dingyuchen": [
+      {
+        "insertions": 111,
+        "deletions": 14,
+        "date": "2019-10-07",
+        "commitResults": [
+          {
+            "hash": "bbc2ff4f3b373404571ebf4f5842702ad6193b0e",
+            "messageTitle": "create incomplete classes for balance and bankaccount",
+            "messageBody": "",
+            "insertions": 15,
+            "deletions": 0
+          },
+          {
+            "hash": "960f43cfae64087eddc887214dcdb1b7cf14c28b",
+            "messageTitle": "create incomplete class for transaction",
+            "messageBody": "",
+            "insertions": 15,
+            "deletions": 0
+          },
+          {
+            "hash": "ea63819dbed7f30bab75e5556adff8d84fd55175",
+            "messageTitle": "create class for in and out transaction",
+            "messageBody": "",
+            "insertions": 71,
+            "deletions": 14
+          },
+          {
+            "hash": "bdaef04c2b0547f5e8be4043736fc03ef841213c",
+            "messageTitle": "fix compile error",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 416,
+        "deletions": 151,
+        "date": "2019-10-13",
+        "commitResults": [
+          {
+            "hash": "1408b3c774298e16361697626c5bcfd2efd00303",
+            "messageTitle": "modify Model class to fit BankAccount",
+            "messageBody": "",
+            "insertions": 245,
+            "deletions": 113
+          },
+          {
+            "hash": "c11761ef77ceea65c6ea504865ee6d769e6c1184",
+            "messageTitle": "add placeholder files for Storage classes",
+            "messageBody": "",
+            "insertions": 141,
+            "deletions": 26
+          },
+          {
+            "hash": "fef2e609f4a5b4115e107ff6aec638926277b30c",
+            "messageTitle": "fix errors in `initModelManager`",
+            "messageBody": "",
+            "insertions": 30,
+            "deletions": 12
+          }
+        ]
+      },
+      {
+        "insertions": 250,
+        "deletions": 62,
+        "date": "2019-10-14",
+        "commitResults": [
+          {
+            "hash": "22cfc27398c18df452b924d66cb847912fc238cc",
+            "messageTitle": "fix references to Commands",
+            "messageBody": "",
+            "insertions": 51,
+            "deletions": 56
+          },
+          {
+            "hash": "8dbe684410e802d5a94a768092ce05f606642ead",
+            "messageTitle": "make model return observable list",
+            "messageBody": "",
+            "insertions": 12,
+            "deletions": 0
+          },
+          {
+            "hash": "27c1c668c121263bf702253b440d05b9afd5df05",
+            "messageTitle": "Fix UI",
+            "messageBody": "",
+            "insertions": 187,
+            "deletions": 6
+          }
+        ]
+      },
+      {
+        "insertions": 18,
+        "deletions": 32,
+        "date": "2019-10-15",
+        "commitResults": [
+          {
+            "hash": "ced21e6e47b9b63a82bbce84658350a03032cb42",
+            "messageTitle": "remove all unused imports",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 32
+          },
+          {
+            "hash": "fc966a9aeb9883299de9dd3e006d0efdaa12adee",
+            "messageTitle": "Fix issue #55",
+            "messageBody": "",
+            "insertions": 15,
+            "deletions": 0
+          }
+        ]
+      }
+    ],
+    "wallacelim97": [
+      {
+        "insertions": 29,
+        "deletions": 29,
+        "date": "2019-09-23",
+        "commitResults": [
+          {
+            "hash": "188b864dbe66d4e219f896fa06f8695c15e3e116",
+            "messageTitle": "Update AboutUs.adoc",
+            "messageBody": "",
+            "insertions": 27,
+            "deletions": 27
+          },
+          {
+            "hash": "736da5d074555a0fea0c61a78401f453a1195278",
+            "messageTitle": "Update AboutUs.adoc",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "e03f184eaf5c16273a45cbdf1aa66a916ae0f0f9",
+            "messageTitle": "Update AboutUs.adoc",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "382006f690c93c7b7ceb570018b9db3d8eaf4c7e",
+            "messageTitle": "Add files via upload",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 130,
+        "deletions": 3,
+        "date": "2019-10-07",
+        "commitResults": [
+          {
+            "hash": "97aded19086b65e2f94d1093e5afaf590618c9a0",
+            "messageTitle": "add entry point to BankAccount",
+            "messageBody": "",
+            "insertions": 130,
+            "deletions": 3
+          }
+        ]
+      },
+      {
+        "insertions": 70,
+        "deletions": 60,
+        "date": "2019-10-14",
+        "commitResults": [
+          {
+            "hash": "aa7ea2f419889a08e574675613abe84ac8217eca",
+            "messageTitle": "Refactored StorageManager class to accomodate BankAccountStorage",
+            "messageBody": "",
+            "insertions": 19,
+            "deletions": 20
+          },
+          {
+            "hash": "d437157b59fbe31a8c60efc09269092213bce2a8",
+            "messageTitle": "Fixed JsonAdaptedTransaction, BankAccount, UserPrefs classes to support json serialization",
+            "messageBody": "",
+            "insertions": 16,
+            "deletions": 13
+          },
+          {
+            "hash": "36bfa8d541c61c37985ed663b7f3b68592803d7a",
+            "messageTitle": "Enabled entry point from MainApp (using in command)",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 5
+          },
+          {
+            "hash": "680f6b8f728c6c5eeb0bf95a705e8ae6c16f9506",
+            "messageTitle": "Inserted JSONSerialized stub for BankAccountStorage",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 2
+          },
+          {
+            "hash": "9a2104dc9fb8bee5ae46b8af6943d5608bda1ffa",
+            "messageTitle": "Fix Help Command with use of stubs",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 3
+          },
+          {
+            "hash": "1131321b4a48406457e8173f85a00f0d9f1ae956",
+            "messageTitle": "Fix JsonAdaptedTransaction class to parse doubles",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 4
+          },
+          {
+            "hash": "72050f7f512733cd0d11fb3a7376ab41324e3e44",
+            "messageTitle": "Fix checkstyle errors for JsonBankAccountStorage and SampleDataUtil classes",
+            "messageBody": "",
+            "insertions": 12,
+            "deletions": 13
+          }
+        ]
+      },
+      {
+        "insertions": 425,
+        "deletions": 130,
+        "date": "2019-10-19",
+        "commitResults": [
+          {
+            "hash": "d9d7923de6eb8af2146c73f163bd089f7e1b33d0",
+            "messageTitle": "Add scaffold for ProjectCommand",
+            "messageBody": "",
+            "insertions": 36,
+            "deletions": 1
+          },
+          {
+            "hash": "2e04be5841fddb448ea8f50b3770f7a5b727cb83",
+            "messageTitle": "Add DateTime class + support for relevant parsing in ParserUtil class",
+            "messageBody": "",
+            "insertions": 80,
+            "deletions": 1
+          },
+          {
+            "hash": "b7856ee5577e2386e21cf95db4ed6f6ed516674c",
+            "messageTitle": "Split DateTime class to Date and Time class, implemented Date class using DateTimeFormatter",
+            "messageBody": "",
+            "insertions": 215,
+            "deletions": 105
+          },
+          {
+            "hash": "35ddd57b2969b801dc194668da8057adfddb0f94",
+            "messageTitle": "Scaffold projection feature",
+            "messageBody": "",
+            "insertions": 66,
+            "deletions": 9
+          },
+          {
+            "hash": "a7cfd972cfdf9c91c63dd86ef3cae589a33e57ab",
+            "messageTitle": "Implement minimal project feature",
+            "messageBody": "",
+            "insertions": 23,
+            "deletions": 9
+          },
+          {
+            "hash": "9e68197698b8296c11df872c27f29a1f0c7e90c9",
+            "messageTitle": "fixed errors in testutil.TransactionBuilder due to usage of deprecated Java Date class",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 5
+          }
+        ]
+      }
+    ],
+    "Berttwm": [
+      {
+        "insertions": 95,
+        "deletions": 80,
+        "date": "2019-09-23",
+        "commitResults": [
+          {
+            "hash": "415a885b2b1f132c52e514876533d93a761d3c27",
+            "messageTitle": "Update ContactUs.adoc",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 3
+          },
+          {
+            "hash": "0825b6f5a88da0241a54d7d9e5469bf9bb02348c",
+            "messageTitle": "Update ContactUs.adoc",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "a33481db6a7bf4dcaf9cafc32e9a09b2d884427f",
+            "messageTitle": "Update UserGuide.adoc",
+            "messageBody": "",
+            "insertions": 23,
+            "deletions": 20
+          },
+          {
+            "hash": "7233cc81a3b0007ede49297f2e39948aad2b8188",
+            "messageTitle": "Update UserGuide.adoc",
+            "messageBody": "",
+            "insertions": 67,
+            "deletions": 55
+          },
+          {
+            "hash": "aa2f33950d0553d3194fb69dc7d1694dccd9c3cf",
+            "messageTitle": "Update UserGuide.adoc",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 57,
+        "deletions": 2,
+        "date": "2019-10-08",
+        "commitResults": [
+          {
+            "hash": "accda2b473bae82930e987c3b87c0d3ff74d4f8b",
+            "messageTitle": "tentative SplitTranscation and SplitCommand created. (Not completed)",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 0
+          },
+          {
+            "hash": "34a2f554224068aa74584dd6106afac92d711c51",
+            "messageTitle": "Tentative SplitTransaction and SplitCommand created. (Not completed)",
+            "messageBody": "",
+            "insertions": 49,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 24,
+        "deletions": 34,
+        "date": "2019-10-14",
+        "commitResults": [
+          {
+            "hash": "fdcac3c0537f33956730892e50c00364bfadeec1",
+            "messageTitle": "JsonAdaptedTransaction toModelType() returns temporary InTransaction",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 25
+          },
+          {
+            "hash": "55ee9a8fc03aa173630a9c31a24e6808411f6719",
+            "messageTitle": "Update BankAccount hasTransaction() and BankAccount toModelType()",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 4
+          },
+          {
+            "hash": "ff418eab5d404faa68952ff19c05cf97038874e7",
+            "messageTitle": "Added Clear Command",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 5
+          }
+        ]
+      },
+      {
+        "insertions": 16,
+        "deletions": 31,
+        "date": "2019-10-15",
+        "commitResults": [
+          {
+            "hash": "70bc28aa97d7d83a099cf56fa48712b637fee56a",
+            "messageTitle": "Checkstyle fix for EditCommand, BankAccount and UniqueTransactionList",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 27
+          },
+          {
+            "hash": "27265440d262a64dc00657209028aefdb6010330",
+            "messageTitle": "Testing ExitTest parameters (incomplete)",
+            "messageBody": "",
+            "insertions": 7,
+            "deletions": 3
+          },
+          {
+            "hash": "b88dfebb48fd4531ac3e36c00c6ccdac3b404910",
+            "messageTitle": "ExitCommandTest fixed and working",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      }
+    ]
+  },
+  "authorFinalContributionMap": {
+    "yewon0303": 147,
+    "joloong": 1922,
+    "dingyuchen": 618,
+    "wallacelim97": 485,
+    "Berttwm": 158
+  },
+  "authorFileTypeContributionMap": {
+    "yewon0303": {
+      "adoc": 9,
+      "adoc": 32,
+      "adoc": 1,
+      "java": 22,
+      "java": 1,
+      "java": 2,
+      "java": 4,
+      "java": 2,
+      "java": 48,
+      "java": 4,
+      "java": 4,
+      "java": 9,
+      "java": 4,
+      "java": 1,
+      "java": 2,
+      "java": 2
+    },
+    "joloong": {
+      "adoc": 1,
+      "json": 39,
+      "gradle": 2,
+      "adoc": 11,
+      "java": 5,
+      "java": 3,
+      "java": 3,
+      "java": 5,
+      "java": 1,
+      "java": 11,
+      "java": 51,
+      "java": 1,
+      "java": 20,
+      "java": 2,
+      "java": 30,
+      "java": 6,
+      "java": 30,
+      "java": 38,
+      "java": 33,
+      "java": 17,
+      "java": 46,
+      "java": 2,
+      "java": 31,
+      "java": 44,
+      "java": 1,
+      "java": 3,
+      "java": 109,
+      "java": 4,
+      "java": 40,
+      "java": 24,
+      "java": 17,
+      "java": 19,
+      "java": 75,
+      "java": 44,
+      "java": 3,
+      "java": 73,
+      "java": 17,
+      "java": 58,
+      "java": 4,
+      "java": 15,
+      "java": 28,
+      "java": 12,
+      "java": 43,
+      "java": 9,
+      "java": 30,
+      "java": 38,
+      "java": 56,
+      "java": 72,
+      "java": 12,
+      "java": 2,
+      "java": 6,
+      "java": 47,
+      "java": 43,
+      "java": 7,
+      "java": 2,
+      "java": 9,
+      "java": 35,
+      "java": 5,
+      "java": 62,
+      "java": 44,
+      "java": 62,
+      "java": 39,
+      "java": 81,
+      "java": 4,
+      "java": 14,
+      "java": 34,
+      "java": 8,
+      "java": 99,
+      "java": 3,
+      "java": 78
+    },
+    "dingyuchen": {
+      "java": 15,
+      "java": 13,
+      "java": 12,
+      "java": 2,
+      "java": 1,
+      "java": 4,
+      "java": 45,
+      "java": 16,
+      "java": 20,
+      "java": 17,
+      "java": 1,
+      "java": 9,
+      "java": 9,
+      "java": 10,
+      "java": 14,
+      "java": 133,
+      "java": 20,
+      "java": 42,
+      "java": 57,
+      "java": 1,
+      "java": 12,
+      "java": 69,
+      "java": 44,
+      "fxml": 2,
+      "fxml": 36,
+      "fxml": 8,
+      "java": 1,
+      "java": 1,
+      "java": 1,
+      "java": 1,
+      "java": 1,
+      "java": 1
+    },
+    "wallacelim97": {
+      "adoc": 27,
+      "java": 3,
+      "java": 4,
+      "java": 22,
+      "java": 43,
+      "java": 40,
+      "java": 3,
+      "java": 37,
+      "java": 22,
+      "java": 39,
+      "java": 5,
+      "java": 59,
+      "java": 3,
+      "java": 50,
+      "java": 2,
+      "java": 55,
+      "java": 2,
+      "java": 1,
+      "java": 13,
+      "java": 2,
+      "java": 1,
+      "java": 1,
+      "java": 2,
+      "java": 1,
+      "java": 7,
+      "java": 13,
+      "java": 7,
+      "java": 1,
+      "java": 16,
+      "java": 4
+    },
+    "Berttwm": {
+      "adoc": 3,
+      "adoc": 85,
+      "java": 1,
+      "java": 24,
+      "java": 6,
+      "java": 7,
+      "java": 15,
+      "java": 6,
+      "java": 5,
+      "java": 5,
+      "java": 1
+    }
+  },
+  "authorContributionVariance": {
+    "yewon0303": 580.3788,
+    "joloong": 49210.516,
+    "dingyuchen": 12939.419,
+    "wallacelim97": 10362.063,
+    "Berttwm": 1160.3826
+  },
+  "authorDisplayNameMap": {
+    "yewon0303": "Ye Won",
+    "joloong": "Joel",
+    "dingyuchen": "Ding",
+    "wallacelim97": "Wallace",
+    "Berttwm": "Bertrand"
+  }
+}
