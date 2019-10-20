@@ -14,4 +14,4 @@
 ## Examples of other valid options; For more, please view the user guide
 ### java -jar RepoSense.jar --repo https://github.com/reposense/RepoSense.git
 
-java -jar RepoSense.jar --config ./configs --repo https://github.com/AY1920S1-CS2103T-W12-3/main.git
+java -jar RepoSense.jar --repo https://github.com/AY1920S1-CS2103T-W12-3/main.git
