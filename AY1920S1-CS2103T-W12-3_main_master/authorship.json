@@ -15501,177 +15501,177 @@
       {
         "lineNumber": 16,
         "author": {
-          "gitId": "wallacelim97"
+          "gitId": "joloong"
         },
-        "content": "import seedu.address.model.tag.Tag;"
+        "content": "import seedu.address.model.person.Person;"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "import seedu.address.model.transaction.Amount;"
+        "content": "import seedu.address.model.tag.Tag;"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "import seedu.address.model.transaction.InTransaction;"
+        "content": "import seedu.address.model.transaction.Amount;"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "import seedu.address.model.transaction.Transaction;"
+        "content": "import seedu.address.model.transaction.InTransaction;"
       },
       {
         "lineNumber": 20,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "import seedu.address.model.transaction.Transaction;"
+      },
+      {
+        "lineNumber": 21,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "import seedu.address.model.util.Date;"
       },
       {
-        "lineNumber": 21,
+        "lineNumber": 22,
         "author": {
           "gitId": "wallacelim97"
         },
         "content": ""
       },
       {
-        "lineNumber": 22,
+        "lineNumber": 23,
         "author": {
           "gitId": "joloong"
         },
         "content": "/**"
       },
       {
-        "lineNumber": 23,
+        "lineNumber": 24,
         "author": {
           "gitId": "yewon0303"
         },
         "content": " * Parses input arguments and creates a new InCommand object."
       },
       {
-        "lineNumber": 24,
+        "lineNumber": 25,
         "author": {
           "gitId": "joloong"
         },
         "content": " */"
       },
       {
-        "lineNumber": 25,
+        "lineNumber": 26,
         "author": {
           "gitId": "wallacelim97"
         },
         "content": "public class InCommandParser implements Parser\u003cInCommand\u003e {"
       },
       {
-        "lineNumber": 26,
+        "lineNumber": 27,
         "author": {
           "gitId": "yewon0303"
         },
         "content": ""
-      },
-      {
-        "lineNumber": 27,
-        "author": {
-          "gitId": "wallacelim97"
-        },
-        "content": "    @Override"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    public InCommand parse(String args) throws ParseException {"
+        "content": "    @Override"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        ArgumentMultimap argMultimap \u003d"
+        "content": "    public InCommand parse(String args) throws ParseException {"
       },
       {
         "lineNumber": 30,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        ArgumentMultimap argMultimap \u003d"
+      },
+      {
+        "lineNumber": 31,
         "author": {
           "gitId": "joloong"
         },
         "content": "                ArgumentTokenizer.tokenize(args, PREFIX_NAME, PREFIX_AMOUNT, PREFIX_DATE, PREFIX_TAG);"
       },
       {
-        "lineNumber": 31,
+        "lineNumber": 32,
         "author": {
           "gitId": "wallacelim97"
         },
         "content": ""
       },
       {
-        "lineNumber": 32,
+        "lineNumber": 33,
         "author": {
           "gitId": "joloong"
         },
         "content": "        if (!arePrefixesPresent(argMultimap, PREFIX_NAME, PREFIX_AMOUNT, PREFIX_DATE)"
       },
       {
-        "lineNumber": 33,
+        "lineNumber": 34,
         "author": {
           "gitId": "wallacelim97"
         },
         "content": "                || !argMultimap.getPreamble().isEmpty()) {"
       },
       {
-        "lineNumber": 34,
+        "lineNumber": 35,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, InCommand.MESSAGE_USAGE));"
       },
       {
-        "lineNumber": 35,
+        "lineNumber": 36,
         "author": {
           "gitId": "wallacelim97"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 36,
+        "lineNumber": 37,
         "author": {
           "gitId": "wallacelim97"
         },
         "content": "        Name name \u003d ParserUtil.parseName(argMultimap.getValue(PREFIX_NAME).get());"
       },
       {
-        "lineNumber": 37,
-        "author": {
-          "gitId": "wallacelim97"
-        },
-        "content": "        Amount amount \u003d ParserUtil.parseAmount(argMultimap.getValue(PREFIX_AMOUNT).get());"
-      },
-      {
         "lineNumber": 38,
         "author": {
-          "gitId": "wallacelim97"
+          "gitId": "joloong"
         },
-        "content": "        Date date \u003d ParserUtil.parseDate(argMultimap.getValue(PREFIX_DATE).get());"
+        "content": "        Person person \u003d new Person(name);"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "        Amount amount \u003d ParserUtil.parseAmount(argMultimap.getValue(PREFIX_AMOUNT).get());"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        Set\u003cTag\u003e tagList \u003d ParserUtil.parseTags(argMultimap.getAllValues(PREFIX_TAG));"
+        "content": "        Date date \u003d ParserUtil.parseDate(argMultimap.getValue(PREFIX_DATE).get());"
       },
       {
         "lineNumber": 41,
@@ -15683,9 +15683,9 @@
       {
         "lineNumber": 42,
         "author": {
-          "gitId": "joloong"
+          "gitId": "wallacelim97"
         },
-        "content": "        Transaction transaction \u003d new InTransaction(amount, date, tagList);"
+        "content": "        Set\u003cTag\u003e tagList \u003d ParserUtil.parseTags(argMultimap.getAllValues(PREFIX_TAG));"
       },
       {
         "lineNumber": 43,
@@ -15697,9 +15697,9 @@
       {
         "lineNumber": 44,
         "author": {
-          "gitId": "wallacelim97"
+          "gitId": "joloong"
         },
-        "content": "        return new InCommand(transaction);"
+        "content": "        Transaction transaction \u003d new InTransaction(amount, date, tagList, person);"
       },
       {
         "lineNumber": 45,
@@ -15713,7 +15713,7 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "        return new InCommand(transaction);"
       },
       {
         "lineNumber": 47,
@@ -15727,52 +15727,66 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    /**"
+        "content": "    }"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     * Returns true if none of the prefixes contains empty {@code Optional} values in the given"
+        "content": ""
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     * {@code ArgumentMultimap}."
+        "content": "    /**"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     */"
+        "content": "     * Returns true if none of the prefixes contains empty {@code Optional} values in the given"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private static boolean arePrefixesPresent(ArgumentMultimap argumentMultimap, Prefix... prefixes) {"
+        "content": "     * {@code ArgumentMultimap}."
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        return Stream.of(prefixes).allMatch(prefix -\u003e argumentMultimap.getValue(prefix).isPresent());"
+        "content": "     */"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "    private static boolean arePrefixesPresent(ArgumentMultimap argumentMultimap, Prefix... prefixes) {"
       },
       {
         "lineNumber": 55,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return Stream.of(prefixes).allMatch(prefix -\u003e argumentMultimap.getValue(prefix).isPresent());"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 57,
         "author": {
           "gitId": "wallacelim97"
         },
@@ -15781,7 +15795,7 @@
     ],
     "authorContributionMap": {
       "yewon0303": 3,
-      "joloong": 16,
+      "joloong": 18,
       "dingyuchen": 1,
       "wallacelim97": 35
     }
@@ -24857,9 +24871,9 @@
       {
         "lineNumber": 57,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
-        "content": "        return phone.orElse(new Phone(\"000\"));"
+        "content": "        return phone.orElse(new Phone(\"65166666\"));"
       },
       {
         "lineNumber": 58,
@@ -25493,7 +25507,8 @@
       }
     ],
     "authorContributionMap": {
-      "dingyuchen": 32,
+      "joloong": 1,
+      "dingyuchen": 31,
       "-": 115
     }
   },
@@ -28202,276 +28217,311 @@
         "author": {
           "gitId": "joloong"
         },
-        "content": "import seedu.address.model.tag.Tag;"
+        "content": "import seedu.address.model.person.Person;"
       },
       {
         "lineNumber": 6,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
-        "content": "import seedu.address.model.util.Date;"
+        "content": "import seedu.address.model.tag.Tag;"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "dingyuchen"
         },
-        "content": ""
+        "content": "import seedu.address.model.util.Date;"
       },
       {
         "lineNumber": 8,
         "author": {
-          "gitId": "joloong"
+          "gitId": "dingyuchen"
         },
-        "content": "/**"
+        "content": ""
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "joloong"
         },
-        "content": " * Handles in transactions."
+        "content": "/**"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "joloong"
         },
-        "content": " */"
+        "content": " * Handles in transactions."
       },
       {
         "lineNumber": 11,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 12,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "public class InTransaction extends Transaction {"
       },
       {
-        "lineNumber": 12,
+        "lineNumber": 13,
         "author": {
           "gitId": "wallacelim97"
         },
         "content": "    public InTransaction(Amount amount, Date date) {"
       },
       {
-        "lineNumber": 13,
+        "lineNumber": 14,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "        super(amount, date);"
       },
       {
-        "lineNumber": 14,
+        "lineNumber": 15,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 15,
+        "lineNumber": 16,
         "author": {
           "gitId": "yewon0303"
         },
         "content": ""
-      },
-      {
-        "lineNumber": 16,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "    public InTransaction(Amount amount, Date date, Set\u003cTag\u003e tags) {"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        super(amount, date, tags);"
+        "content": "    public InTransaction(Amount amount, Date date, Set\u003cTag\u003e tags) {"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    }"
+        "content": "        super(amount, date, tags);"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 20,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
-        "content": "    @Override"
+        "content": ""
       },
       {
         "lineNumber": 21,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "joloong"
         },
-        "content": "    public Amount handleBalance(Amount balance) {"
+        "content": "    public InTransaction(Amount amount, Date date, Set\u003cTag\u003e tags, Person personInvolved) {"
       },
       {
         "lineNumber": 22,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "joloong"
         },
-        "content": "        Amount newBalance \u003d balance.addAmount(super.amount);"
+        "content": "        super(amount, date, tags, personInvolved);"
       },
       {
         "lineNumber": 23,
         "author": {
-          "gitId": "yewon0303"
-        },
-        "content": "        return newBalance;"
-      },
-      {
-        "lineNumber": 24,
-        "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 25,
+        "lineNumber": 24,
         "author": {
           "gitId": "joloong"
         },
         "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "dingyuchen"
+        },
+        "content": "    @Override"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "yewon0303"
         },
-        "content": "    @Override"
+        "content": "    public Amount handleBalance(Amount balance) {"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "yewon0303"
         },
-        "content": "    public Budget handleBudget(Budget budget) {"
+        "content": "        Amount newBalance \u003d balance.addAmount(super.amount);"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "yewon0303"
         },
-        "content": "        return budget;"
+        "content": "        return newBalance;"
       },
       {
         "lineNumber": 29,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "dingyuchen"
         },
         "content": "    }"
       },
       {
         "lineNumber": 30,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "joloong"
         },
         "content": ""
       },
       {
         "lineNumber": 31,
         "author": {
-          "gitId": "joloong"
+          "gitId": "yewon0303"
         },
         "content": "    @Override"
       },
       {
         "lineNumber": 32,
         "author": {
-          "gitId": "joloong"
+          "gitId": "yewon0303"
         },
-        "content": "    public boolean equals(Object obj) {"
+        "content": "    public Budget handleBudget(Budget budget) {"
       },
       {
         "lineNumber": 33,
         "author": {
-          "gitId": "joloong"
+          "gitId": "yewon0303"
         },
-        "content": "        if (this \u003d\u003d obj) {"
+        "content": "        return budget;"
       },
       {
         "lineNumber": 34,
         "author": {
-          "gitId": "joloong"
+          "gitId": "yewon0303"
         },
-        "content": "            return true;"
+        "content": "    }"
       },
       {
         "lineNumber": 35,
         "author": {
-          "gitId": "joloong"
+          "gitId": "yewon0303"
         },
-        "content": "        } else if (obj instanceof InTransaction) {"
+        "content": ""
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            InTransaction inObj \u003d (InTransaction) obj;"
+        "content": "    @Override"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            return super.amount.equals(inObj.amount)"
+        "content": "    public boolean equals(Object obj) {"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "joloong"
         },
-        "content": "                    \u0026\u0026 super.date.equals(inObj.date)"
+        "content": "        if (this \u003d\u003d obj) {"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "joloong"
         },
-        "content": "                    \u0026\u0026 super.peopleInvolved.equals(inObj.peopleInvolved);"
+        "content": "            return true;"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        } else {"
+        "content": "        } else if (obj instanceof InTransaction) {"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            return false;"
+        "content": "            InTransaction inObj \u003d (InTransaction) obj;"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        }"
+        "content": "            return super.amount.equals(inObj.amount)"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    }"
+        "content": "                    \u0026\u0026 super.date.equals(inObj.date)"
       },
       {
         "lineNumber": 44,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "                    \u0026\u0026 super.peopleInvolved.equals(inObj.peopleInvolved);"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            return false;"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 49,
         "author": {
           "gitId": "dingyuchen"
         },
@@ -28480,7 +28530,7 @@
     ],
     "authorContributionMap": {
       "yewon0303": 9,
-      "joloong": 24,
+      "joloong": 29,
       "dingyuchen": 10,
       "wallacelim97": 1
     }
@@ -33820,7 +33870,7 @@
         "author": {
           "gitId": "joloong"
         },
-        "content": "        return new InTransaction(new Amount(Double.parseDouble(amount)), new Date(date), modelTags);"
+        "content": "        return new InTransaction(new Amount(Double.parseDouble(amount)), new Date(date), modelTags, person);"
       },
       {
         "lineNumber": 90,
@@ -38646,6 +38696,618 @@
     }
   },
   {
+    "path": "src/main/java/seedu/address/ui/UiManager.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package seedu.address.ui;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.logging.Logger;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import javafx.application.Platform;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import javafx.scene.control.Alert;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import javafx.scene.control.Alert.AlertType;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import javafx.scene.image.Image;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import javafx.stage.Stage;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import seedu.address.MainApp;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import seedu.address.commons.core.LogsCenter;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import seedu.address.commons.util.StringUtil;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import seedu.address.logic.Logic;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * The manager of the UI component."
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class UiManager implements Ui {"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static final String ALERT_DIALOG_PANE_FIELD_ID \u003d \"alertDialogPane\";"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final Logger logger \u003d LogsCenter.getLogger(UiManager.class);"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "    private static final String ICON_APPLICATION \u003d \"/images/palpay_32.png\";"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private Logic logic;"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private MainWindow mainWindow;"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public UiManager(Logic logic) {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        super();"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.logic \u003d logic;"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void start(Stage primaryStage) {"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        logger.info(\"Starting UI...\");"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        //Set the application icon."
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        primaryStage.getIcons().add(getImage(ICON_APPLICATION));"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            mainWindow \u003d new MainWindow(primaryStage, logic);"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            mainWindow.show(); //This should be called before creating other UI parts"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            mainWindow.fillInnerParts();"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } catch (Throwable e) {"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            logger.severe(StringUtil.getDetails(e));"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            showFatalErrorDialogAndShutdown(\"Fatal error during initializing\", e);"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private Image getImage(String imagePath) {"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return new Image(MainApp.class.getResourceAsStream(imagePath));"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    void showAlertDialogAndWait(Alert.AlertType type, String title, String headerText, String contentText) {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        showAlertDialogAndWait(mainWindow.getPrimaryStage(), type, title, headerText, contentText);"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Shows an alert dialog on {@code owner} with the given parameters."
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * This method only returns after the user has closed the alert dialog."
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static void showAlertDialogAndWait(Stage owner, AlertType type, String title, String headerText,"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                               String contentText) {"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        final Alert alert \u003d new Alert(type);"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        alert.getDialogPane().getStylesheets().add(\"view/DarkTheme.css\");"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        alert.initOwner(owner);"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        alert.setTitle(title);"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        alert.setHeaderText(headerText);"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        alert.setContentText(contentText);"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        alert.getDialogPane().setId(ALERT_DIALOG_PANE_FIELD_ID);"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        alert.showAndWait();"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Shows an error alert dialog with {@code title} and error message, {@code e},"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * and exits the application after the user has closed the alert dialog."
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private void showFatalErrorDialogAndShutdown(String title, Throwable e) {"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        logger.severe(title + \" \" + e.getMessage() + StringUtil.getDetails(e));"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        showAlertDialogAndWait(Alert.AlertType.ERROR, title, e.getMessage(), e.toString());"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Platform.exit();"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        System.exit(1);"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "joloong": 1,
+      "-": 85
+    }
+  },
+  {
     "path": "src/main/resources/view/MainWindow.fxml",
     "fileType": "fxml",
     "lines": [
@@ -38759,63 +39421,63 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cicons\u003e"
+        "content": "    \u003cicons\u003e"
       },
       {
         "lineNumber": 17,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "    \u003cImage url\u003d\"@/images/address_book_32.png\" /\u003e"
+        "content": "        \u003cImage url\u003d\"@/images/palpay_32.png\"/\u003e"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003c/icons\u003e"
+        "content": "    \u003c/icons\u003e"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cscene\u003e"
+        "content": "    \u003cscene\u003e"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003cScene\u003e"
+        "content": "        \u003cScene\u003e"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003cstylesheets\u003e"
+        "content": "            \u003cstylesheets\u003e"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cURL value\u003d\"@DarkTheme.css\" /\u003e"
+        "content": "                \u003cURL value\u003d\"@DarkTheme.css\"/\u003e"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cURL value\u003d\"@Extensions.css\" /\u003e"
+        "content": "                \u003cURL value\u003d\"@Extensions.css\"/\u003e"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003c/stylesheets\u003e"
+        "content": "            \u003c/stylesheets\u003e"
       },
       {
         "lineNumber": 25,
@@ -38829,63 +39491,63 @@
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003cVBox\u003e"
+        "content": "            \u003cVBox\u003e"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cMenuBar fx:id\u003d\"menuBar\" VBox.vgrow\u003d\"NEVER\"\u003e"
+        "content": "                \u003cMenuBar fx:id\u003d\"menuBar\" VBox.vgrow\u003d\"NEVER\"\u003e"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cMenu mnemonicParsing\u003d\"false\" text\u003d\"File\"\u003e"
+        "content": "                    \u003cMenu mnemonicParsing\u003d\"false\" text\u003d\"File\"\u003e"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003cMenuItem mnemonicParsing\u003d\"false\" onAction\u003d\"#handleExit\" text\u003d\"Exit\" /\u003e"
+        "content": "                        \u003cMenuItem mnemonicParsing\u003d\"false\" onAction\u003d\"#handleExit\" text\u003d\"Exit\"/\u003e"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/Menu\u003e"
+        "content": "                    \u003c/Menu\u003e"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cMenu mnemonicParsing\u003d\"false\" text\u003d\"Help\"\u003e"
+        "content": "                    \u003cMenu mnemonicParsing\u003d\"false\" text\u003d\"Help\"\u003e"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003cMenuItem fx:id\u003d\"helpMenuItem\" mnemonicParsing\u003d\"false\" onAction\u003d\"#handleHelp\" text\u003d\"Help\" /\u003e"
+        "content": "                        \u003cMenuItem fx:id\u003d\"helpMenuItem\" mnemonicParsing\u003d\"false\" onAction\u003d\"#handleHelp\" text\u003d\"Help\"/\u003e"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/Menu\u003e"
+        "content": "                    \u003c/Menu\u003e"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003c/MenuBar\u003e"
+        "content": "                \u003c/MenuBar\u003e"
       },
       {
         "lineNumber": 35,
@@ -38899,35 +39561,35 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cStackPane VBox.vgrow\u003d\"NEVER\" fx:id\u003d\"commandBoxPlaceholder\" styleClass\u003d\"pane-with-border\"\u003e"
+        "content": "                \u003cStackPane VBox.vgrow\u003d\"NEVER\" fx:id\u003d\"commandBoxPlaceholder\" styleClass\u003d\"pane-with-border\"\u003e"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cpadding\u003e"
+        "content": "                    \u003cpadding\u003e"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003cInsets top\u003d\"5\" right\u003d\"10\" bottom\u003d\"5\" left\u003d\"10\" /\u003e"
+        "content": "                        \u003cInsets top\u003d\"5\" right\u003d\"10\" bottom\u003d\"5\" left\u003d\"10\"/\u003e"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/padding\u003e"
+        "content": "                    \u003c/padding\u003e"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003c/StackPane\u003e"
+        "content": "                \u003c/StackPane\u003e"
       },
       {
         "lineNumber": 41,
@@ -38941,42 +39603,42 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cStackPane VBox.vgrow\u003d\"NEVER\" fx:id\u003d\"resultDisplayPlaceholder\" styleClass\u003d\"pane-with-border\""
+        "content": "                \u003cStackPane VBox.vgrow\u003d\"NEVER\" fx:id\u003d\"resultDisplayPlaceholder\" styleClass\u003d\"pane-with-border\""
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": "                   minHeight\u003d\"100\" prefHeight\u003d\"100\" maxHeight\u003d\"100\"\u003e"
+        "content": "                           minHeight\u003d\"100\" prefHeight\u003d\"100\" maxHeight\u003d\"100\"\u003e"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cpadding\u003e"
+        "content": "                    \u003cpadding\u003e"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003cInsets top\u003d\"5\" right\u003d\"10\" bottom\u003d\"5\" left\u003d\"10\" /\u003e"
+        "content": "                        \u003cInsets top\u003d\"5\" right\u003d\"10\" bottom\u003d\"5\" left\u003d\"10\"/\u003e"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/padding\u003e"
+        "content": "                    \u003c/padding\u003e"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003c/StackPane\u003e"
+        "content": "                \u003c/StackPane\u003e"
       },
       {
         "lineNumber": 48,
@@ -38988,82 +39650,89 @@
       {
         "lineNumber": 49,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        \u003cVBox fx:id\u003d\"personList\" styleClass\u003d\"pane-with-border\" minWidth\u003d\"340\" prefWidth\u003d\"340\" VBox.vgrow\u003d\"ALWAYS\"\u003e"
+        "content": "                \u003cVBox fx:id\u003d\"personList\" styleClass\u003d\"pane-with-border\" minWidth\u003d\"340\" prefWidth\u003d\"340\""
       },
       {
         "lineNumber": 50,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "          \u003cpadding\u003e"
+        "content": "                      VBox.vgrow\u003d\"ALWAYS\"\u003e"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003cInsets top\u003d\"10\" right\u003d\"10\" bottom\u003d\"10\" left\u003d\"10\" /\u003e"
+        "content": "                    \u003cpadding\u003e"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/padding\u003e"
+        "content": "                        \u003cInsets top\u003d\"10\" right\u003d\"10\" bottom\u003d\"10\" left\u003d\"10\"/\u003e"
       },
       {
         "lineNumber": 53,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "-"
         },
-        "content": "          \u003cStackPane fx:id\u003d\"transactionListPanelPlaceholder\" VBox.vgrow\u003d\"ALWAYS\"/\u003e"
+        "content": "                    \u003c/padding\u003e"
       },
       {
         "lineNumber": 54,
         "author": {
-          "gitId": "-"
+          "gitId": "dingyuchen"
         },
-        "content": "        \u003c/VBox\u003e"
+        "content": "                    \u003cStackPane fx:id\u003d\"transactionListPanelPlaceholder\" VBox.vgrow\u003d\"ALWAYS\"/\u003e"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                \u003c/VBox\u003e"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cStackPane fx:id\u003d\"statusbarPlaceholder\" VBox.vgrow\u003d\"NEVER\" /\u003e"
+        "content": ""
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003c/VBox\u003e"
+        "content": "                \u003cStackPane fx:id\u003d\"statusbarPlaceholder\" VBox.vgrow\u003d\"NEVER\"/\u003e"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003c/Scene\u003e"
+        "content": "            \u003c/VBox\u003e"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003c/scene\u003e"
+        "content": "        \u003c/Scene\u003e"
       },
       {
         "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003c/scene\u003e"
+      },
+      {
+        "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
@@ -39071,8 +39740,9 @@
       }
     ],
     "authorContributionMap": {
+      "joloong": 3,
       "dingyuchen": 2,
-      "-": 58
+      "-": 56
     }
   },
   {
@@ -39513,6 +40183,268 @@
     ],
     "authorContributionMap": {
       "joloong": 15
+    }
+  },
+  {
+    "path": "src/test/java/seedu/address/commons/util/AppUtilTest.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package seedu.address.commons.util;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertNotNull;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import static seedu.address.testutil.Assert.assertThrows;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import org.junit.jupiter.api.Test;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class AppUtilTest {"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void getImage_exitingImage() {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertNotNull(AppUtil.getImage(\"/images/palpay_32.png\"));"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void getImage_nullGiven_throwsNullPointerException() {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertThrows(NullPointerException.class, () -\u003e AppUtil.getImage(null));"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void checkArgument_true_nothingHappens() {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        AppUtil.checkArgument(true);"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        AppUtil.checkArgument(true, \"\");"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void checkArgument_falseWithoutErrorMessage_throwsIllegalArgumentException() {"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertThrows(IllegalArgumentException.class, () -\u003e AppUtil.checkArgument(false));"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void checkArgument_falseWithErrorMessage_throwsIllegalArgumentException() {"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        String errorMessage \u003d \"error message\";"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertThrows(IllegalArgumentException.class, errorMessage, () -\u003e AppUtil.checkArgument(false, errorMessage));"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "joloong": 1,
+      "-": 35
     }
   },
   {

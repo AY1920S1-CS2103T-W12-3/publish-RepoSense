@@ -604,6 +604,41 @@
             "deletions": 5
           }
         ]
+      },
+      {
+        "insertions": 55,
+        "deletions": 47,
+        "date": "2019-10-21",
+        "commitResults": [
+          {
+            "hash": "e9c7cb6de6a4d147ca964c9f2e9c869806665d80",
+            "messageTitle": "Change product icon",
+            "messageBody": "",
+            "insertions": 42,
+            "deletions": 41
+          },
+          {
+            "hash": "f504ef31a5f1e6eba94edd28014d5fdd9cffb82e",
+            "messageTitle": "Fix the InCommand and Transaction",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 3
+          },
+          {
+            "hash": "7efa389a2fb3a5197f806bceb93ab15a45173909",
+            "messageTitle": "Change PalPay icon",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 3
+          },
+          {
+            "hash": "1678a563a1c1678e8f9b22467bc505ac545cf79d",
+            "messageTitle": "Remove bank_building_32.png",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          }
+        ]
       }
     ],
     "dingyuchen": [
@@ -1182,8 +1217,8 @@
   },
   "authorFinalContributionMap": {
     "yewon0303": 347,
-    "joloong": 1891,
-    "dingyuchen": 989,
+    "joloong": 1904,
+    "dingyuchen": 988,
     "wallacelim97": 470,
     "Berttwm": 290
   },
@@ -1233,15 +1268,16 @@
       "java": 30,
       "java": 26,
       "java": 33,
-      "java": 16,
+      "java": 18,
       "java": 46,
       "java": 30,
       "java": 46,
       "java": 1,
       "java": 109,
+      "java": 1,
       "java": 4,
       "java": 34,
-      "java": 24,
+      "java": 29,
       "java": 17,
       "java": 13,
       "java": 65,
@@ -1253,7 +1289,10 @@
       "java": 17,
       "java": 58,
       "java": 4,
+      "java": 1,
+      "fxml": 3,
       "java": 15,
+      "java": 1,
       "java": 28,
       "java": 12,
       "java": 47,
@@ -1308,7 +1347,7 @@
       "java": 17,
       "java": 1,
       "java": 9,
-      "java": 32,
+      "java": 31,
       "java": 9,
       "java": 15,
       "java": 10,
@@ -1393,7 +1432,7 @@
   },
   "authorContributionVariance": {
     "yewon0303": 3327.465,
-    "joloong": 49667.18,
+    "joloong": 49364.684,
     "dingyuchen": 15546.8125,
     "wallacelim97": 10352.474,
     "Berttwm": 2452.7407
