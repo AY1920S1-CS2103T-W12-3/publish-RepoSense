@@ -149,8 +149,8 @@
         ]
       },
       {
-        "insertions": 15,
-        "deletions": 30,
+        "insertions": 133,
+        "deletions": 83,
         "date": "2019-10-21",
         "commitResults": [
           {
@@ -173,6 +173,48 @@
             "messageBody": "",
             "insertions": 6,
             "deletions": 6
+          },
+          {
+            "hash": "9e81df62bc9fa860ee4a29adcfe1d286aff95c15",
+            "messageTitle": "Update UserGuide based on updated and new CLISyntax developed",
+            "messageBody": "",
+            "insertions": 31,
+            "deletions": 33
+          },
+          {
+            "hash": "dbbab38a5907386f38e3d9e2b1b0efc6e079ec56",
+            "messageTitle": "Update Commands in UserGuide",
+            "messageBody": "",
+            "insertions": 24,
+            "deletions": 5
+          },
+          {
+            "hash": "a96577867c2f86c684f0cb5f0e954105d3e97f37",
+            "messageTitle": "Update UserGuide with more commands and examples",
+            "messageBody": "",
+            "insertions": 13,
+            "deletions": 1
+          },
+          {
+            "hash": "2d2905758c6ad4b90ed6bf31ef5685f44fc7dfa0",
+            "messageTitle": "Update Command Summary in UserGuide",
+            "messageBody": "",
+            "insertions": 48,
+            "deletions": 12
+          },
+          {
+            "hash": "f3d4d6bc5dbb30c17153e6d6a4e0dcbde02ec117",
+            "messageTitle": "Fix grammar error",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "c68989bf8f1e5a8a88e629d7620772c58b6bfe3c",
+            "messageTitle": "Add newline at the end of UserGuide",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
           }
         ]
       }
@@ -606,8 +648,8 @@
         ]
       },
       {
-        "insertions": 55,
-        "deletions": 47,
+        "insertions": 291,
+        "deletions": 56,
         "date": "2019-10-21",
         "commitResults": [
           {
@@ -637,6 +679,13 @@
             "messageBody": "",
             "insertions": 0,
             "deletions": 0
+          },
+          {
+            "hash": "f3c1d05c16ee9b5a96f7f733940599f1dc1dc7ba",
+            "messageTitle": "Add SortCommand and relevant classes",
+            "messageBody": "",
+            "insertions": 236,
+            "deletions": 9
           }
         ]
       }
@@ -1216,17 +1265,17 @@
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 347,
-    "joloong": 1904,
-    "dingyuchen": 988,
-    "wallacelim97": 470,
-    "Berttwm": 290
+    "yewon0303": 445,
+    "joloong": 2141,
+    "dingyuchen": 985,
+    "wallacelim97": 466,
+    "Berttwm": 249
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
       "adoc": 9,
       "adoc": 32,
-      "adoc": 1,
+      "adoc": 100,
       "java": 19,
       "java": 46,
       "java": 1,
@@ -1237,7 +1286,7 @@
       "java": 13,
       "java": 6,
       "java": 5,
-      "java": 41,
+      "java": 40,
       "java": 66,
       "java": 9,
       "java": 10,
@@ -1263,39 +1312,47 @@
       "java": 1,
       "java": 20,
       "java": 2,
+      "java": 1,
       "java": 30,
+      "java": 40,
       "java": 5,
       "java": 30,
-      "java": 26,
+      "java": 30,
       "java": 33,
       "java": 18,
-      "java": 46,
-      "java": 30,
-      "java": 46,
+      "java": 33,
+      "java": 53,
+      "java": 40,
+      "java": 52,
       "java": 1,
+      "java": 11,
       "java": 109,
       "java": 1,
       "java": 4,
-      "java": 34,
+      "java": 49,
+      "java": 13,
+      "java": 1,
       "java": 29,
       "java": 17,
       "java": 13,
       "java": 65,
       "java": 44,
-      "java": 2,
+      "java": 7,
       "java": 3,
       "java": 3,
       "java": 73,
       "java": 17,
       "java": 58,
       "java": 4,
+      "java": 44,
       "java": 1,
+      "fxml": 41,
       "fxml": 3,
       "java": 15,
       "java": 1,
       "java": 28,
       "java": 12,
-      "java": 47,
+      "java": 53,
       "java": 9,
       "java": 30,
       "java": 38,
@@ -1344,7 +1401,7 @@
       "java": 18,
       "java": 21,
       "java": 1,
-      "java": 17,
+      "java": 14,
       "java": 1,
       "java": 9,
       "java": 31,
@@ -1385,7 +1442,7 @@
       "java": 4,
       "java": 22,
       "java": 1,
-      "java": 42,
+      "java": 41,
       "java": 38,
       "java": 3,
       "java": 35,
@@ -1397,10 +1454,10 @@
       "java": 2,
       "java": 2,
       "java": 1,
-      "java": 13,
+      "java": 12,
       "java": 1,
       "java": 1,
-      "java": 65,
+      "java": 63,
       "java": 6,
       "java": 54,
       "java": 12,
@@ -1411,7 +1468,7 @@
     },
     "Berttwm": {
       "adoc": 3,
-      "adoc": 85,
+      "adoc": 44,
       "java": 1,
       "java": 52,
       "java": 20,
@@ -1431,8 +1488,8 @@
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 3327.465,
-    "joloong": 49364.684,
+    "yewon0303": 4518.5933,
+    "joloong": 51292.06,
     "dingyuchen": 15546.8125,
     "wallacelim97": 10352.474,
     "Berttwm": 2452.7407
