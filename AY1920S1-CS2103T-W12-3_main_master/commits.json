@@ -105,6 +105,76 @@
             "deletions": 18
           }
         ]
+      },
+      {
+        "insertions": 266,
+        "deletions": 39,
+        "date": "2019-10-19",
+        "commitResults": [
+          {
+            "hash": "026229016c447989eb61fbe943209c8af341c7ef",
+            "messageTitle": "Create Budget class, Update BankAccount with Budget, Incomplete implementation of deadline",
+            "messageBody": "",
+            "insertions": 85,
+            "deletions": 0
+          },
+          {
+            "hash": "e4cb53dfc2b52a637c6e06ec46016fdf51ec99d9",
+            "messageTitle": "Fix checkstyle errors to pass gradle test",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 2
+          },
+          {
+            "hash": "f8a84c401f62014c0ba50249f6080dd4c3bdf752",
+            "messageTitle": "Update DateParser, Implement SetCommand for setting budget, Incomplete implementation of SetCommand",
+            "messageBody": "",
+            "insertions": 142,
+            "deletions": 17
+          },
+          {
+            "hash": "08e02698ec97a9ee991973b0afd12b15ea05cedf",
+            "messageTitle": "Implement SetCommand fully, Improve DateParser to parse date for both SetCommand and InCommand",
+            "messageBody": "",
+            "insertions": 28,
+            "deletions": 20
+          },
+          {
+            "hash": "9ebcb8a472ae356265ca8edb4edfdea1c2876da1",
+            "messageTitle": "Update AddCommandTest to pass gradle test",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 15,
+        "deletions": 30,
+        "date": "2019-10-21",
+        "commitResults": [
+          {
+            "hash": "dc3db9f67eec7c8008df96b35f82c04b8d3a8434",
+            "messageTitle": "Update JavaDoc on Model interface",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 2
+          },
+          {
+            "hash": "d070b75b22df86d50f97a4e4cf48b181f3f9f8c2",
+            "messageTitle": "Fix conflicts, Update SetCommand",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 22
+          },
+          {
+            "hash": "14a1b1bc186d37fa458c8573b0173c40cf8853bb",
+            "messageTitle": "Fix checkstyle errors",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 6
+          }
+        ]
       }
     ],
     "joloong": [
@@ -648,6 +718,62 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 158,
+        "deletions": 41,
+        "date": "2019-10-20",
+        "commitResults": [
+          {
+            "hash": "4aa3672c7ef9ba13738042b59f7afb57b2dd9230",
+            "messageTitle": "Add new classes to support Split",
+            "messageBody": "",
+            "insertions": 92,
+            "deletions": 23
+          },
+          {
+            "hash": "292c5c867e89e1ba60621f67ccf16a2fd6c9cdc3",
+            "messageTitle": "Complete SplitTransaction",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 6
+          },
+          {
+            "hash": "13cd2909386e36e5c057ac9b1c8ec85427c8dc9b",
+            "messageTitle": "Fix failing test cases",
+            "messageBody": "",
+            "insertions": 56,
+            "deletions": 12
+          }
+        ]
+      },
+      {
+        "insertions": 241,
+        "deletions": 45,
+        "date": "2019-10-21",
+        "commitResults": [
+          {
+            "hash": "9607b0f1ade201c784b3aecc8c763527cb538bfa",
+            "messageTitle": "Implement SplitCommandParser and fix checkstyle errors",
+            "messageBody": "",
+            "insertions": 222,
+            "deletions": 41
+          },
+          {
+            "hash": "6faf2e7434d06b91c534f8743c63d4cc7efd9d65",
+            "messageTitle": "Add vscode files to gitignore",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 0
+          },
+          {
+            "hash": "708eee747f8bfcd9f1fb5b5a93f5f3cf0f94b47b",
+            "messageTitle": "Undo auto refactor",
+            "messageBody": "",
+            "insertions": 13,
+            "deletions": 4
+          }
+        ]
       }
     ],
     "wallacelim97": [
@@ -804,6 +930,41 @@
             "deletions": 5
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-10-20",
+        "commitResults": [
+          {
+            "hash": "e8be77d1abc93137f80277769d268424833956be",
+            "messageTitle": "Correct List command success message",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 31,
+        "deletions": 24,
+        "date": "2019-10-21",
+        "commitResults": [
+          {
+            "hash": "594217cb212d92ea46d5ea09a5f8ce3e3c4ec6aa",
+            "messageTitle": "Fixed Date checking",
+            "messageBody": "",
+            "insertions": 19,
+            "deletions": 12
+          },
+          {
+            "hash": "46e9784b62fd25124ff2050de35a61cdfff0bbd4",
+            "messageTitle": "Refactored CommandParser to Parser temporarily",
+            "messageBody": "",
+            "insertions": 12,
+            "deletions": 12
+          }
+        ]
       }
     ],
     "Berttwm": [
@@ -925,34 +1086,132 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 116,
+        "deletions": 11,
+        "date": "2019-10-20",
+        "commitResults": [
+          {
+            "hash": "a071fa937cec6fcb6efc0b724d10681b5cd9335b",
+            "messageTitle": "Create OutCommand class",
+            "messageBody": "",
+            "insertions": 52,
+            "deletions": 0
+          },
+          {
+            "hash": "fbe0609d3af39b4806b247de4a41866a753e6584",
+            "messageTitle": "OutCommandParser creation",
+            "messageBody": "",
+            "insertions": 56,
+            "deletions": 0
+          },
+          {
+            "hash": "c6124f53b6cc75383ce84bf284b57ee960ce884b",
+            "messageTitle": "Added in OutCommand case to BankAccountParser",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 0
+          },
+          {
+            "hash": "64d1ea503c3b43c50ae952a32646693820515d8c",
+            "messageTitle": "Working OutCommand, returns negative value when OutCommand.",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 11
+          }
+        ]
+      },
+      {
+        "insertions": 135,
+        "deletions": 49,
+        "date": "2019-10-21",
+        "commitResults": [
+          {
+            "hash": "cf920c460b31a6a2c52e9a9f08866d002f9c1166",
+            "messageTitle": "Added functionality to SplitCommand and SplitCommandParser. Added ParseNames as input to ParserUtil",
+            "messageBody": "",
+            "insertions": 57,
+            "deletions": 1
+          },
+          {
+            "hash": "ff08d81fe0e3166f388024ea431f247f4223d17e",
+            "messageTitle": "Fix parseNames bug in ParserUtil",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 4
+          },
+          {
+            "hash": "2d19936f205a5bb4a497cff6fa92bcf00c9d959e",
+            "messageTitle": "SplitCommand fixes. Proper Invalid Command Format for SplitCommand",
+            "messageBody": "",
+            "insertions": 30,
+            "deletions": 20
+          },
+          {
+            "hash": "1e9c8a53449f8dc3695adba68b5bc0ef924b7c48",
+            "messageTitle": "Proper checkstyle for SplitCommand usages",
+            "messageBody": "",
+            "insertions": 29,
+            "deletions": 11
+          },
+          {
+            "hash": "f0598cc2670b14b9e7e284964f0fa0ca0a67f160",
+            "messageTitle": "Fix all conflicts with SplitCommand, Fix Checkstyle and imports",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 5
+          },
+          {
+            "hash": "1494376f1f82f23bd7c680414655ff623d562972",
+            "messageTitle": "Fix errors from Master merge",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 7
+          },
+          {
+            "hash": "78cf085760bd066de6a36d73fcc7a018256ab5c0",
+            "messageTitle": "gitignore file fix",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 147,
-    "joloong": 1922,
-    "dingyuchen": 618,
-    "wallacelim97": 485,
-    "Berttwm": 158
+    "yewon0303": 347,
+    "joloong": 1891,
+    "dingyuchen": 989,
+    "wallacelim97": 470,
+    "Berttwm": 290
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
       "adoc": 9,
       "adoc": 32,
       "adoc": 1,
-      "java": 22,
+      "java": 19,
+      "java": 46,
       "java": 1,
-      "java": 2,
       "java": 4,
-      "java": 2,
-      "java": 48,
-      "java": 4,
-      "java": 4,
+      "java": 3,
+      "java": 1,
+      "java": 50,
+      "java": 13,
+      "java": 6,
+      "java": 5,
+      "java": 41,
+      "java": 66,
       "java": 9,
-      "java": 4,
+      "java": 10,
+      "java": 13,
+      "java": 7,
       "java": 1,
       "java": 2,
-      "java": 2
+      "java": 2,
+      "java": 6
     },
     "joloong": {
       "adoc": 1,
@@ -970,25 +1229,25 @@
       "java": 20,
       "java": 2,
       "java": 30,
-      "java": 6,
+      "java": 5,
       "java": 30,
-      "java": 38,
+      "java": 26,
       "java": 33,
-      "java": 17,
+      "java": 16,
       "java": 46,
-      "java": 2,
-      "java": 31,
-      "java": 44,
+      "java": 30,
+      "java": 46,
       "java": 1,
-      "java": 3,
       "java": 109,
       "java": 4,
-      "java": 40,
+      "java": 34,
       "java": 24,
       "java": 17,
-      "java": 19,
-      "java": 75,
+      "java": 13,
+      "java": 65,
       "java": 44,
+      "java": 2,
+      "java": 3,
       "java": 3,
       "java": 73,
       "java": 17,
@@ -997,7 +1256,7 @@
       "java": 15,
       "java": 28,
       "java": 12,
-      "java": 43,
+      "java": 47,
       "java": 9,
       "java": 30,
       "java": 38,
@@ -1027,24 +1286,41 @@
       "java": 78
     },
     "dingyuchen": {
+      "gitignore": 6,
       "java": 15,
       "java": 13,
       "java": 12,
       "java": 2,
       "java": 1,
       "java": 4,
-      "java": 45,
-      "java": 16,
-      "java": 20,
+      "java": 1,
+      "java": 23,
+      "java": 2,
+      "java": 1,
+      "java": 60,
+      "java": 1,
+      "java": 63,
+      "java": 58,
+      "java": 31,
+      "java": 18,
+      "java": 21,
+      "java": 1,
       "java": 17,
       "java": 1,
       "java": 9,
+      "java": 32,
       "java": 9,
+      "java": 15,
       "java": 10,
-      "java": 14,
+      "java": 11,
+      "java": 62,
+      "java": 15,
       "java": 133,
+      "java": 1,
       "java": 20,
+      "java": 1,
       "java": 42,
+      "java": 1,
       "java": 57,
       "java": 1,
       "java": 12,
@@ -1054,64 +1330,73 @@
       "fxml": 36,
       "fxml": 8,
       "java": 1,
+      "java": 2,
+      "java": 1,
+      "java": 35,
+      "java": 2,
+      "java": 1,
+      "java": 2,
       "java": 1,
       "java": 1,
-      "java": 1,
-      "java": 1,
-      "java": 1
+      "java": 2
     },
     "wallacelim97": {
       "adoc": 27,
       "java": 3,
       "java": 4,
       "java": 22,
-      "java": 43,
-      "java": 40,
+      "java": 1,
+      "java": 42,
+      "java": 38,
       "java": 3,
-      "java": 37,
-      "java": 22,
-      "java": 39,
+      "java": 35,
+      "java": 17,
+      "java": 38,
       "java": 5,
-      "java": 59,
-      "java": 3,
+      "java": 2,
       "java": 50,
       "java": 2,
-      "java": 55,
       "java": 2,
       "java": 1,
       "java": 13,
-      "java": 2,
       "java": 1,
       "java": 1,
-      "java": 2,
-      "java": 1,
-      "java": 7,
-      "java": 13,
+      "java": 65,
+      "java": 6,
+      "java": 54,
+      "java": 12,
       "java": 7,
       "java": 1,
       "java": 16,
-      "java": 4
+      "java": 2
     },
     "Berttwm": {
       "adoc": 3,
       "adoc": 85,
       "java": 1,
-      "java": 24,
+      "java": 52,
+      "java": 20,
+      "java": 27,
+      "java": 56,
+      "java": 1,
+      "java": 10,
+      "java": 1,
+      "java": 1,
+      "java": 1,
+      "java": 13,
       "java": 6,
-      "java": 7,
-      "java": 15,
       "java": 6,
       "java": 5,
-      "java": 5,
+      "java": 1,
       "java": 1
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 580.3788,
-    "joloong": 49667.184,
-    "dingyuchen": 12939.419,
-    "wallacelim97": 10362.063,
-    "Berttwm": 1160.3826
+    "yewon0303": 3327.465,
+    "joloong": 49667.18,
+    "dingyuchen": 15546.8125,
+    "wallacelim97": 10352.474,
+    "Berttwm": 2452.7407
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
