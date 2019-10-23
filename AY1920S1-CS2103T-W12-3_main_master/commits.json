@@ -233,8 +233,8 @@
         ]
       },
       {
-        "insertions": 564,
-        "deletions": 112,
+        "insertions": 587,
+        "deletions": 113,
         "date": "2019-10-22",
         "commitResults": [
           {
@@ -278,6 +278,34 @@
             "messageBody": "",
             "insertions": 6,
             "deletions": 1
+          },
+          {
+            "hash": "ffb9e3824a7e0a03909e8858b8571a49fb993b5c",
+            "messageTitle": "Add SetCommand description on DeveloperGuide, Design Consideration incomplete.",
+            "messageBody": "",
+            "insertions": 23,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 65,
+        "deletions": 11,
+        "date": "2019-10-23",
+        "commitResults": [
+          {
+            "hash": "1d0c648bf15fc9acc699ea95b5b79860b26e7414",
+            "messageTitle": "Update ModelClassDiagram.puml for DeveloperGuide",
+            "messageBody": "",
+            "insertions": 65,
+            "deletions": 11
+          },
+          {
+            "hash": "03198af0f07c4e0befaa27187927ed9eb4eb9f87",
+            "messageTitle": "Export ModelClassDiagram and add to DeveloperGuide",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
           }
         ]
       }
@@ -753,10 +781,52 @@
         ]
       },
       {
-        "insertions": 19,
-        "deletions": 18,
+        "insertions": 248,
+        "deletions": 99,
         "date": "2019-10-22",
         "commitResults": [
+          {
+            "hash": "49376a53e88fe17988197b42e8ff01d20d2c79c7",
+            "messageTitle": "Update DeveloperGuide.adoc",
+            "messageBody": "Standardize the naming convention for titles.\r\n\r\nStart writing the implementation of sort.",
+            "insertions": 19,
+            "deletions": 8
+          },
+          {
+            "hash": "214668ddff86b62baabe26fb3889fcb73d824444",
+            "messageTitle": "Correct the repoURL",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "54ff4878ff400271337ac61e35b8b6b6fd5eec26",
+            "messageTitle": "Correct all repoURL to PalPay",
+            "messageBody": "",
+            "insertions": 42,
+            "deletions": 29
+          },
+          {
+            "hash": "4436b723b6f90f36a6e1991eb6511670e22e95f1",
+            "messageTitle": "Update Developer Guide on sort command (Incomplete)",
+            "messageBody": "",
+            "insertions": 163,
+            "deletions": 38
+          },
+          {
+            "hash": "6b42559d31bb85f6c95a30158c89027ce37a4f7e",
+            "messageTitle": "Change Sequential to Sequence",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "e244597cc8f3de6f48d3c9a526d16c0dc72a6ba8",
+            "messageTitle": "Access User/Develop Guide from README again",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 4
+          },
           {
             "hash": "085a3b852d15b74b4a7c5f917fb0f7020978aa17",
             "messageTitle": "Update version number to v1.2.1",
@@ -965,8 +1035,8 @@
         ]
       },
       {
-        "insertions": 531,
-        "deletions": 336,
+        "insertions": 578,
+        "deletions": 343,
         "date": "2019-10-22",
         "commitResults": [
           {
@@ -1003,6 +1073,13 @@
             "messageBody": "",
             "insertions": 75,
             "deletions": 51
+          },
+          {
+            "hash": "a5a2530a0faffc26878973912cb6ed39d3eba219",
+            "messageTitle": "Update user and developer guide for Split transactions",
+            "messageBody": "",
+            "insertions": 47,
+            "deletions": 7
           }
         ]
       }
@@ -1194,6 +1271,34 @@
             "messageBody": "",
             "insertions": 12,
             "deletions": 12
+          }
+        ]
+      },
+      {
+        "insertions": 105,
+        "deletions": 1,
+        "date": "2019-10-22",
+        "commitResults": [
+          {
+            "hash": "6e3fe751ae1b21beba98952558886ae3520c4b57",
+            "messageTitle": "Add Project Command to Developer Guide",
+            "messageBody": "",
+            "insertions": 104,
+            "deletions": 0
+          },
+          {
+            "hash": "f912e8d733fc13b09481b121815683b10ac5e55a",
+            "messageTitle": "Fixed ProjectCommand Sequence Diagram not rendering properly",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "cab5c93faf89219f423023022516eb9968b55a47",
+            "messageTitle": "renamed Project to Projcet.puml",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
           }
         ]
       }
@@ -1475,17 +1580,18 @@
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 956,
-    "joloong": 2018,
-    "dingyuchen": 1327,
-    "wallacelim97": 434,
-    "Berttwm": 900
+    "yewon0303": 1031,
+    "joloong": 2222,
+    "dingyuchen": 1369,
+    "wallacelim97": 539,
+    "Berttwm": 898
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
-      "adoc": 9,
-      "adoc": 32,
-      "adoc": 100,
+      "adoc": 6,
+      "adoc": 52,
+      "adoc": 94,
+      "puml": 64,
       "java": 3,
       "java": 7,
       "java": 1,
@@ -1532,10 +1638,15 @@
       "fxml": 1
     },
     "joloong": {
-      "adoc": 1,
+      "adoc": 2,
       "json": 39,
       "gradle": 3,
-      "adoc": 9,
+      "adoc": 11,
+      "adoc": 99,
+      "adoc": 4,
+      "adoc": 12,
+      "adoc": 4,
+      "puml": 82,
       "java": 6,
       "java": 2,
       "java": 3,
@@ -1619,7 +1730,8 @@
     },
     "dingyuchen": {
       "gitignore": 6,
-      "adoc": 2,
+      "adoc": 30,
+      "adoc": 14,
       "java": 15,
       "java": 17,
       "java": 13,
@@ -1696,6 +1808,8 @@
     },
     "wallacelim97": {
       "adoc": 27,
+      "adoc": 12,
+      "puml": 93,
       "java": 3,
       "java": 4,
       "java": 19,
@@ -1722,7 +1836,7 @@
     },
     "Berttwm": {
       "adoc": 3,
-      "adoc": 44,
+      "adoc": 42,
       "java": 1,
       "java": 1,
       "java": 1,
@@ -1752,10 +1866,10 @@
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 18375.016,
-    "joloong": 51066.754,
-    "dingyuchen": 36235.72,
-    "wallacelim97": 10352.474,
+    "yewon0303": 19300.926,
+    "joloong": 52651.273,
+    "dingyuchen": 39076.875,
+    "wallacelim97": 10497.412,
     "Berttwm": 30444.822
   },
   "authorDisplayNameMap": {
