@@ -205,39 +205,46 @@ window.vSummary = {
   methods: {
     // view functions //
     getFileTypeContributionBars(fileTypeContribution) {
-      let currentBarWidth = 0;
-      const fullBarWidth = 100;
-      const contributionPerFullBar = (this.avgContributionSize * 2);
-      const allFileTypesContributionBars = {};
+      let totalWidth = 0;
+      const contributionLimit = (this.avgContributionSize * 2);
+      const totalBars = {};
+      const maxLength = 100;
 
       Object.keys(fileTypeContribution).forEach((fileType) => {
         const contribution = fileTypeContribution[fileType];
-        let barWidth = (contribution / contributionPerFullBar) * fullBarWidth;
-        const contributionBars = [];
+        const res = [];
+        let fileTypeWidth = 0;
 
-        // if contribution bar for file type is able to fit on the current line
-        if (currentBarWidth + barWidth < fullBarWidth) {
-          contributionBars.push(barWidth);
-          currentBarWidth += barWidth;
-        } else {
-          // take up all the space left on the current line
-          contributionBars.push(fullBarWidth - currentBarWidth);
-          barWidth -= fullBarWidth - currentBarWidth;
-          // additional bar width will start on a new line
-          const numOfFullBars = Math.floor(barWidth / fullBarWidth);
-          for (let i = 0; i < numOfFullBars; i += 1) {
-            contributionBars.push(fullBarWidth);
-          }
-          const remainingBarWidth = barWidth % fullBarWidth;
-          if (remainingBarWidth !== 0) {
-            contributionBars.push(remainingBarWidth);
-          }
-          currentBarWidth = remainingBarWidth;
+        // compute 100% width bars
+        const cnt = parseInt(contribution / contributionLimit, 10);
+        for (let cntId = 0; cntId < cnt; cntId += 1) {
+          res.push(maxLength);
+          fileTypeWidth += maxLength;
+          totalWidth += maxLength;
         }
-        allFileTypesContributionBars[fileType] = contributionBars;
+
+        // compute < 100% width bars
+        const last = (contribution % contributionLimit) / contributionLimit;
+        if (last !== 0) {
+          res.push(last * maxLength);
+          fileTypeWidth += last * maxLength;
+          totalWidth += last * maxLength;
+        }
+
+        // split > 100% width bars into smaller bars
+        if ((totalWidth > maxLength) && (totalWidth !== fileTypeWidth)) {
+          res.unshift(maxLength - (totalWidth - fileTypeWidth));
+          res[res.length - 1] = res[res.length - 1] - (maxLength - (totalWidth - fileTypeWidth));
+          if (res[res.length - 1] < 0) {
+            const negativeWidth = res.pop();
+            res[res.length - 1] += negativeWidth;
+          }
+          totalWidth = res[res.length - 1];
+        }
+        totalBars[fileType] = res;
       });
 
-      return allFileTypesContributionBars;
+      return totalBars;
     },
     getFileTypes(repo) {
       const fileTypes = [];
