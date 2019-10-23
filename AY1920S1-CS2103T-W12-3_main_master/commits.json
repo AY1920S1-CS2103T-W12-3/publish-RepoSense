@@ -779,6 +779,20 @@
             "deletions": 4
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-10-23",
+        "commitResults": [
+          {
+            "hash": "f52966fc6418961d9490c187f3c0f7971c6e4928",
+            "messageTitle": "Fix bug where OutCommand is not processing tags/categories",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "dingyuchen": [
@@ -1410,8 +1424,8 @@
         ]
       },
       {
-        "insertions": 133,
-        "deletions": 89,
+        "insertions": 789,
+        "deletions": 181,
         "date": "2019-10-23",
         "commitResults": [
           {
@@ -1427,17 +1441,45 @@
             "messageBody": "",
             "insertions": 40,
             "deletions": 38
+          },
+          {
+            "hash": "d77412d2e2ad960720fc924f8d7c837205295b70",
+            "messageTitle": "Finish InCommand equals Test and OutCommand Test",
+            "messageBody": "",
+            "insertions": 312,
+            "deletions": 16
+          },
+          {
+            "hash": "84bf7970348842fd810c0cbdcdea9c18b98defed",
+            "messageTitle": "UpdateCommand first implementation : To change to editCommand eventually",
+            "messageBody": "",
+            "insertions": 158,
+            "deletions": 12
+          },
+          {
+            "hash": "e64595d022b5fff7ddb238de19af944fba398b34",
+            "messageTitle": "Working UpdateCommand",
+            "messageBody": "",
+            "insertions": 126,
+            "deletions": 33
+          },
+          {
+            "hash": "ca27897164ead2a77000db99f8bee0af840fcd8a",
+            "messageTitle": "Checkstyle and UpdateParser fix",
+            "messageBody": "",
+            "insertions": 60,
+            "deletions": 31
           }
         ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 960,
-    "joloong": 2022,
-    "dingyuchen": 1333,
+    "yewon0303": 956,
+    "joloong": 2018,
+    "dingyuchen": 1327,
     "wallacelim97": 434,
-    "Berttwm": 321
+    "Berttwm": 900
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
@@ -1451,7 +1493,7 @@
       "java": 1,
       "java": 47,
       "java": 2,
-      "java": 10,
+      "java": 9,
       "java": 3,
       "java": 1,
       "java": 50,
@@ -1466,7 +1508,7 @@
       "java": 3,
       "java": 4,
       "java": 136,
-      "java": 21,
+      "java": 18,
       "java": 82,
       "java": 2,
       "java": 10,
@@ -1510,13 +1552,14 @@
       "java": 36,
       "java": 5,
       "java": 30,
-      "java": 27,
+      "java": 26,
       "java": 33,
       "java": 17,
+      "java": 1,
       "java": 33,
-      "java": 46,
+      "java": 44,
       "java": 31,
-      "java": 47,
+      "java": 45,
       "java": 1,
       "java": 10,
       "java": 109,
@@ -1595,10 +1638,10 @@
       "java": 60,
       "java": 1,
       "java": 57,
-      "java": 68,
+      "java": 67,
       "java": 46,
-      "java": 33,
       "java": 32,
+      "java": 31,
       "java": 5,
       "java": 15,
       "java": 27,
@@ -1620,7 +1663,7 @@
       "java": 17,
       "java": 3,
       "java": 11,
-      "java": 110,
+      "java": 108,
       "java": 10,
       "java": 25,
       "java": 1,
@@ -1639,7 +1682,7 @@
       "java": 4,
       "java": 3,
       "java": 1,
-      "java": 26,
+      "java": 25,
       "java": 35,
       "java": 2,
       "java": 2,
@@ -1684,32 +1727,36 @@
       "java": 1,
       "java": 1,
       "java": 3,
-      "java": 45,
+      "java": 57,
       "java": 1,
       "java": 1,
       "java": 1,
       "java": 22,
-      "java": 27,
-      "java": 54,
+      "java": 179,
+      "java": 33,
+      "java": 53,
       "java": 1,
-      "java": 6,
-      "java": 6,
-      "java": 4,
-      "java": 1,
+      "java": 73,
       "java": 9,
-      "java": 6,
+      "java": 7,
+      "java": 7,
+      "java": 1,
+      "java": 12,
+      "java": 9,
+      "java": 11,
       "java": 5,
       "java": 3,
       "java": 1,
-      "java": 75
+      "java": 86,
+      "java": 275
     }
   },
   "authorContributionVariance": {
     "yewon0303": 18375.016,
-    "joloong": 51080.53,
+    "joloong": 51066.754,
     "dingyuchen": 36235.72,
     "wallacelim97": 10352.474,
-    "Berttwm": 3664.7097
+    "Berttwm": 30444.822
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",

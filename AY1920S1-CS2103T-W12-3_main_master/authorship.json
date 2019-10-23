@@ -14242,13 +14242,97 @@
         "author": {
           "gitId": "Berttwm"
         },
+        "content": ""
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public boolean equals(Object obj) {"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        if (this \u003d\u003d obj) {"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return true;"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        } else if (obj instanceof OutCommand) {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            OutCommand outCommand \u003d (OutCommand) obj;"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return transaction.equals(outCommand.transaction);"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return false;"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "Berttwm"
+        },
         "content": "}"
       }
     ],
     "authorContributionMap": {
       "yewon0303": 1,
       "dingyuchen": 4,
-      "Berttwm": 45
+      "Berttwm": 57
     }
   },
   {
@@ -16023,6 +16107,1268 @@
     }
   },
   {
+    "path": "src/main/java/seedu/address/logic/commands/UpdateCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "package seedu.address.logic.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static java.util.Objects.requireNonNull;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static seedu.address.logic.parser.CliSyntax.PREFIX_AMOUNT;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static seedu.address.logic.parser.CliSyntax.PREFIX_DATE;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.Collections;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.HashSet;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.Optional;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.Set;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import javafx.collections.transformation.FilteredList;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.commons.core.Messages;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.commons.core.index.Index;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.commons.util.CollectionUtil;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.logic.commands.exceptions.CommandException;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.Model;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.tag.Tag;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.transaction.Amount;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.transaction.BankAccountOperation;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.transaction.InTransaction;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.transaction.OutTransaction;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.util.Date;"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": " * Updates the details of an existing Transaction in the BankAccount."
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "public class UpdateCommand extends Command {"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public static final String COMMAND_WORD \u003d \"update\";"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public static final String MESSAGE_USAGE \u003d COMMAND_WORD + \": Updates the details of the person identified \""
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            + \"by the index number used in the displayed person list. \""
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            + \"Existing values will be overwritten by the input values.\\n\""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            + \"Parameters: INDEX (must be a positive integer) \""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            + \"[\" + PREFIX_AMOUNT + \"AMOUNT] \""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            + \"[\" + PREFIX_DATE + \"DATE] \""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            + \"[\" + PREFIX_TAG + \"TAG]...\\n\""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            + \"Example: \" + COMMAND_WORD + \" 1 \""
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            + PREFIX_AMOUNT + \"123 \""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            + PREFIX_DATE + \"12022019\";"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public static final String MESSAGE_NOT_EDITED \u003d \"At least one field to update must be provided.\";"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public static final String MESSAGE_UPDATE_TRANSACTION_SUCCESS \u003d \"Updated Transaction: %1$s\";"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    private final Index targetIndex;"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    private final UpdateTransactionDescriptor updateTransactionDescriptor;"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public UpdateCommand(Index targetIndex, UpdateTransactionDescriptor updateTransactionDescriptor) {"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        requireNonNull(targetIndex);"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        requireNonNull(updateTransactionDescriptor);"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        this.targetIndex \u003d targetIndex;"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        this.updateTransactionDescriptor \u003d new UpdateTransactionDescriptor(updateTransactionDescriptor);"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public CommandResult execute(Model model) throws CommandException {"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        requireNonNull(model);"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        FilteredList\u003cBankAccountOperation\u003e lastShownList \u003d model.getFilteredTransactionList();"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        if (targetIndex.getZeroBased() \u003e\u003d lastShownList.size()) {"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new CommandException(Messages.MESSAGE_INVALID_TRANSACTION_DISPLAYED_INDEX);"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        BankAccountOperation transactionToReplace \u003d lastShownList.get(targetIndex.getZeroBased());"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        BankAccountOperation updatedTransaction \u003d createUpdatedTransaction(transactionToReplace,"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                updateTransactionDescriptor);"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        model.setTransaction(transactionToReplace, updatedTransaction);"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        model.commitBankAccount();"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        return new CommandResult(String.format(MESSAGE_UPDATE_TRANSACTION_SUCCESS, updatedTransaction));"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * Creates and returns a {@code Person} with the details of {@code personToEdit}"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * edited with {@code editPersonDescriptor}."
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    private static BankAccountOperation createUpdatedTransaction(BankAccountOperation transactionToEdit,"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                                                UpdateTransactionDescriptor updateTransactionDescriptor) {"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        assert transactionToEdit !\u003d null;"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        Amount updatedAmount \u003d updateTransactionDescriptor.getAmount().orElse(transactionToEdit.getAmount());"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        Date updatedDate \u003d updateTransactionDescriptor.getDate().orElse(transactionToEdit.getDate());"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        Set\u003cTag\u003e updatedTags \u003d updateTransactionDescriptor.getTags().orElse(transactionToEdit.getTags());"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        if (transactionToEdit instanceof InTransaction) {"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return new InTransaction(updatedAmount, updatedDate, updatedTags);"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return new OutTransaction(updatedAmount, updatedDate, updatedTags);"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * Stores the details to update the transaction with. Each non-empty field value will replace the"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * corresponding field value of the transaction."
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public static class UpdateTransactionDescriptor {"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        // TODO: Add name object"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        private Amount amount;"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        private Date date;"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        private Set\u003cTag\u003e tags;"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public UpdateTransactionDescriptor() {}"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        /**"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         * Copy constructor."
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         * A defensive copy of {@code tags} is used internally."
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         */"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public UpdateTransactionDescriptor(UpdateCommand.UpdateTransactionDescriptor toCopy) {"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            setAmount(toCopy.amount);"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            setDate(toCopy.date);"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            setTags(toCopy.tags);"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        /**"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         * Returns true if at least one field is edited."
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         */"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public boolean isAnyFieldEdited() {"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return CollectionUtil.isAnyNonNull(amount, date, tags);"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void setAmount(Amount amount) {"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            this.amount \u003d amount;"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public Optional\u003cAmount\u003e getAmount() {"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return Optional.ofNullable(amount);"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void setDate(Date date) {"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            this.date \u003d date;"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public Optional\u003cDate\u003e getDate() {"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return Optional.ofNullable(date);"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        /**"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         * Sets {@code tags} to this object\u0027s {@code tags}."
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         * A defensive copy of {@code tags} is used internally."
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         */"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void setTags(Set\u003cTag\u003e tags) {"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            this.tags \u003d (tags !\u003d null) ? new HashSet\u003c\u003e(tags) : null;"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        /**"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         * Returns an unmodifiable tag set, which throws {@code UnsupportedOperationException}"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         * if modification is attempted."
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         * Returns {@code Optional#empty()} if {@code tags} is null."
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "         */"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public Optional\u003cSet\u003cTag\u003e\u003e getTags() {"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return (tags !\u003d null) ? Optional.of(Collections.unmodifiableSet(tags)) : Optional.empty();"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public boolean equals(Object other) {"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            // short circuit if same object"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            if (other \u003d\u003d this) {"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                return true;"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            // instanceof handles nulls"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            if (!(other instanceof UpdateCommand.UpdateTransactionDescriptor)) {"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                return false;"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            // state check"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            UpdateCommand.UpdateTransactionDescriptor e \u003d (UpdateCommand.UpdateTransactionDescriptor) other;"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return getAmount().equals(e.getAmount())"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                    \u0026\u0026 getDate().equals(e.getDate())"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                    \u0026\u0026 getTags().equals(e.getTags());"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Berttwm": 179
+    }
+  },
+  {
     "path": "src/main/java/seedu/address/logic/parser/BankAccountParser.java",
     "fileType": "java",
     "lines": [
@@ -16162,14 +17508,14 @@
       {
         "lineNumber": 20,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "Berttwm"
         },
         "content": "import seedu.address.logic.commands.SetCommand;"
       },
       {
         "lineNumber": 21,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
         "content": "import seedu.address.logic.commands.SortCommand;"
       },
@@ -16190,530 +17536,558 @@
       {
         "lineNumber": 24,
         "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.logic.commands.UpdateCommand;"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
           "gitId": "joloong"
         },
         "content": "import seedu.address.logic.parser.exceptions.ParseException;"
       },
       {
-        "lineNumber": 25,
+        "lineNumber": 26,
         "author": {
           "gitId": "wallacelim97"
         },
         "content": ""
-      },
-      {
-        "lineNumber": 26,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "/**"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "joloong"
         },
-        "content": " * Parses input arguments and creates a new SplitCommand or InCommand object"
+        "content": "/**"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "joloong"
         },
-        "content": " */"
+        "content": " * Parses input arguments and creates a new SplitCommand or InCommand object"
       },
       {
         "lineNumber": 29,
         "author": {
-          "gitId": "wallacelim97"
+          "gitId": "joloong"
         },
-        "content": "public class BankAccountParser {"
+        "content": " */"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "public class BankAccountParser {"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     * Used for initial separation of command word and args."
+        "content": "    /**"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     */"
+        "content": "     * Used for initial separation of command word and args."
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private static final Pattern BASIC_COMMAND_FORMAT \u003d Pattern.compile(\"(?\u003ccommandWord\u003e\\\\S+)(?\u003carguments\u003e.*)\");"
+        "content": "     */"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "    private static final Pattern BASIC_COMMAND_FORMAT \u003d Pattern.compile(\"(?\u003ccommandWord\u003e\\\\S+)(?\u003carguments\u003e.*)\");"
       },
       {
         "lineNumber": 36,
         "author": {
-          "gitId": "joloong"
+          "gitId": "wallacelim97"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "joloong"
         },
-        "content": "     * Parses the given {@code String} of arguments in the context of the SplitCommand or InCommand"
+        "content": "    /**"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "joloong"
         },
-        "content": "     * and returns an SplitCommand or InCommand object for execution."
+        "content": "     * Parses the given {@code String} of arguments in the context of the SplitCommand or InCommand"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "joloong"
         },
-        "content": "     *"
+        "content": "     * and returns an SplitCommand or InCommand object for execution."
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "joloong"
         },
-        "content": "     * @throws ParseException if the user input does not conform the expected format"
+        "content": "     *"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "joloong"
         },
-        "content": "     */"
+        "content": "     * @throws ParseException if the user input does not conform the expected format"
       },
       {
         "lineNumber": 42,
         "author": {
-          "gitId": "wallacelim97"
+          "gitId": "joloong"
         },
-        "content": "    public Command parseCommand(String userInput) throws ParseException {"
+        "content": "     */"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        final Matcher matcher \u003d BASIC_COMMAND_FORMAT.matcher(userInput.trim());"
+        "content": "    public Command parseCommand(String userInput) throws ParseException {"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        if (!matcher.matches()) {"
+        "content": "        final Matcher matcher \u003d BASIC_COMMAND_FORMAT.matcher(userInput.trim());"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, HelpCommand.MESSAGE_USAGE));"
+        "content": "        if (!matcher.matches()) {"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        }"
+        "content": "            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, HelpCommand.MESSAGE_USAGE));"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        final String commandWord \u003d matcher.group(\"commandWord\");"
+        "content": ""
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        final String arguments \u003d matcher.group(\"arguments\");"
+        "content": "        final String commandWord \u003d matcher.group(\"commandWord\");"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "        final String arguments \u003d matcher.group(\"arguments\");"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        switch (commandWord) {"
+        "content": ""
       },
       {
         "lineNumber": 52,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "        switch (commandWord) {"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        case SplitCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "            return new SplitCommandParser().parse(arguments);"
+        "content": "        case SplitCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "            return new SplitCommandParser().parse(arguments);"
       },
       {
         "lineNumber": 56,
         "author": {
-          "gitId": "wallacelim97"
+          "gitId": "Berttwm"
         },
-        "content": "        case InCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            return new InCommandParser().parse(arguments);"
+        "content": "        case InCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 58,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "            return new InCommandParser().parse(arguments);"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        case OutCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "            return new OutCommandParser().parse(arguments);"
+        "content": "        case OutCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "            return new OutCommandParser().parse(arguments);"
       },
       {
         "lineNumber": 62,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": "        case FilterCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            return new FilterCommandParser().parse(arguments);"
+        "content": "        case FilterCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "            return new FilterCommandParser().parse(arguments);"
       },
       {
         "lineNumber": 65,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "Berttwm"
         },
-        "content": "        case SetCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "yewon0303"
         },
-        "content": "            return new SetCommandParser().parse(arguments);"
+        "content": "        case SetCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "yewon0303"
         },
-        "content": ""
+        "content": "            return new SetCommandParser().parse(arguments);"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "yewon0303"
         },
-        "content": "        case ProjectCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "yewon0303"
         },
-        "content": "            return new ProjectCommandParser().parse(arguments);"
+        "content": "        case ProjectCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "yewon0303"
         },
-        "content": ""
+        "content": "            return new ProjectCommandParser().parse(arguments);"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "yewon0303"
         },
-        "content": "        case SortCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "yewon0303"
         },
-        "content": "            return new SortCommandParser().parse(arguments);"
+        "content": "        case SortCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "yewon0303"
         },
-        "content": ""
+        "content": "            return new SortCommandParser().parse(arguments);"
       },
       {
         "lineNumber": 74,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "yewon0303"
         },
-        "content": "        case ClearCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "            return new ClearCommand();"
+        "content": "        case ClearCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "            return new ClearCommand();"
       },
       {
         "lineNumber": 77,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": "        case ListCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            return new ListCommand();"
+        "content": "        case ListCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "            return new ListCommand();"
       },
       {
         "lineNumber": 80,
         "author": {
-          "gitId": "wallacelim97"
+          "gitId": "joloong"
         },
-        "content": "        case HelpCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            return new HelpCommand();"
+        "content": "        case HelpCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 82,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "            return new HelpCommand();"
+      },
+      {
+        "lineNumber": 83,
         "author": {
           "gitId": "Berttwm"
         },
         "content": ""
       },
       {
-        "lineNumber": 83,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "        case DeleteCommand.COMMAND_WORD:"
-      },
-      {
         "lineNumber": 84,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": "            return new DeleteCommandParser().parse(arguments);"
+        "content": "        case UpdateCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 85,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "            return new UpdateCommandParser().parse(arguments);"
       },
       {
         "lineNumber": 86,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": "        case UndoCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            return new UndoCommand();"
+        "content": "        case DeleteCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "            return new DeleteCommandParser().parse(arguments);"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        case RedoCommand.COMMAND_WORD:"
+        "content": ""
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            return new RedoCommand();"
+        "content": "        case UndoCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "            return new UndoCommand();"
       },
       {
         "lineNumber": 92,
         "author": {
-          "gitId": "wallacelim97"
-        },
-        "content": "        case ExitCommand.COMMAND_WORD:"
-      },
-      {
-        "lineNumber": 93,
-        "author": {
-          "gitId": "wallacelim97"
-        },
-        "content": "            return new ExitCommand();"
-      },
-      {
-        "lineNumber": 94,
-        "author": {
-          "gitId": "Berttwm"
+          "gitId": "joloong"
         },
         "content": ""
       },
       {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        case RedoCommand.COMMAND_WORD:"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            return new RedoCommand();"
+      },
+      {
         "lineNumber": 95,
         "author": {
-          "gitId": "wallacelim97"
+          "gitId": "joloong"
         },
-        "content": "        default:"
+        "content": ""
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            throw new ParseException(MESSAGE_UNKNOWN_COMMAND);"
+        "content": "        case ExitCommand.COMMAND_WORD:"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        }"
+        "content": "            return new ExitCommand();"
       },
       {
         "lineNumber": 98,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        default:"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "            throw new ParseException(MESSAGE_UNKNOWN_COMMAND);"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 102,
         "author": {
           "gitId": "wallacelim97"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 99,
+        "lineNumber": 103,
         "author": {
           "gitId": "wallacelim97"
         },
@@ -16721,10 +18095,10 @@
       }
     ],
     "authorContributionMap": {
-      "yewon0303": 10,
-      "joloong": 27,
+      "yewon0303": 9,
+      "joloong": 26,
       "wallacelim97": 35,
-      "Berttwm": 27
+      "Berttwm": 33
     }
   },
   {
@@ -17725,9 +19099,9 @@
       {
         "lineNumber": 30,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "joloong"
         },
-        "content": "                ArgumentTokenizer.tokenize(args, PREFIX_NAME, PREFIX_AMOUNT, PREFIX_DATE);"
+        "content": "                ArgumentTokenizer.tokenize(args, PREFIX_NAME, PREFIX_AMOUNT, PREFIX_DATE, PREFIX_TAG);"
       },
       {
         "lineNumber": 31,
@@ -17913,8 +19287,9 @@
       }
     ],
     "authorContributionMap": {
+      "joloong": 1,
       "dingyuchen": 2,
-      "Berttwm": 54
+      "Berttwm": 53
     }
   },
   {
@@ -20558,6 +21933,526 @@
     }
   },
   {
+    "path": "src/main/java/seedu/address/logic/parser/UpdateCommandParser.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "package seedu.address.logic.parser;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static java.util.Objects.requireNonNull;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static seedu.address.commons.core.Messages.MESSAGE_INVALID_COMMAND_FORMAT;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static seedu.address.logic.parser.CliSyntax.PREFIX_AMOUNT;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static seedu.address.logic.parser.CliSyntax.PREFIX_DATE;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.Collection;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.Collections;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.Optional;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.Set;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.commons.core.index.Index;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.logic.commands.UpdateCommand;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.logic.commands.UpdateCommand.UpdateTransactionDescriptor;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.logic.parser.exceptions.ParseException;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.tag.Tag;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": " * Parses input arguments and creates a new UpdateCommand object"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "public class UpdateCommandParser implements Parser\u003cUpdateCommand\u003e {"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * Parses the given {@code String} of arguments in the context of the UpdateCommand"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * and returns an UpdateCommand object for execution."
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * @throws ParseException if the user input does not conform the expected format"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public UpdateCommand parse(String args) throws ParseException {"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        requireNonNull(args);"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        ArgumentMultimap argMultimap \u003d"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                ArgumentTokenizer.tokenize(args, PREFIX_NAME, PREFIX_AMOUNT, PREFIX_DATE, PREFIX_TAG);"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        Index index;"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            index \u003d ParserUtil.parseIndex(argMultimap.getPreamble());"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        } catch (ParseException pe) {"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, UpdateCommand.MESSAGE_USAGE), pe);"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        UpdateTransactionDescriptor updateTransactionDescriptor \u003d new UpdateTransactionDescriptor();"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        if (argMultimap.getValue(PREFIX_AMOUNT).isPresent()) {"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            updateTransactionDescriptor.setAmount(ParserUtil.parseAmount(argMultimap.getValue(PREFIX_AMOUNT).get()));"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        if (argMultimap.getValue(PREFIX_DATE).isPresent()) {"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            updateTransactionDescriptor.setDate(ParserUtil.parseDate(argMultimap.getValue(PREFIX_DATE).get()));"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        parseTagsForEdit(argMultimap.getAllValues(PREFIX_TAG)).ifPresent(updateTransactionDescriptor::setTags);"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        if (!updateTransactionDescriptor.isAnyFieldEdited()) {"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new ParseException(UpdateCommand.MESSAGE_NOT_EDITED);"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        return new UpdateCommand(index, updateTransactionDescriptor);"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * Parses {@code Collection\u003cString\u003e tags} into a {@code Set\u003cTag\u003e} if {@code tags} is non-empty."
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * If {@code tags} contain only one element which is an empty string, it will be parsed into a"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * {@code Set\u003cTag\u003e} containing zero tags."
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    private Optional\u003cSet\u003cTag\u003e\u003e parseTagsForEdit(Collection\u003cString\u003e tags) throws ParseException {"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        assert tags !\u003d null;"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        if (tags.isEmpty()) {"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return Optional.empty();"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        Collection\u003cString\u003e tagSet \u003d tags.size() \u003d\u003d 1 \u0026\u0026 tags.contains(\"\") ? Collections.emptySet() : tags;"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        return Optional.of(ParserUtil.parseTags(tagSet));"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Berttwm": 73
+    }
+  },
+  {
     "path": "src/main/java/seedu/address/model/BankAccount.java",
     "fileType": "java",
     "lines": [
@@ -20984,16 +22879,16 @@
       {
         "lineNumber": 61,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "Berttwm"
         },
-        "content": "    public void setTransaction(BankAccountOperation target, BankAccountOperation editedTransaction) {"
+        "content": "    public void setTransaction(BankAccountOperation transactionTarget, BankAccountOperation transactionEdit) {"
       },
       {
         "lineNumber": 62,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": "        requireNonNull(editedTransaction);"
+        "content": "        requireNonNull(transactionEdit);"
       },
       {
         "lineNumber": 63,
@@ -21005,9 +22900,9 @@
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": "        transactions.setTransaction(target, editedTransaction);"
+        "content": "        transactions.setTransaction(transactionTarget, transactionEdit);"
       },
       {
         "lineNumber": 65,
@@ -21684,10 +23579,10 @@
     ],
     "authorContributionMap": {
       "yewon0303": 36,
-      "joloong": 46,
-      "dingyuchen": 68,
+      "joloong": 44,
+      "dingyuchen": 67,
       "wallacelim97": 4,
-      "Berttwm": 6
+      "Berttwm": 9
     }
   },
   {
@@ -22819,9 +24714,9 @@
       {
         "lineNumber": 114,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "Berttwm"
         },
-        "content": "    void setTransaction(BankAccountOperation target, BankAccountOperation editedTransaction);"
+        "content": "    void setTransaction(BankAccountOperation transactionTarget, BankAccountOperation transactionEdit);"
       },
       {
         "lineNumber": 115,
@@ -23114,8 +25009,8 @@
     "authorContributionMap": {
       "yewon0303": 12,
       "joloong": 31,
-      "dingyuchen": 33,
-      "Berttwm": 6,
+      "dingyuchen": 32,
+      "Berttwm": 7,
       "-": 73
     }
   },
@@ -23882,16 +25777,16 @@
       {
         "lineNumber": 109,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "Berttwm"
         },
-        "content": "    public void setTransaction(BankAccountOperation target, BankAccountOperation editedTransaction) {"
+        "content": "    public void setTransaction(BankAccountOperation transactionTarget, BankAccountOperation transactionEdit) {"
       },
       {
         "lineNumber": 110,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": "        requireAllNonNull(target, editedTransaction);"
+        "content": "        requireAllNonNull(transactionTarget, transactionEdit);"
       },
       {
         "lineNumber": 111,
@@ -23903,9 +25798,9 @@
       {
         "lineNumber": 112,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": "        versionedBankAccount.setTransaction(target, editedTransaction);"
+        "content": "        versionedBankAccount.setTransaction(transactionTarget, transactionEdit);"
       },
       {
         "lineNumber": 113,
@@ -24554,9 +26449,9 @@
     ],
     "authorContributionMap": {
       "yewon0303": 8,
-      "joloong": 47,
-      "dingyuchen": 32,
-      "Berttwm": 4,
+      "joloong": 45,
+      "dingyuchen": 31,
+      "Berttwm": 7,
       "-": 113
     }
   },
@@ -32605,208 +34500,292 @@
       {
         "lineNumber": 3,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "Berttwm"
         },
-        "content": "import seedu.address.model.util.Date;"
+        "content": "import java.util.Set;"
       },
       {
         "lineNumber": 4,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "Berttwm"
         },
         "content": ""
       },
       {
         "lineNumber": 5,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": "/**"
+        "content": "import seedu.address.model.person.Person;"
       },
       {
         "lineNumber": 6,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": " * Handles out transactions."
+        "content": "import seedu.address.model.tag.Tag;"
       },
       {
         "lineNumber": 7,
         "author": {
-          "gitId": "joloong"
+          "gitId": "dingyuchen"
         },
-        "content": " */"
+        "content": "import seedu.address.model.util.Date;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "dingyuchen"
         },
-        "content": "public class OutTransaction extends Transaction implements BankAccountOperation {"
+        "content": ""
       },
       {
         "lineNumber": 9,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "joloong"
         },
-        "content": "    public OutTransaction(Amount amount, Date date) {"
+        "content": "/**"
       },
       {
         "lineNumber": 10,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
-        "content": "        super(amount, date);"
+        "content": " * Handles out transactions."
       },
       {
         "lineNumber": 11,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
-        "content": "    }"
+        "content": " */"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "dingyuchen"
         },
-        "content": ""
+        "content": "public class OutTransaction extends Transaction implements BankAccountOperation {"
       },
       {
         "lineNumber": 13,
+        "author": {
+          "gitId": "yewon0303"
+        },
+        "content": "    public OutTransaction(Amount amount, Date date) {"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "dingyuchen"
+        },
+        "content": "        super(amount, date);"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "dingyuchen"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "dingyuchen"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public OutTransaction(Amount amount, Date date, Set\u003cTag\u003e tags) {"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        super(amount, date, tags);"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public OutTransaction(Amount amount, Date date, Set\u003cTag\u003e tags, Person personInvolved) {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        super(amount, date, tags, personInvolved);"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "    @Override"
       },
       {
-        "lineNumber": 14,
+        "lineNumber": 26,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "    public Amount handleBalance(Amount balance) {"
       },
       {
-        "lineNumber": 15,
+        "lineNumber": 27,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "        Amount newBalance \u003d balance.subtractAmount(super.amount);"
       },
       {
-        "lineNumber": 16,
+        "lineNumber": 28,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "        return newBalance;"
       },
       {
-        "lineNumber": 17,
+        "lineNumber": 29,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 18,
+        "lineNumber": 30,
         "author": {
           "gitId": "joloong"
         },
         "content": ""
       },
       {
-        "lineNumber": 19,
+        "lineNumber": 31,
         "author": {
           "gitId": "joloong"
         },
         "content": "    @Override"
       },
       {
-        "lineNumber": 20,
+        "lineNumber": 32,
         "author": {
           "gitId": "joloong"
         },
         "content": "    public boolean equals(Object obj) {"
       },
       {
-        "lineNumber": 21,
+        "lineNumber": 33,
         "author": {
           "gitId": "joloong"
         },
         "content": "        if (this \u003d\u003d obj) {"
       },
       {
-        "lineNumber": 22,
+        "lineNumber": 34,
         "author": {
           "gitId": "joloong"
         },
         "content": "            return true;"
       },
       {
-        "lineNumber": 23,
+        "lineNumber": 35,
         "author": {
           "gitId": "joloong"
         },
         "content": "        } else if (obj instanceof OutTransaction) {"
       },
       {
-        "lineNumber": 24,
+        "lineNumber": 36,
         "author": {
           "gitId": "joloong"
         },
         "content": "            OutTransaction inObj \u003d (OutTransaction) obj;"
       },
       {
-        "lineNumber": 25,
+        "lineNumber": 37,
         "author": {
           "gitId": "joloong"
         },
         "content": "            return super.amount.equals(inObj.amount)"
       },
       {
-        "lineNumber": 26,
+        "lineNumber": 38,
         "author": {
           "gitId": "joloong"
         },
         "content": "                    \u0026\u0026 super.date.equals(inObj.date)"
       },
       {
-        "lineNumber": 27,
+        "lineNumber": 39,
         "author": {
           "gitId": "joloong"
         },
         "content": "                    \u0026\u0026 super.peopleInvolved.equals(inObj.peopleInvolved);"
       },
       {
-        "lineNumber": 28,
+        "lineNumber": 40,
         "author": {
           "gitId": "joloong"
         },
         "content": "        } else {"
       },
       {
-        "lineNumber": 29,
+        "lineNumber": 41,
         "author": {
           "gitId": "joloong"
         },
         "content": "            return false;"
       },
       {
-        "lineNumber": 30,
+        "lineNumber": 42,
         "author": {
           "gitId": "joloong"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 31,
+        "lineNumber": 43,
         "author": {
           "gitId": "joloong"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 32,
+        "lineNumber": 44,
         "author": {
           "gitId": "dingyuchen"
         },
@@ -32816,7 +34795,8 @@
     "authorContributionMap": {
       "yewon0303": 4,
       "joloong": 17,
-      "dingyuchen": 11
+      "dingyuchen": 11,
+      "Berttwm": 12
     }
   },
   {
@@ -36416,16 +38396,16 @@
       {
         "lineNumber": 59,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "Berttwm"
         },
-        "content": "    public void setTransaction(BankAccountOperation target, BankAccountOperation editedTransaction) {"
+        "content": "    public void setTransaction(BankAccountOperation transactionTarget, BankAccountOperation transactionEdit) {"
       },
       {
         "lineNumber": 60,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "Berttwm"
         },
-        "content": "        requireAllNonNull(target, editedTransaction);"
+        "content": "        requireAllNonNull(transactionTarget, transactionEdit);"
       },
       {
         "lineNumber": 61,
@@ -36437,9 +38417,9 @@
       {
         "lineNumber": 62,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "Berttwm"
         },
-        "content": "        int index \u003d internalList.indexOf(target);"
+        "content": "        int index \u003d internalList.indexOf(transactionTarget);"
       },
       {
         "lineNumber": 63,
@@ -36472,9 +38452,9 @@
       {
         "lineNumber": 67,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "Berttwm"
         },
-        "content": "        if (!target.equals(editedTransaction) \u0026\u0026 contains(editedTransaction)) {"
+        "content": "        if (!transactionTarget.equals(transactionEdit) \u0026\u0026 contains(transactionEdit)) {"
       },
       {
         "lineNumber": 68,
@@ -36507,9 +38487,9 @@
       {
         "lineNumber": 72,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "Berttwm"
         },
-        "content": "        internalList.set(index, editedTransaction);"
+        "content": "        internalList.set(index, transactionEdit);"
       },
       {
         "lineNumber": 73,
@@ -36968,9 +38948,9 @@
       }
     ],
     "authorContributionMap": {
-      "yewon0303": 21,
-      "dingyuchen": 110,
-      "Berttwm": 6
+      "yewon0303": 18,
+      "dingyuchen": 108,
+      "Berttwm": 11
     }
   },
   {
@@ -54955,175 +56935,175 @@
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "import static seedu.address.testutil.Assert.assertThrows;"
+        "content": "import static org.junit.jupiter.api.Assertions.assertFalse;"
       },
       {
         "lineNumber": 6,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "import static org.junit.jupiter.api.Assertions.assertTrue;"
       },
       {
         "lineNumber": 7,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "import java.nio.file.Path;"
+        "content": "import static seedu.address.testutil.Assert.assertThrows;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "-"
         },
-        "content": "import java.util.ArrayList;"
+        "content": ""
       },
       {
         "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.Path;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 11,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "import java.util.Arrays;"
       },
       {
-        "lineNumber": 10,
+        "lineNumber": 12,
         "author": {
           "gitId": "joloong"
         },
         "content": "import java.util.List;"
       },
       {
-        "lineNumber": 11,
+        "lineNumber": 13,
         "author": {
           "gitId": "-"
         },
         "content": "import java.util.function.Predicate;"
       },
       {
-        "lineNumber": 12,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 13,
-        "author": {
-          "gitId": "Berttwm"
-        },
-        "content": "import org.junit.jupiter.api.Test;"
-      },
-      {
         "lineNumber": 14,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "-"
         },
         "content": ""
       },
       {
         "lineNumber": 15,
         "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import org.junit.jupiter.api.Test;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
           "gitId": "-"
         },
         "content": "import javafx.collections.ObservableList;"
       },
       {
-        "lineNumber": 16,
+        "lineNumber": 18,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "import javafx.collections.transformation.FilteredList;"
       },
       {
-        "lineNumber": 17,
+        "lineNumber": 19,
         "author": {
           "gitId": "joloong"
         },
         "content": ""
       },
       {
-        "lineNumber": 18,
+        "lineNumber": 20,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "import seedu.address.commons.core.GuiSettings;"
       },
       {
-        "lineNumber": 19,
+        "lineNumber": 21,
         "author": {
           "gitId": "joloong"
         },
         "content": "import seedu.address.model.BankAccount;"
       },
       {
-        "lineNumber": 20,
+        "lineNumber": 22,
         "author": {
           "gitId": "joloong"
         },
         "content": "import seedu.address.model.Model;"
       },
       {
-        "lineNumber": 21,
+        "lineNumber": 23,
         "author": {
           "gitId": "joloong"
         },
         "content": "import seedu.address.model.ReadOnlyBankAccount;"
       },
       {
-        "lineNumber": 22,
+        "lineNumber": 24,
         "author": {
           "gitId": "joloong"
         },
         "content": "import seedu.address.model.ReadOnlyUserPrefs;"
       },
       {
-        "lineNumber": 23,
+        "lineNumber": 25,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "import seedu.address.model.transaction.BankAccountOperation;"
       },
       {
-        "lineNumber": 24,
+        "lineNumber": 26,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "import seedu.address.model.transaction.Budget;"
       },
       {
-        "lineNumber": 25,
+        "lineNumber": 27,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "import seedu.address.model.transaction.LedgerOperation;"
       },
       {
-        "lineNumber": 26,
+        "lineNumber": 28,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "import seedu.address.model.transaction.Transaction;"
       },
       {
-        "lineNumber": 27,
-        "author": {
-          "gitId": "Berttwm"
-        },
-        "content": "import seedu.address.testutil.TransactionBuilder;"
-      },
-      {
-        "lineNumber": 28,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
         "lineNumber": 29,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "public class InCommandTest {"
+        "content": "import seedu.address.testutil.TransactionBuilder;"
       },
       {
         "lineNumber": 30,
@@ -55135,9 +57115,9 @@
       {
         "lineNumber": 31,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "Berttwm"
         },
-        "content": "    // TODO: Refactor into InCommandTest"
+        "content": "public class InCommandTest {"
       },
       {
         "lineNumber": 32,
@@ -55284,21 +57264,21 @@
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        Person validPerson \u003d new PersonBuilder().build();"
+        "content": "        BankAccountOperation validTransaction \u003d new TransactionBuilder().build();"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        InCommand addCommand \u003d new InCommand(validPerson);"
+        "content": "        InCommand addCommand \u003d new InCommand(validTransaction);"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        ModelStub modelStub \u003d new ModelStubWithPerson(validPerson);"
+        "content": "        ModelStub modelStub \u003d new ModelStubWithTransaction(validTransaction);"
       },
       {
         "lineNumber": 55,
@@ -55326,238 +57306,238 @@
         "author": {
           "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "    */"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "    @Test"
+        "content": ""
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "    public void equals() {"
+        "content": "    @Test"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        Person alice \u003d new PersonBuilder().withName(\"Alice\").build();"
+        "content": "    public void equals() {"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        Person bob \u003d new PersonBuilder().withName(\"Bob\").build();"
+        "content": "        BankAccountOperation firstTransaction \u003d new TransactionBuilder()"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        InCommand addAliceCommand \u003d new InCommand(alice);"
+        "content": "                .withTags(\"Food\")"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        InCommand addBobCommand \u003d new InCommand(bob);"
+        "content": "                .withAmount(\"100\")"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "                .withDate(\"10102019\")"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        // same object -\u003e returns true"
+        "content": "                .build();"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        assertTrue(addAliceCommand.equals(addAliceCommand));"
+        "content": "        BankAccountOperation secondTransaction \u003d new TransactionBuilder()"
       },
       {
         "lineNumber": 68,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "                .withTags(\"Drinks\")"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        // same values -\u003e returns true"
+        "content": "                .withAmount(\"80\")"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        InCommand addAliceCommandCopy \u003d new InCommand(alice);"
+        "content": "                .withDate(\"10102019\")"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        assertTrue(addAliceCommand.equals(addAliceCommandCopy));"
+        "content": "                .build();"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "        InCommand addFirstCommand \u003d new InCommand(firstTransaction);"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        // different types -\u003e returns false"
+        "content": "        InCommand addSecondCommand \u003d new InCommand(secondTransaction);"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        assertFalse(addAliceCommand.equals(1));"
+        "content": ""
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "        // same object -\u003e returns true"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        // null -\u003e returns false"
+        "content": "        assertTrue(addFirstCommand.equals(addFirstCommand));"
       },
       {
         "lineNumber": 77,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "-"
         },
-        "content": "        assertFalse(addAliceCommand.equals(null));"
+        "content": ""
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "        // same values -\u003e returns true"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        // different person -\u003e returns false"
+        "content": "        InCommand addFirstCommandCopy \u003d new InCommand(firstTransaction);"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        assertFalse(addAliceCommand.equals(addBobCommand));"
+        "content": "        assertTrue(addFirstCommand.equals(addFirstCommandCopy));"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "    */"
+        "content": "        // different types -\u003e returns false"
       },
       {
         "lineNumber": 83,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "        assertFalse(addFirstCommand.equals(1));"
       },
       {
         "lineNumber": 84,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 85,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "     * A default model stub that have all of the methods failing."
+        "content": "        // null -\u003e returns false"
       },
       {
         "lineNumber": 86,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "     */"
+        "content": "        assertFalse(addFirstCommand.equals(null));"
       },
       {
         "lineNumber": 87,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "    private class ModelStub implements Model {"
+        "content": ""
       },
       {
         "lineNumber": 88,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "        @Override"
+        "content": "        // different person -\u003e returns false"
       },
       {
         "lineNumber": 89,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "        public void setUserPrefs(ReadOnlyUserPrefs userPrefs) {"
+        "content": "        assertFalse(addFirstCommand.equals(addSecondCommand));"
       },
       {
         "lineNumber": 90,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "    }"
       },
       {
         "lineNumber": 91,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 92,
@@ -55571,1148 +57551,1148 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        @Override"
+        "content": "    /**"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
-        "content": "        public ReadOnlyUserPrefs getUserPrefs() {"
+        "content": "     * A default model stub that have all of the methods failing."
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "     */"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "    private class ModelStub implements Model {"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": "        @Override"
+        "content": "        public void setUserPrefs(ReadOnlyUserPrefs userPrefs) {"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "        public GuiSettings getGuiSettings() {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "        @Override"
+        "content": "        public ReadOnlyUserPrefs getUserPrefs() {"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": "        public void setGuiSettings(GuiSettings guiSettings) {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "        @Override"
+        "content": "        public GuiSettings getGuiSettings() {"
       },
       {
         "lineNumber": 109,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "        public Path getBankAccountFilePath() {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "        @Override"
+        "content": "        public void setGuiSettings(GuiSettings guiSettings) {"
       },
       {
         "lineNumber": 114,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "        public void setBankAccountFilePath(Path bankAccountFilePath) {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 118,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        @Override"
+        "content": "        public Path getBankAccountFilePath() {"
       },
       {
         "lineNumber": 119,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "-"
         },
-        "content": "        public void handleOperation(BankAccountOperation transaction) {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 123,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        public void setBankAccountFilePath(Path bankAccountFilePath) {"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "dingyuchen"
+        },
+        "content": "        public void handleOperation(BankAccountOperation transaction) {"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 132,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "        @Override"
       },
       {
-        "lineNumber": 124,
+        "lineNumber": 133,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "        public void handleOperation(LedgerOperation operation) {"
       },
       {
-        "lineNumber": 125,
+        "lineNumber": 134,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
-        "lineNumber": 126,
+        "lineNumber": 135,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 127,
+        "lineNumber": 136,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": ""
       },
       {
-        "lineNumber": 128,
+        "lineNumber": 137,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "        @Override"
       },
       {
-        "lineNumber": 129,
+        "lineNumber": 138,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "        public void addBudget(Budget budget) {"
       },
       {
-        "lineNumber": 130,
+        "lineNumber": 139,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
-        "lineNumber": 131,
+        "lineNumber": 140,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 132,
+        "lineNumber": 141,
         "author": {
           "gitId": "yewon0303"
         },
         "content": ""
       },
       {
-        "lineNumber": 133,
+        "lineNumber": 142,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "        @Override"
       },
       {
-        "lineNumber": 134,
+        "lineNumber": 143,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "        public void addTransaction(BankAccountOperation transaction) {"
       },
       {
-        "lineNumber": 135,
-        "author": {
-          "gitId": "Berttwm"
-        },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
-      },
-      {
-        "lineNumber": 136,
-        "author": {
-          "gitId": "Berttwm"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 137,
-        "author": {
-          "gitId": "Berttwm"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 138,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        @Override"
-      },
-      {
-        "lineNumber": 139,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "        public void setBankAccount(ReadOnlyBankAccount newData) {"
-      },
-      {
-        "lineNumber": 140,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
-      },
-      {
-        "lineNumber": 141,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 142,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 143,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        @Override"
-      },
-      {
         "lineNumber": 144,
         "author": {
-          "gitId": "joloong"
+          "gitId": "Berttwm"
         },
-        "content": "        public ReadOnlyBankAccount getBankAccount() {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 145,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 146,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        @Override"
+        "content": "        public void setBankAccount(ReadOnlyBankAccount newData) {"
       },
       {
         "lineNumber": 149,
         "author": {
-          "gitId": "joloong"
-        },
-        "content": "        public boolean canUndoBankAccount() {"
-      },
-      {
-        "lineNumber": 150,
-        "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
         "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
-        "lineNumber": 151,
+        "lineNumber": 150,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 152,
+        "lineNumber": 151,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
         "content": ""
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        @Override"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        @Override"
+        "content": "        public ReadOnlyBankAccount getBankAccount() {"
       },
       {
         "lineNumber": 154,
         "author": {
-          "gitId": "joloong"
-        },
-        "content": "        public void undoBankAccount() {"
-      },
-      {
-        "lineNumber": 155,
-        "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
         "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
-        "lineNumber": 156,
+        "lineNumber": 155,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
         "content": "        }"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        @Override"
+        "content": "        public boolean canUndoBankAccount() {"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        public boolean canRedoBankAccount() {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        @Override"
+        "content": "        public void undoBankAccount() {"
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        public void redoBankAccount() {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        @Override"
+        "content": "        public boolean canRedoBankAccount() {"
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        public void commitBankAccount() {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        @Override"
+        "content": "        public void redoBankAccount() {"
       },
       {
         "lineNumber": 174,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
-        "content": "        public void setTransactions(List\u003cBankAccountOperation\u003e transactionHistory) {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 178,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        @Override"
+        "content": "        public void commitBankAccount() {"
       },
       {
         "lineNumber": 179,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
-        "content": "        public boolean hasTransaction(BankAccountOperation transaction) {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 180,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 181,
         "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 182,
-        "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
         "content": ""
       },
       {
-        "lineNumber": 183,
+        "lineNumber": 182,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
         "content": "        @Override"
       },
       {
-        "lineNumber": 184,
+        "lineNumber": 183,
         "author": {
           "gitId": "dingyuchen"
         },
-        "content": "        public void deleteTransaction(BankAccountOperation target) {"
+        "content": "        public void setTransactions(List\u003cBankAccountOperation\u003e transactionHistory) {"
       },
       {
-        "lineNumber": 185,
+        "lineNumber": 184,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
         "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
-        "lineNumber": 186,
+        "lineNumber": 185,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
         "content": "        }"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ""
       },
       {
         "lineNumber": 187,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 188,
         "author": {
-          "gitId": "-"
+          "gitId": "dingyuchen"
         },
-        "content": "        @Override"
+        "content": "        public boolean hasTransaction(BankAccountOperation transaction) {"
       },
       {
         "lineNumber": 189,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "-"
         },
-        "content": "        public void setTransaction(BankAccountOperation target, BankAccountOperation editedTransaction) {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "-"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 191,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        @Override"
       },
       {
         "lineNumber": 193,
         "author": {
-          "gitId": "-"
+          "gitId": "dingyuchen"
         },
-        "content": "        @Override"
+        "content": "        public void deleteTransaction(BankAccountOperation target) {"
       },
       {
         "lineNumber": 194,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "-"
         },
-        "content": "        public FilteredList\u003cBankAccountOperation\u003e getFilteredTransactionList() {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "-"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": "        }"
       },
       {
         "lineNumber": 196,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 197,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "dingyuchen"
+        },
+        "content": "        public void setTransaction(BankAccountOperation target, BankAccountOperation editedTransaction) {"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "dingyuchen"
+        },
+        "content": "        public FilteredList\u003cBankAccountOperation\u003e getFilteredTransactionList() {"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 206,
         "author": {
           "gitId": "joloong"
         },
         "content": ""
       },
       {
-        "lineNumber": 198,
+        "lineNumber": 207,
         "author": {
           "gitId": "joloong"
         },
         "content": "        @Override"
       },
       {
-        "lineNumber": 199,
+        "lineNumber": 208,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "        public void updateFilteredTransactionList(Predicate\u003cBankAccountOperation\u003e predicate) {"
       },
       {
-        "lineNumber": 200,
+        "lineNumber": 209,
         "author": {
           "gitId": "joloong"
         },
         "content": "            throw new AssertionError(\"This method should not be called.\");"
-      },
-      {
-        "lineNumber": 201,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 202,
-        "author": {
-          "gitId": "dingyuchen"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 203,
-        "author": {
-          "gitId": "yewon0303"
-        },
-        "content": "        @Override"
-      },
-      {
-        "lineNumber": 204,
-        "author": {
-          "gitId": "yewon0303"
-        },
-        "content": "        public ObservableList\u003cBudget\u003e getFilteredBudgetList() {"
-      },
-      {
-        "lineNumber": 205,
-        "author": {
-          "gitId": "yewon0303"
-        },
-        "content": "            return null;"
-      },
-      {
-        "lineNumber": 206,
-        "author": {
-          "gitId": "yewon0303"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 207,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 208,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 209,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    /**"
       },
       {
         "lineNumber": 210,
         "author": {
           "gitId": "joloong"
         },
-        "content": "     * A Model stub that contains a single transaction."
+        "content": "        }"
       },
       {
         "lineNumber": 211,
         "author": {
-          "gitId": "-"
+          "gitId": "dingyuchen"
         },
-        "content": "     */"
+        "content": ""
       },
       {
         "lineNumber": 212,
         "author": {
-          "gitId": "joloong"
-        },
-        "content": "    private class ModelStubWithTransaction extends ModelStub {"
-      },
-      {
-        "lineNumber": 213,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "        private final Transaction transaction;"
-      },
-      {
-        "lineNumber": 214,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 215,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "        ModelStubWithTransaction(Transaction transaction) {"
-      },
-      {
-        "lineNumber": 216,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "            requireNonNull(transaction);"
-      },
-      {
-        "lineNumber": 217,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "            this.transaction \u003d transaction;"
-      },
-      {
-        "lineNumber": 218,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 219,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 220,
-        "author": {
-          "gitId": "-"
+          "gitId": "yewon0303"
         },
         "content": "        @Override"
       },
       {
-        "lineNumber": 221,
+        "lineNumber": 213,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "yewon0303"
         },
-        "content": "        public boolean hasTransaction(BankAccountOperation transaction) {"
+        "content": "        public ObservableList\u003cBudget\u003e getFilteredBudgetList() {"
       },
       {
-        "lineNumber": 222,
+        "lineNumber": 214,
         "author": {
-          "gitId": "joloong"
+          "gitId": "yewon0303"
         },
-        "content": "            requireNonNull(transaction);"
+        "content": "            return null;"
       },
       {
-        "lineNumber": 223,
+        "lineNumber": 215,
         "author": {
-          "gitId": "joloong"
-        },
-        "content": "            return this.transaction.isSameTransaction(transaction);"
-      },
-      {
-        "lineNumber": 224,
-        "author": {
-          "gitId": "-"
+          "gitId": "yewon0303"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 225,
+        "lineNumber": 216,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 226,
+        "lineNumber": 217,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 227,
+        "lineNumber": 218,
         "author": {
           "gitId": "-"
         },
         "content": "    /**"
       },
       {
-        "lineNumber": 228,
+        "lineNumber": 219,
         "author": {
           "gitId": "joloong"
         },
-        "content": "     * A Model stub that always accept the transaction being added."
+        "content": "     * A Model stub that contains a single transaction."
       },
       {
-        "lineNumber": 229,
+        "lineNumber": 220,
         "author": {
           "gitId": "-"
         },
         "content": "     */"
       },
       {
-        "lineNumber": 230,
+        "lineNumber": 221,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    private class ModelStubAcceptingTransactionAdded extends ModelStub {"
+        "content": "    private class ModelStubWithTransaction extends ModelStub {"
       },
       {
-        "lineNumber": 231,
+        "lineNumber": 222,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
-        "content": "        final ArrayList\u003cBankAccountOperation\u003e transactionsAdded \u003d new ArrayList\u003c\u003e();"
+        "content": "        private final Transaction transaction;"
       },
       {
-        "lineNumber": 232,
+        "lineNumber": 223,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 233,
+        "lineNumber": 224,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        ModelStubWithTransaction(Transaction transaction) {"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            requireNonNull(transaction);"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            this.transaction \u003d transaction;"
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 229,
         "author": {
           "gitId": "-"
         },
         "content": "        @Override"
       },
       {
-        "lineNumber": 234,
+        "lineNumber": 230,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "        public boolean hasTransaction(BankAccountOperation transaction) {"
       },
       {
-        "lineNumber": 235,
+        "lineNumber": 231,
         "author": {
           "gitId": "joloong"
         },
         "content": "            requireNonNull(transaction);"
       },
       {
-        "lineNumber": 236,
+        "lineNumber": 232,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            return transactionsAdded.stream().anyMatch(transaction::isSameTransaction);"
+        "content": "            return this.transaction.isSameTransaction(transaction);"
       },
       {
-        "lineNumber": 237,
+        "lineNumber": 233,
         "author": {
           "gitId": "-"
         },
         "content": "        }"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "     * A Model stub that always accept the transaction being added."
       },
       {
         "lineNumber": 238,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "     */"
       },
       {
         "lineNumber": 239,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
-        "content": "        @Override"
+        "content": "    private class ModelStubAcceptingTransactionAdded extends ModelStub {"
       },
       {
         "lineNumber": 240,
         "author": {
           "gitId": "dingyuchen"
         },
-        "content": "        public void handleOperation(LedgerOperation operation) {"
+        "content": "        final ArrayList\u003cBankAccountOperation\u003e transactionsAdded \u003d new ArrayList\u003c\u003e();"
       },
       {
         "lineNumber": 241,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "-"
         },
-        "content": "            throw new AssertionError(\"This method should not be called.\");"
+        "content": ""
       },
       {
         "lineNumber": 242,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "-"
         },
-        "content": "        }"
+        "content": "        @Override"
       },
       {
         "lineNumber": 243,
         "author": {
           "gitId": "dingyuchen"
         },
-        "content": ""
+        "content": "        public boolean hasTransaction(BankAccountOperation transaction) {"
       },
       {
         "lineNumber": 244,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            requireNonNull(transaction);"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            return transactionsAdded.stream().anyMatch(transaction::isSameTransaction);"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 248,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "        @Override"
       },
       {
-        "lineNumber": 245,
-        "author": {
-          "gitId": "Berttwm"
-        },
-        "content": "        public void handleOperation(BankAccountOperation transaction) {"
-      },
-      {
-        "lineNumber": 246,
-        "author": {
-          "gitId": "Berttwm"
-        },
-        "content": "            addTransaction(transaction);"
-      },
-      {
-        "lineNumber": 247,
-        "author": {
-          "gitId": "Berttwm"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 248,
-        "author": {
-          "gitId": "Berttwm"
-        },
-        "content": ""
-      },
-      {
         "lineNumber": 249,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "dingyuchen"
         },
-        "content": "        @Override"
+        "content": "        public void handleOperation(LedgerOperation operation) {"
       },
       {
         "lineNumber": 250,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "dingyuchen"
         },
-        "content": "        public void addTransaction(BankAccountOperation transaction) {"
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
       },
       {
         "lineNumber": 251,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "dingyuchen"
         },
-        "content": "            requireNonNull(transaction);"
+        "content": "        }"
       },
       {
         "lineNumber": 252,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "dingyuchen"
         },
-        "content": "            transactionsAdded.add(transaction);"
+        "content": ""
       },
       {
         "lineNumber": 253,
         "author": {
-          "gitId": "Berttwm"
+          "gitId": "dingyuchen"
         },
-        "content": "        }"
+        "content": "        @Override"
       },
       {
         "lineNumber": 254,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": ""
+        "content": "        public void handleOperation(BankAccountOperation transaction) {"
       },
       {
         "lineNumber": 255,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        @Override"
+        "content": "            addTransaction(transaction);"
       },
       {
         "lineNumber": 256,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "        public void commitBankAccount() {"
+        "content": "        }"
       },
       {
         "lineNumber": 257,
@@ -56724,61 +58704,124 @@
       {
         "lineNumber": 258,
         "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void addTransaction(BankAccountOperation transaction) {"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            requireNonNull(transaction);"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            transactionsAdded.add(transaction);"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void commitBankAccount() {"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 267,
+        "author": {
           "gitId": "dingyuchen"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 259,
+        "lineNumber": 268,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": ""
       },
       {
-        "lineNumber": 260,
+        "lineNumber": 269,
         "author": {
           "gitId": "-"
         },
         "content": "        @Override"
       },
       {
-        "lineNumber": 261,
+        "lineNumber": 270,
         "author": {
           "gitId": "joloong"
         },
         "content": "        public ReadOnlyBankAccount getBankAccount() {"
       },
       {
-        "lineNumber": 262,
+        "lineNumber": 271,
         "author": {
           "gitId": "joloong"
         },
         "content": "            return new BankAccount();"
       },
       {
-        "lineNumber": 263,
+        "lineNumber": 272,
         "author": {
           "gitId": "-"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 264,
+        "lineNumber": 273,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 265,
+        "lineNumber": 274,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 266,
+        "lineNumber": 275,
         "author": {
           "gitId": "-"
         },
@@ -56788,9 +58831,9 @@
     "authorContributionMap": {
       "yewon0303": 9,
       "joloong": 57,
-      "dingyuchen": 26,
-      "Berttwm": 75,
-      "-": 99
+      "dingyuchen": 25,
+      "Berttwm": 86,
+      "-": 98
     }
   },
   {
@@ -57060,6 +59103,1940 @@
     "authorContributionMap": {
       "joloong": 6,
       "-": 31
+    }
+  },
+  {
+    "path": "src/test/java/seedu/address/logic/commands/OutCommandTest.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "package seedu.address.logic.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static java.util.Objects.requireNonNull;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertFalse;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertTrue;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import static seedu.address.testutil.Assert.assertThrows;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.nio.file.Path;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.Arrays;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.List;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import java.util.function.Predicate;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import org.junit.jupiter.api.Test;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import javafx.collections.ObservableList;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import javafx.collections.transformation.FilteredList;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.commons.core.GuiSettings;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.BankAccount;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.Model;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.ReadOnlyBankAccount;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.ReadOnlyUserPrefs;"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.transaction.BankAccountOperation;"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.transaction.Budget;"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.transaction.LedgerOperation;"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.model.transaction.Transaction;"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "import seedu.address.testutil.TransactionBuilder;"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "public class OutCommandTest {"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public void constructor_nullTransaction_throwsNullPointerException() {"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        assertThrows(NullPointerException.class, () -\u003e new OutCommand(null));"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public void executeTransactionAcceptedByModeladdSuccessful() throws Exception {"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        ModelStubAcceptingTransactionAdded modelStub \u003d new ModelStubAcceptingTransactionAdded();"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        BankAccountOperation validTransaction \u003d new TransactionBuilder().build();"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        OutCommand outCommand \u003d new OutCommand(validTransaction);"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        CommandResult commandResult \u003d outCommand.execute(modelStub);"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        assertEquals(String.format(OutCommand.MESSAGE_SUCCESS, validTransaction), commandResult.getFeedbackToUser());"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        assertEquals(Arrays.asList(validTransaction), modelStub.transactionsAdded);"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    /*"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public void execute_duplicatePerson_throwsCommandException() {"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        BankAccountOperation validTransaction \u003d new TransactionBuilder().build();"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        InCommand addCommand \u003d new InCommand(validTransaction);"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        ModelStub modelStub \u003d new ModelStubWithTransaction(validTransaction);"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        assertThrows(CommandException.class, InCommand.MESSAGE_DUPLICATE_PERSON, () -\u003e addCommand.execute(modelStub));"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    */"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    public void equals() {"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        BankAccountOperation firstTransaction \u003d new TransactionBuilder()"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                .withTags(\"Food\")"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                .withAmount(\"100\")"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                .withDate(\"10102019\")"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                .build();"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        BankAccountOperation secondTransaction \u003d new TransactionBuilder()"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                .withTags(\"Drinks\")"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                .withAmount(\"80\")"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                .withDate(\"10102019\")"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "                .build();"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        OutCommand addFirstCommand \u003d new OutCommand(firstTransaction);"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        OutCommand addSecondCommand \u003d new OutCommand(secondTransaction);"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        // same object -\u003e returns true"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        assertTrue(addFirstCommand.equals(addFirstCommand));"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        // same values -\u003e returns true"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        OutCommand addFirstCommandCopy \u003d new OutCommand(firstTransaction);"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        assertTrue(addFirstCommand.equals(addFirstCommandCopy));"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        // different types -\u003e returns false"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        assertFalse(addFirstCommand.equals(1));"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        // null -\u003e returns false"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        assertFalse(addFirstCommand.equals(null));"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        // different person -\u003e returns false"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        assertFalse(addFirstCommand.equals(addSecondCommand));"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * A default model stub that have all of the methods failing."
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    private class ModelStub implements Model {"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void setUserPrefs(ReadOnlyUserPrefs userPrefs) {"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public ReadOnlyUserPrefs getUserPrefs() {"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public GuiSettings getGuiSettings() {"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void setGuiSettings(GuiSettings guiSettings) {"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public Path getBankAccountFilePath() {"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void setBankAccountFilePath(Path bankAccountFilePath) {"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void handleOperation(BankAccountOperation transaction) {"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void handleOperation(LedgerOperation operation) {"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void addBudget(Budget budget) {"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void addTransaction(BankAccountOperation transaction) {"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void setBankAccount(ReadOnlyBankAccount newData) {"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public ReadOnlyBankAccount getBankAccount() {"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public boolean canUndoBankAccount() {"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void undoBankAccount() {"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public boolean canRedoBankAccount() {"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void redoBankAccount() {"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void commitBankAccount() {"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void setTransactions(List\u003cBankAccountOperation\u003e transactionHistory) {"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public boolean hasTransaction(BankAccountOperation transaction) {"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void deleteTransaction(BankAccountOperation target) {"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void setTransaction(BankAccountOperation target, BankAccountOperation editedTransaction) {"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public FilteredList\u003cBankAccountOperation\u003e getFilteredTransactionList() {"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void updateFilteredTransactionList(Predicate\u003cBankAccountOperation\u003e predicate) {"
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public ObservableList\u003cBudget\u003e getFilteredBudgetList() {"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return null;"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * A Model stub that contains a single transaction."
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    private class ModelStubWithTransaction extends ModelStub {"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        private final Transaction transaction;"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        ModelStubWithTransaction(Transaction transaction) {"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            requireNonNull(transaction);"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            this.transaction \u003d transaction;"
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public boolean hasTransaction(BankAccountOperation transaction) {"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            requireNonNull(transaction);"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return this.transaction.isSameTransaction(transaction);"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     * A Model stub that always accept the transaction being added."
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    private class ModelStubAcceptingTransactionAdded extends ModelStub {"
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        final ArrayList\u003cBankAccountOperation\u003e transactionsAdded \u003d new ArrayList\u003c\u003e();"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public boolean hasTransaction(BankAccountOperation transaction) {"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            requireNonNull(transaction);"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return transactionsAdded.stream().anyMatch(transaction::isSameTransaction);"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void handleOperation(LedgerOperation operation) {"
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            throw new AssertionError(\"This method should not be called.\");"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void handleOperation(BankAccountOperation transaction) {"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            addTransaction(transaction);"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void addTransaction(BankAccountOperation transaction) {"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            requireNonNull(transaction);"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            transactionsAdded.add(transaction);"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public void commitBankAccount() {"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        @Override"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        public ReadOnlyBankAccount getBankAccount() {"
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "            return new BankAccount();"
+      },
+      {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 273,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 275,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Berttwm": 275
     }
   },
   {
