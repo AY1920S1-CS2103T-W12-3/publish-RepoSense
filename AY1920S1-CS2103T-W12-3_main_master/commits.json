@@ -751,6 +751,34 @@
             "deletions": 9
           }
         ]
+      },
+      {
+        "insertions": 19,
+        "deletions": 18,
+        "date": "2019-10-22",
+        "commitResults": [
+          {
+            "hash": "085a3b852d15b74b4a7c5f917fb0f7020978aa17",
+            "messageTitle": "Update version number to v1.2.1",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "c2fff917331c1da69970a1f125e35b8bd45f7a7b",
+            "messageTitle": "Update archiveName for shadowJar",
+            "messageBody": "",
+            "insertions": 13,
+            "deletions": 13
+          },
+          {
+            "hash": "2a5cb2689a14de4915b919a41ea40a49e62233a2",
+            "messageTitle": "Update archiveName for shadowJar to PalPay",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 4
+          }
+        ]
       }
     ],
     "dingyuchen": [
@@ -1366,15 +1394,50 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 11,
+        "deletions": 16,
+        "date": "2019-10-22",
+        "commitResults": [
+          {
+            "hash": "57724930e2bfa923fa94515556451037722bb891",
+            "messageTitle": "Update InCommand and OutCommand Message_Usage",
+            "messageBody": "",
+            "insertions": 11,
+            "deletions": 16
+          }
+        ]
+      },
+      {
+        "insertions": 133,
+        "deletions": 89,
+        "date": "2019-10-23",
+        "commitResults": [
+          {
+            "hash": "74ba0bac5e2d07d237fc2d5def24cc8b7e8f1829",
+            "messageTitle": "Create addTransaction field for Model/ModelManager. Working series of InCommandTest",
+            "messageBody": "",
+            "insertions": 93,
+            "deletions": 51
+          },
+          {
+            "hash": "ca5158f4893780687c44f43073a864166f037cfa",
+            "messageTitle": "Checktyle on InCommandTest",
+            "messageBody": "",
+            "insertions": 40,
+            "deletions": 38
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 957,
-    "joloong": 2006,
-    "dingyuchen": 1332,
+    "yewon0303": 960,
+    "joloong": 2022,
+    "dingyuchen": 1333,
     "wallacelim97": 434,
-    "Berttwm": 228
+    "Berttwm": 321
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
@@ -1384,7 +1447,7 @@
       "java": 3,
       "java": 7,
       "java": 1,
-      "java": 19,
+      "java": 17,
       "java": 1,
       "java": 47,
       "java": 2,
@@ -1393,8 +1456,8 @@
       "java": 1,
       "java": 50,
       "java": 36,
-      "java": 9,
-      "java": 10,
+      "java": 12,
+      "java": 8,
       "java": 3,
       "java": 40,
       "java": 126,
@@ -1423,15 +1486,16 @@
       "fxml": 1,
       "fxml": 1,
       "fxml": 1,
-      "java": 5,
+      "java": 9,
       "fxml": 1
     },
     "joloong": {
       "adoc": 1,
       "json": 39,
-      "gradle": 2,
+      "gradle": 3,
       "adoc": 9,
-      "java": 5,
+      "java": 6,
+      "java": 2,
       "java": 3,
       "java": 1,
       "java": 4,
@@ -1451,7 +1515,7 @@
       "java": 17,
       "java": 33,
       "java": 46,
-      "java": 37,
+      "java": 31,
       "java": 47,
       "java": 1,
       "java": 10,
@@ -1481,7 +1545,6 @@
       "java": 1,
       "java": 28,
       "java": 12,
-      "java": 39,
       "java": 9,
       "java": 26,
       "java": 35,
@@ -1489,6 +1552,7 @@
       "java": 72,
       "java": 12,
       "java": 2,
+      "java": 57,
       "java": 6,
       "java": 47,
       "java": 43,
@@ -1524,7 +1588,7 @@
       "java": 4,
       "java": 3,
       "java": 5,
-      "java": 22,
+      "java": 21,
       "java": 2,
       "java": 3,
       "java": 2,
@@ -1533,7 +1597,7 @@
       "java": 57,
       "java": 68,
       "java": 46,
-      "java": 32,
+      "java": 33,
       "java": 32,
       "java": 5,
       "java": 15,
@@ -1572,10 +1636,10 @@
       "fxml": 34,
       "fxml": 7,
       "java": 1,
-      "java": 25,
       "java": 4,
       "java": 3,
       "java": 1,
+      "java": 26,
       "java": 35,
       "java": 2,
       "java": 2,
@@ -1617,26 +1681,35 @@
       "adoc": 3,
       "adoc": 44,
       "java": 1,
-      "java": 47,
-      "java": 20,
+      "java": 1,
+      "java": 1,
+      "java": 3,
+      "java": 45,
+      "java": 1,
+      "java": 1,
+      "java": 1,
+      "java": 22,
       "java": 27,
       "java": 54,
       "java": 1,
       "java": 6,
+      "java": 6,
+      "java": 4,
       "java": 1,
       "java": 9,
       "java": 6,
       "java": 5,
       "java": 3,
-      "java": 1
+      "java": 1,
+      "java": 75
     }
   },
   "authorContributionVariance": {
     "yewon0303": 18375.016,
-    "joloong": 51292.06,
+    "joloong": 51080.53,
     "dingyuchen": 36235.72,
     "wallacelim97": 10352.474,
-    "Berttwm": 2452.7407
+    "Berttwm": 3664.7097
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
