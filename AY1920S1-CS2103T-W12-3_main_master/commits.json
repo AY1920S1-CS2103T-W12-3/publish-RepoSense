@@ -1385,6 +1385,27 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 35,
+        "deletions": 4,
+        "date": "2019-10-24",
+        "commitResults": [
+          {
+            "hash": "b84b0dc948bb9735b65c1b1ad4424dacfbfe7db6",
+            "messageTitle": "Add Future Enchancements + Design Considerations + Alternative Implementations to the Project feature in the Developer Guide",
+            "messageBody": "",
+            "insertions": 31,
+            "deletions": 0
+          },
+          {
+            "hash": "8d6f891ba442dee0b199b86965c2b6fee82f9175",
+            "messageTitle": "Refactor Project.puml",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 4
+          }
+        ]
       }
     ],
     "Berttwm": [
@@ -1674,7 +1695,7 @@
     "yewon0303": 1369,
     "joloong": 2907,
     "dingyuchen": 1337,
-    "wallacelim97": 508,
+    "wallacelim97": 539,
     "Berttwm": 1103
   },
   "authorFileTypeContributionMap": {
@@ -1964,7 +1985,7 @@
       "java": 21
     },
     "wallacelim97": {
-      "adoc": 12,
+      "adoc": 43,
       "puml": 93,
       "java": 3,
       "java": 4,
@@ -2030,7 +2051,7 @@
     "yewon0303": 25568.463,
     "joloong": 167442.69,
     "dingyuchen": 39076.88,
-    "wallacelim97": 10510.811,
+    "wallacelim97": 10478.668,
     "Berttwm": 35452.414
   },
   "authorDisplayNameMap": {

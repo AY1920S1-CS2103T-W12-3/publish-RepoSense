@@ -5207,240 +5207,240 @@
       {
         "lineNumber": 428,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "\u003d\u003d Documentation"
+        "content": "\u003d\u003d\u003d\u003d Future Enhancements"
       },
       {
         "lineNumber": 429,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
         "content": ""
       },
       {
         "lineNumber": 430,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "Refer to the guide \u003c\u003cDocumentation#, here\u003e\u003e."
+        "content": "\u003d\u003d\u003d\u003d\u003d Graphical Representation"
       },
       {
         "lineNumber": 431,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "In future updates, the _user\u0027s_ balance projection will be displayed as a linear graph plotted against time, up until"
       },
       {
         "lineNumber": 432,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "\u003d\u003d Testing"
+        "content": "the date specified by the user in the command."
       },
       {
         "lineNumber": 433,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
         "content": ""
       },
       {
         "lineNumber": 434,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "Refer to the guide \u003c\u003cTesting#, here\u003e\u003e."
+        "content": "\u003d\u003d\u003d\u003d\u003d Projection by Category"
       },
       {
         "lineNumber": 435,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "In future updates, the _user_ will be able to customise projections beyond specifying a single date."
       },
       {
         "lineNumber": 436,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "\u003d\u003d Dev Ops"
+        "content": "Some possible customizations include solely projection _income_ / _outflow_ amounts, and filtered"
       },
       {
         "lineNumber": 437,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "projections based on _categories_. For instance, `project d/22112019 c/Food -o` will project the"
       },
       {
         "lineNumber": 438,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "Refer to the guide \u003c\u003cDevOps#, here\u003e\u003e."
+        "content": "_user\u0027s_ spending (or outflow, as denoted by the `-o` flag) on Food (specified by the `c/Food` tag)"
       },
       {
         "lineNumber": 439,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "up until the 22nd of November, 2019 (specified by the `d/22112019` tag)."
       },
       {
         "lineNumber": 440,
         "author": {
-          "gitId": "-"
-        },
-        "content": "[appendix]"
-      },
-      {
-        "lineNumber": 441,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "\u003d\u003d Product Scope"
-      },
-      {
-        "lineNumber": 442,
-        "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
         "content": ""
       },
       {
+        "lineNumber": 441,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "\u003d\u003d\u003d\u003d Design Considerations"
+      },
+      {
+        "lineNumber": 442,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "The project command has multiple possible implementations as to how the projection may be computed."
+      },
+      {
         "lineNumber": 443,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "*Target user profile*:"
+        "content": "In the current implementation, the projected amount is calculated via the following equation:"
       },
       {
         "lineNumber": 444,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
         "content": ""
       },
       {
         "lineNumber": 445,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "* has a need to manage a significant number of contacts"
+        "content": "_Projected Balance \u003d Current Balance - [(Past Income - Past Outflow) / Total Days Elapsed] *"
       },
       {
         "lineNumber": 446,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "* prefer desktop apps over other types"
+        "content": "Days Until Date of Projection_"
       },
       {
         "lineNumber": 447,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "* can type fast"
+        "content": ""
       },
       {
         "lineNumber": 448,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "* prefers typing over mouse input"
+        "content": "While this algorithm allows for simple and fast computation, it does not hedge against one-time big purchases."
       },
       {
         "lineNumber": 449,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "* is reasonably comfortable using CLI apps"
+        "content": "For example, if the user were to buy a computer, his outflow projection is likely to be proportionally"
       },
       {
         "lineNumber": 450,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "larger in the short run."
       },
       {
         "lineNumber": 451,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "*Value proposition*: manage contacts faster than a typical mouse/GUI driven app"
+        "content": ""
       },
       {
         "lineNumber": 452,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "\u003d\u003d\u003d\u003d Alternative Implementations"
       },
       {
         "lineNumber": 453,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "[appendix]"
+        "content": "\u003d\u003d\u003d\u003d\u003d Linear Regression"
       },
       {
         "lineNumber": 454,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "\u003d\u003d User Stories"
+        "content": "In light of the above-mentioned limitation, a possible algorithm to be used is the"
       },
       {
         "lineNumber": 455,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "https://en.wikipedia.org/wiki/Gradient_descent#targetText\u003dGradient%20descent%20is%20a%20first,function%20at%20the%20current%20point[_Gradient Descent_]"
       },
       {
         "lineNumber": 456,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "Priorities: High (must have) - `* * \\*`, Medium (nice to have) - `* \\*`, Low (unlikely to have) - `*`"
+        "content": "algorithm in finding a best fit projection line for the user\u0027s balance. However, this will increase the"
       },
       {
         "lineNumber": 457,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "computational cost of the `project` function significantly, causing _PalPay_ to run slower overall."
       },
       {
         "lineNumber": 458,
         "author": {
-          "gitId": "-"
+          "gitId": "wallacelim97"
         },
-        "content": "[width\u003d\"59%\",cols\u003d\"22%,\u003c23%,\u003c25%,\u003c30%\",options\u003d\"header\",]"
+        "content": ""
       },
       {
         "lineNumber": 459,
         "author": {
           "gitId": "-"
         },
-        "content": "|\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
+        "content": "\u003d\u003d Documentation"
       },
       {
         "lineNumber": 460,
         "author": {
           "gitId": "-"
         },
-        "content": "|Priority |As a ... |I want to ... |So that I can..."
+        "content": ""
       },
       {
         "lineNumber": 461,
         "author": {
           "gitId": "-"
         },
-        "content": "|`* * *` |data-oriented person |see an overview of my transactions in an intuitive graph |gain insights at a glance"
+        "content": "Refer to the guide \u003c\u003cDocumentation#, here\u003e\u003e."
       },
       {
         "lineNumber": 462,
@@ -5454,7 +5454,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "|`* * *` |new user |see usage instructions |refer to instructions when I forget how to use the App"
+        "content": "\u003d\u003d Testing"
       },
       {
         "lineNumber": 464,
@@ -5468,7 +5468,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "|`* * *` |student |input my spending into different categories |manage my expenses better"
+        "content": "Refer to the guide \u003c\u003cTesting#, here\u003e\u003e."
       },
       {
         "lineNumber": 466,
@@ -5482,7 +5482,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "|`* * *` |visual person | see how much budget I have left in each category |cut down on spending as necessary"
+        "content": "\u003d\u003d Dev Ops"
       },
       {
         "lineNumber": 468,
@@ -5494,9 +5494,9 @@
       {
         "lineNumber": 469,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "-"
         },
-        "content": "|`* * *` |student with many friends |split the bill with my friends |know how much I should payment for a meal"
+        "content": "Refer to the guide \u003c\u003cDevOps#, here\u003e\u003e."
       },
       {
         "lineNumber": 470,
@@ -5508,184 +5508,184 @@
       {
         "lineNumber": 471,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "-"
         },
-        "content": "|`* * *` |student who forgets to payment his debt on time |be reminded to payment my debt before the deadline |stop incurring interests"
+        "content": "[appendix]"
       },
       {
         "lineNumber": 472,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d Product Scope"
       },
       {
         "lineNumber": 473,
         "author": {
           "gitId": "-"
         },
-        "content": "|`* *` |patriotic Singaporean who travels to JB often |easily calculate how much Ringgit to bring |enjoy my holiday with insufficient money"
+        "content": ""
       },
       {
         "lineNumber": 474,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "*Target user profile*:"
       },
       {
         "lineNumber": 475,
         "author": {
           "gitId": "-"
         },
-        "content": "|`* *` |thrifty person |see how my savings or spending will project into the future |plan my budget"
+        "content": ""
       },
       {
         "lineNumber": 476,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* has a need to manage a significant number of contacts"
       },
       {
         "lineNumber": 477,
         "author": {
           "gitId": "-"
         },
-        "content": "|`*` |user who forgets to save money |be incentivized me to save money |be motivated to not overspend/save money"
+        "content": "* prefer desktop apps over other types"
       },
       {
         "lineNumber": 478,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* can type fast"
       },
       {
         "lineNumber": 479,
         "author": {
           "gitId": "-"
         },
-        "content": "|\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
+        "content": "* prefers typing over mouse input"
       },
       {
         "lineNumber": 480,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* is reasonably comfortable using CLI apps"
       },
       {
         "lineNumber": 481,
         "author": {
           "gitId": "-"
         },
-        "content": "_{More to be added}_"
+        "content": ""
       },
       {
         "lineNumber": 482,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "*Value proposition*: manage contacts faster than a typical mouse/GUI driven app"
       },
       {
         "lineNumber": 483,
         "author": {
           "gitId": "-"
         },
-        "content": "[appendix]"
+        "content": ""
       },
       {
         "lineNumber": 484,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Use Cases"
+        "content": "[appendix]"
       },
       {
         "lineNumber": 485,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d User Stories"
       },
       {
         "lineNumber": 486,
         "author": {
           "gitId": "-"
         },
-        "content": "(For all use cases below, the **System** is the `PalPay` and the **Actor** is the `user`, unless specified otherwise)"
+        "content": ""
       },
       {
         "lineNumber": 487,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Priorities: High (must have) - `* * \\*`, Medium (nice to have) - `* \\*`, Low (unlikely to have) - `*`"
       },
       {
         "lineNumber": 488,
         "author": {
           "gitId": "-"
         },
-        "content": "[discrete]"
+        "content": ""
       },
       {
         "lineNumber": 489,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Use case: Add an income"
+        "content": "[width\u003d\"59%\",cols\u003d\"22%,\u003c23%,\u003c25%,\u003c30%\",options\u003d\"header\",]"
       },
       {
         "lineNumber": 490,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "|\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
       },
       {
         "lineNumber": 491,
         "author": {
           "gitId": "-"
         },
-        "content": "*MSS*"
+        "content": "|Priority |As a ... |I want to ... |So that I can..."
       },
       {
         "lineNumber": 492,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "|`* * *` |data-oriented person |see an overview of my transactions in an intuitive graph |gain insights at a glance"
       },
       {
         "lineNumber": 493,
         "author": {
           "gitId": "-"
         },
-        "content": "1. User requests to add an income amount."
+        "content": ""
       },
       {
         "lineNumber": 494,
         "author": {
           "gitId": "-"
         },
-        "content": "2. PalPay adds the income amount."
+        "content": "|`* * *` |new user |see usage instructions |refer to instructions when I forget how to use the App"
       },
       {
         "lineNumber": 495,
         "author": {
           "gitId": "-"
         },
-        "content": "+"
+        "content": ""
       },
       {
         "lineNumber": 496,
         "author": {
           "gitId": "-"
         },
-        "content": "Use case ends."
+        "content": "|`* * *` |student |input my spending into different categories |manage my expenses better"
       },
       {
         "lineNumber": 497,
@@ -5699,7 +5699,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "*Extensions*"
+        "content": "|`* * *` |visual person | see how much budget I have left in each category |cut down on spending as necessary"
       },
       {
         "lineNumber": 499,
@@ -5711,79 +5711,79 @@
       {
         "lineNumber": 500,
         "author": {
-          "gitId": "-"
+          "gitId": "dingyuchen"
         },
-        "content": "[none]"
+        "content": "|`* * *` |student with many friends |split the bill with my friends |know how much I should payment for a meal"
       },
       {
         "lineNumber": 501,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "* 1a."
-      },
-      {
-        "lineNumber": 502,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "Amount entered by the user is invalid."
-      },
-      {
-        "lineNumber": 503,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "+"
-      },
-      {
-        "lineNumber": 504,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "[none]"
-      },
-      {
-        "lineNumber": 505,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "** 1a1. PalPay shows an error message."
-      },
-      {
-        "lineNumber": 506,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "+"
-      },
-      {
-        "lineNumber": 507,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "Use case resumes at step 1."
-      },
-      {
-        "lineNumber": 508,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
+        "lineNumber": 502,
+        "author": {
+          "gitId": "dingyuchen"
+        },
+        "content": "|`* * *` |student who forgets to payment his debt on time |be reminded to payment my debt before the deadline |stop incurring interests"
+      },
+      {
+        "lineNumber": 503,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 504,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "|`* *` |patriotic Singaporean who travels to JB often |easily calculate how much Ringgit to bring |enjoy my holiday with insufficient money"
+      },
+      {
+        "lineNumber": 505,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 506,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "|`* *` |thrifty person |see how my savings or spending will project into the future |plan my budget"
+      },
+      {
+        "lineNumber": 507,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 508,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "|`*` |user who forgets to save money |be incentivized me to save money |be motivated to not overspend/save money"
+      },
+      {
         "lineNumber": 509,
         "author": {
           "gitId": "-"
         },
-        "content": "[discrete]"
+        "content": ""
       },
       {
         "lineNumber": 510,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Use case: Delete expense"
+        "content": "|\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
       },
       {
         "lineNumber": 511,
@@ -5797,7 +5797,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "*MSS*"
+        "content": "_{More to be added}_"
       },
       {
         "lineNumber": 513,
@@ -5811,84 +5811,84 @@
         "author": {
           "gitId": "-"
         },
-        "content": "1. User requests to view spending."
+        "content": "[appendix]"
       },
       {
         "lineNumber": 515,
         "author": {
           "gitId": "-"
         },
-        "content": "2. PalPay shows the list of expenses since beginning of time."
+        "content": "\u003d\u003d Use Cases"
       },
       {
         "lineNumber": 516,
         "author": {
           "gitId": "-"
         },
-        "content": "3. User requests to delete an expense."
+        "content": ""
       },
       {
         "lineNumber": 517,
         "author": {
           "gitId": "-"
         },
-        "content": "4. PalPay deletes the specified expense."
+        "content": "(For all use cases below, the **System** is the `PalPay` and the **Actor** is the `user`, unless specified otherwise)"
       },
       {
         "lineNumber": 518,
         "author": {
           "gitId": "-"
         },
-        "content": "+"
+        "content": ""
       },
       {
         "lineNumber": 519,
         "author": {
           "gitId": "-"
         },
-        "content": "Use case ends."
+        "content": "[discrete]"
       },
       {
         "lineNumber": 520,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d\u003d Use case: Add an income"
       },
       {
         "lineNumber": 521,
         "author": {
           "gitId": "-"
         },
-        "content": "*Extensions*"
+        "content": ""
       },
       {
         "lineNumber": 522,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "*MSS*"
       },
       {
         "lineNumber": 523,
         "author": {
           "gitId": "-"
         },
-        "content": "[none]"
+        "content": ""
       },
       {
         "lineNumber": 524,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "* 1a."
+        "content": "1. User requests to add an income amount."
       },
       {
         "lineNumber": 525,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "User speicified days passed since."
+        "content": "2. PalPay adds the income amount."
       },
       {
         "lineNumber": 526,
@@ -5902,329 +5902,329 @@
         "author": {
           "gitId": "-"
         },
-        "content": "[none]"
+        "content": "Use case ends."
       },
       {
         "lineNumber": 528,
         "author": {
           "gitId": "-"
         },
-        "content": "** 1a1. PalPay shows the list of expenses since the time period specified."
+        "content": ""
       },
       {
         "lineNumber": 529,
         "author": {
           "gitId": "-"
         },
-        "content": "+"
+        "content": "*Extensions*"
       },
       {
         "lineNumber": 530,
         "author": {
           "gitId": "-"
         },
-        "content": "Use case resumes at step 3."
+        "content": ""
       },
       {
         "lineNumber": 531,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "[none]"
       },
       {
         "lineNumber": 532,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "_{More to be added}_"
+        "content": "* 1a."
       },
       {
         "lineNumber": 533,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "Amount entered by the user is invalid."
       },
       {
         "lineNumber": 534,
         "author": {
           "gitId": "-"
         },
-        "content": "[appendix]"
+        "content": "+"
       },
       {
         "lineNumber": 535,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Non Functional Requirements"
+        "content": "[none]"
       },
       {
         "lineNumber": 536,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "** 1a1. PalPay shows an error message."
       },
       {
         "lineNumber": 537,
         "author": {
           "gitId": "-"
         },
-        "content": ". Should work on any \u003c\u003cmainstream-os,mainstream OS\u003e\u003e with JDK 11 or above installed."
+        "content": "+"
       },
       {
         "lineNumber": 538,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "-"
         },
-        "content": ". A user with above average typing speed for regular English text should be able to accomplish most of the tasks faster using commands than using the mouse."
+        "content": "Use case resumes at step 1."
       },
       {
         "lineNumber": 539,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "-"
         },
-        "content": ". Upon user input, PalPay should execute tasks (and display results) within 1 second."
+        "content": ""
       },
       {
         "lineNumber": 540,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "-"
         },
-        "content": ". Users should have (and be able to specify) default options such that they can issue minimal commands for common tasks."
+        "content": "[discrete]"
       },
       {
         "lineNumber": 541,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "-"
         },
-        "content": ". Should be quick and efficient, with each user session lasting no longer than 3 minutes to effectively manage his current financial state."
+        "content": "\u003d\u003d\u003d Use case: Delete expense"
       },
       {
         "lineNumber": 542,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "-"
         },
-        "content": ". Should not make users feel defeated, but rather empowered in managing their finances."
+        "content": ""
       },
       {
         "lineNumber": 543,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "*MSS*"
       },
       {
         "lineNumber": 544,
         "author": {
           "gitId": "-"
         },
-        "content": "[appendix]"
+        "content": ""
       },
       {
         "lineNumber": 545,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Glossary"
+        "content": "1. User requests to view spending."
       },
       {
         "lineNumber": 546,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "2. PalPay shows the list of expenses since beginning of time."
       },
       {
         "lineNumber": 547,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "[[mainstream-os]]"
+        "content": "3. User requests to delete an expense."
       },
       {
         "lineNumber": 548,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "Mainstream OS::"
+        "content": "4. PalPay deletes the specified expense."
       },
       {
         "lineNumber": 549,
         "author": {
           "gitId": "-"
         },
-        "content": "Windows, Linux, Unix, OS-X"
+        "content": "+"
       },
       {
         "lineNumber": 550,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Use case ends."
       },
       {
         "lineNumber": 551,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "[[private-contact-detail]]"
+        "content": ""
       },
       {
         "lineNumber": 552,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "Private contact detail::"
+        "content": "*Extensions*"
       },
       {
         "lineNumber": 553,
         "author": {
           "gitId": "-"
         },
-        "content": "A contact detail that is not meant to be shared with others"
+        "content": ""
       },
       {
         "lineNumber": 554,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "[none]"
       },
       {
         "lineNumber": 555,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "[appendix]"
+        "content": "* 1a."
       },
       {
         "lineNumber": 556,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "\u003d\u003d Product Survey"
+        "content": "User speicified days passed since."
       },
       {
         "lineNumber": 557,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "+"
       },
       {
         "lineNumber": 558,
         "author": {
           "gitId": "-"
         },
-        "content": "*Product Name*"
+        "content": "[none]"
       },
       {
         "lineNumber": 559,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "** 1a1. PalPay shows the list of expenses since the time period specified."
       },
       {
         "lineNumber": 560,
         "author": {
           "gitId": "-"
         },
-        "content": "Author: ..."
+        "content": "+"
       },
       {
         "lineNumber": 561,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Use case resumes at step 3."
       },
       {
         "lineNumber": 562,
         "author": {
           "gitId": "-"
         },
-        "content": "Pros:"
+        "content": ""
       },
       {
         "lineNumber": 563,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "_{More to be added}_"
       },
       {
         "lineNumber": 564,
         "author": {
           "gitId": "-"
         },
-        "content": "* ..."
+        "content": ""
       },
       {
         "lineNumber": 565,
         "author": {
           "gitId": "-"
         },
-        "content": "* ..."
+        "content": "[appendix]"
       },
       {
         "lineNumber": 566,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d Non Functional Requirements"
       },
       {
         "lineNumber": 567,
         "author": {
           "gitId": "-"
         },
-        "content": "Cons:"
+        "content": ""
       },
       {
         "lineNumber": 568,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": ". Should work on any \u003c\u003cmainstream-os,mainstream OS\u003e\u003e with JDK 11 or above installed."
       },
       {
         "lineNumber": 569,
         "author": {
-          "gitId": "-"
+          "gitId": "yewon0303"
         },
-        "content": "* ..."
+        "content": ". A user with above average typing speed for regular English text should be able to accomplish most of the tasks faster using commands than using the mouse."
       },
       {
         "lineNumber": 570,
         "author": {
-          "gitId": "-"
+          "gitId": "yewon0303"
         },
-        "content": "* ..."
+        "content": ". Upon user input, PalPay should execute tasks (and display results) within 1 second."
       },
       {
         "lineNumber": 571,
         "author": {
-          "gitId": "-"
+          "gitId": "yewon0303"
         },
-        "content": ""
+        "content": ". Users should have (and be able to specify) default options such that they can issue minimal commands for common tasks."
       },
       {
         "lineNumber": 572,
         "author": {
-          "gitId": "-"
+          "gitId": "yewon0303"
         },
-        "content": "[appendix]"
+        "content": ". Should be quick and efficient, with each user session lasting no longer than 3 minutes to effectively manage his current financial state."
       },
       {
         "lineNumber": 573,
         "author": {
-          "gitId": "-"
+          "gitId": "yewon0303"
         },
-        "content": "\u003d\u003d Instructions for Manual Testing"
+        "content": ". Should not make users feel defeated, but rather empowered in managing their finances."
       },
       {
         "lineNumber": 574,
@@ -6238,42 +6238,42 @@
         "author": {
           "gitId": "-"
         },
-        "content": "Given below are instructions to test the app manually."
+        "content": "[appendix]"
       },
       {
         "lineNumber": 576,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d Glossary"
       },
       {
         "lineNumber": 577,
         "author": {
           "gitId": "-"
         },
-        "content": "[NOTE]"
+        "content": ""
       },
       {
         "lineNumber": 578,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "These instructions only provide a starting point for testers to work on; testers are expected to do more _exploratory_ testing."
+        "content": "[[mainstream-os]]"
       },
       {
         "lineNumber": 579,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "Mainstream OS::"
       },
       {
         "lineNumber": 580,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Launch and Shutdown"
+        "content": "Windows, Linux, Unix, OS-X"
       },
       {
         "lineNumber": 581,
@@ -6285,44 +6285,44 @@
       {
         "lineNumber": 582,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ". Initial launch"
+        "content": "[[private-contact-detail]]"
       },
       {
         "lineNumber": 583,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "Private contact detail::"
       },
       {
         "lineNumber": 584,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Download the jar file and copy into an empty folder"
+        "content": "A contact detail that is not meant to be shared with others"
       },
       {
         "lineNumber": 585,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Double-click the jar file +"
+        "content": ""
       },
       {
         "lineNumber": 586,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "   Expected: Shows the GUI with a set of sample contacts."
+        "content": "[appendix]"
       },
       {
         "lineNumber": 587,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "The window size may not be optimum."
+        "content": "\u003d\u003d Product Survey"
       },
       {
         "lineNumber": 588,
@@ -6336,7 +6336,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": ". Saving window preferences"
+        "content": "*Product Name*"
       },
       {
         "lineNumber": 590,
@@ -6348,79 +6348,79 @@
       {
         "lineNumber": 591,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": ".. Resize the window to an optimum size."
+        "content": "Author: ..."
       },
       {
         "lineNumber": 592,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "Move the window to a different location."
+        "content": ""
       },
       {
         "lineNumber": 593,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "Close the window."
+        "content": "Pros:"
       },
       {
         "lineNumber": 594,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Re-launch the app by double-clicking the jar file. +"
+        "content": ""
       },
       {
         "lineNumber": 595,
         "author": {
           "gitId": "-"
         },
-        "content": "   Expected: The most recent window size and location is retained."
+        "content": "* ..."
       },
       {
         "lineNumber": 596,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* ..."
       },
       {
         "lineNumber": 597,
         "author": {
           "gitId": "-"
         },
-        "content": "_{ more test cases ... }_"
+        "content": ""
       },
       {
         "lineNumber": 598,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Cons:"
       },
       {
         "lineNumber": 599,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Deleting a Person"
+        "content": ""
       },
       {
         "lineNumber": 600,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* ..."
       },
       {
         "lineNumber": 601,
         "author": {
           "gitId": "-"
         },
-        "content": ". Deleting a person while all persons are listed"
+        "content": "* ..."
       },
       {
         "lineNumber": 602,
@@ -6432,114 +6432,114 @@
       {
         "lineNumber": 603,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": ".. Prerequisites: List all persons using the `list` command."
+        "content": "[appendix]"
       },
       {
         "lineNumber": 604,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "Multiple persons in the list."
+        "content": "\u003d\u003d Instructions for Manual Testing"
       },
       {
         "lineNumber": 605,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Test case: `delete 1` +"
+        "content": ""
       },
       {
         "lineNumber": 606,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "   Expected: First contact is deleted from the list."
+        "content": "Given below are instructions to test the app manually."
       },
       {
         "lineNumber": 607,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "Details of the deleted contact shown in the status message."
+        "content": ""
       },
       {
         "lineNumber": 608,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "Timestamp in the status bar is updated."
+        "content": "[NOTE]"
       },
       {
         "lineNumber": 609,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Test case: `delete 0` +"
+        "content": "These instructions only provide a starting point for testers to work on; testers are expected to do more _exploratory_ testing."
       },
       {
         "lineNumber": 610,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "   Expected: No person is deleted."
+        "content": ""
       },
       {
         "lineNumber": 611,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "Error details shown in the status message."
+        "content": "\u003d\u003d\u003d Launch and Shutdown"
       },
       {
         "lineNumber": 612,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "Status bar remains the same."
+        "content": ""
       },
       {
         "lineNumber": 613,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Other incorrect delete commands to try: `delete`, `delete x` (where x is larger than the list size) _{give more}_ +"
+        "content": ". Initial launch"
       },
       {
         "lineNumber": 614,
         "author": {
           "gitId": "-"
         },
-        "content": "   Expected: Similar to previous."
+        "content": ""
       },
       {
         "lineNumber": 615,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": ".. Download the jar file and copy into an empty folder"
       },
       {
         "lineNumber": 616,
         "author": {
           "gitId": "-"
         },
-        "content": "_{ more test cases ... }_"
+        "content": ".. Double-click the jar file +"
       },
       {
         "lineNumber": 617,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "   Expected: Shows the GUI with a set of sample contacts."
       },
       {
         "lineNumber": 618,
         "author": {
           "gitId": "joloong"
         },
-        "content": "\u003d\u003d\u003d Saving Data"
+        "content": "The window size may not be optimum."
       },
       {
         "lineNumber": 619,
@@ -6553,7 +6553,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": ". Dealing with missing/corrupted data files"
+        "content": ". Saving window preferences"
       },
       {
         "lineNumber": 621,
@@ -6565,19 +6565,236 @@
       {
         "lineNumber": 622,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ".. _{explain how to simulate a missing/corrupted file and the expected behavior}_"
+        "content": ".. Resize the window to an optimum size."
       },
       {
         "lineNumber": 623,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "Move the window to a different location."
+      },
+      {
+        "lineNumber": 624,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "Close the window."
+      },
+      {
+        "lineNumber": 625,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ".. Re-launch the app by double-clicking the jar file. +"
+      },
+      {
+        "lineNumber": 626,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "   Expected: The most recent window size and location is retained."
+      },
+      {
+        "lineNumber": 627,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 624,
+        "lineNumber": 628,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "_{ more test cases ... }_"
+      },
+      {
+        "lineNumber": 629,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 630,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "\u003d\u003d\u003d Deleting a Person"
+      },
+      {
+        "lineNumber": 631,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 632,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ". Deleting a person while all persons are listed"
+      },
+      {
+        "lineNumber": 633,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 634,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ".. Prerequisites: List all persons using the `list` command."
+      },
+      {
+        "lineNumber": 635,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "Multiple persons in the list."
+      },
+      {
+        "lineNumber": 636,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ".. Test case: `delete 1` +"
+      },
+      {
+        "lineNumber": 637,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "   Expected: First contact is deleted from the list."
+      },
+      {
+        "lineNumber": 638,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "Details of the deleted contact shown in the status message."
+      },
+      {
+        "lineNumber": 639,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "Timestamp in the status bar is updated."
+      },
+      {
+        "lineNumber": 640,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ".. Test case: `delete 0` +"
+      },
+      {
+        "lineNumber": 641,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "   Expected: No person is deleted."
+      },
+      {
+        "lineNumber": 642,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "Error details shown in the status message."
+      },
+      {
+        "lineNumber": 643,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "Status bar remains the same."
+      },
+      {
+        "lineNumber": 644,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ".. Other incorrect delete commands to try: `delete`, `delete x` (where x is larger than the list size) _{give more}_ +"
+      },
+      {
+        "lineNumber": 645,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "   Expected: Similar to previous."
+      },
+      {
+        "lineNumber": 646,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 647,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "_{ more test cases ... }_"
+      },
+      {
+        "lineNumber": 648,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 649,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "\u003d\u003d\u003d Saving Data"
+      },
+      {
+        "lineNumber": 650,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 651,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ". Dealing with missing/corrupted data files"
+      },
+      {
+        "lineNumber": 652,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 653,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ".. _{explain how to simulate a missing/corrupted file and the expected behavior}_"
+      },
+      {
+        "lineNumber": 654,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 655,
         "author": {
           "gitId": "-"
         },
@@ -6588,7 +6805,7 @@
       "yewon0303": 156,
       "joloong": 53,
       "dingyuchen": 20,
-      "wallacelim97": 12,
+      "wallacelim97": 43,
       "Berttwm": 13,
       "-": 370
     }
@@ -12368,14 +12585,14 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "participant \":DateComparator\" as DateComparator MODEL_COLOR"
+        "content": "participant \"dc:DateComparator\" as DateComparator MODEL_COLOR"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "participant \":Projection\" as Projection MODEL_COLOR"
+        "content": "participant \"pr:Projection\" as Projection MODEL_COLOR"
       },
       {
         "lineNumber": 17,
@@ -12718,7 +12935,7 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "DateComparator --\u003e ProjectCommand : dc"
+        "content": "DateComparator --\u003e ProjectCommand"
       },
       {
         "lineNumber": 66,
@@ -12809,7 +13026,7 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "Projection --\u003e ProjectCommand : pr"
+        "content": "Projection --\u003e ProjectCommand"
       },
       {
         "lineNumber": 79,
