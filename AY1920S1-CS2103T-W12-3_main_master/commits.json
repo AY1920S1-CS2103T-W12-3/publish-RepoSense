@@ -2,55 +2,6 @@
   "authorDailyContributionsMap": {
     "yewon0303": [
       {
-        "insertions": 50,
-        "deletions": 33,
-        "date": "2019-09-23",
-        "commitResults": [
-          {
-            "hash": "ac89616cc6ff311fdb51ffc5c36ad7d68b8f56f9",
-            "messageTitle": "Update README.adoc",
-            "messageBody": "",
-            "insertions": 9,
-            "deletions": 9
-          },
-          {
-            "hash": "b54a9e126437ef9c8aa393dff76ea6d293271def",
-            "messageTitle": "Update README.adoc",
-            "messageBody": "",
-            "insertions": 1,
-            "deletions": 1
-          },
-          {
-            "hash": "4f8ad248412f205a2f5770a51ac3b43760cae4d5",
-            "messageTitle": "Update README.adoc",
-            "messageBody": "",
-            "insertions": 1,
-            "deletions": 1
-          },
-          {
-            "hash": "8fc37e59f793ac50b77155cbc495089fdc94f7ca",
-            "messageTitle": "Update DeveloperGuide.adoc",
-            "messageBody": "",
-            "insertions": 34,
-            "deletions": 17
-          },
-          {
-            "hash": "d492cfe63a7a62d42467900d3b0a966ca3a895f7",
-            "messageTitle": "Update DeveloperGuide.adoc",
-            "messageBody": "",
-            "insertions": 4,
-            "deletions": 3
-          },
-          {
-            "hash": "1b3155b4a7aa7cbd949fd7a208837eb40aee8551",
-            "messageTitle": "Update UserGuide.adoc",
-            "messageBody": "",
-            "insertions": 1,
-            "deletions": 2
-          }
-        ]
-      },
-      {
         "insertions": 67,
         "deletions": 30,
         "date": "2019-10-07",
@@ -289,8 +240,8 @@
         ]
       },
       {
-        "insertions": 65,
-        "deletions": 11,
+        "insertions": 223,
+        "deletions": 53,
         "date": "2019-10-23",
         "commitResults": [
           {
@@ -306,32 +257,109 @@
             "messageBody": "",
             "insertions": 0,
             "deletions": 0
+          },
+          {
+            "hash": "7fd5281b9a99301e9cd4d32ae7b22fd98226f797",
+            "messageTitle": "Update JsonBankAccountStorage to support storage of Budgets in a BankAccount",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 0
+          },
+          {
+            "hash": "6fb335766e87a13b080ed6802f54e08b87963688",
+            "messageTitle": "Update DeleteCommand to support deletion of both transaction and budget",
+            "messageBody": "",
+            "insertions": 73,
+            "deletions": 16
+          },
+          {
+            "hash": "7880eef55f5a2676e7cf0d5c07b444c4bb616694",
+            "messageTitle": "Update UpdateCommand to take in type as parameter",
+            "messageBody": "",
+            "insertions": 28,
+            "deletions": 16
+          },
+          {
+            "hash": "e744aa8e2c39f271ef4ece77538909662a621f97",
+            "messageTitle": "Fix checkstyle errors",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 1
+          },
+          {
+            "hash": "c65b3a93a75b19d6f2d6962cea47184862acfe6b",
+            "messageTitle": "Fix gradle test errors",
+            "messageBody": "",
+            "insertions": 46,
+            "deletions": 9
+          }
+        ]
+      },
+      {
+        "insertions": 271,
+        "deletions": 176,
+        "date": "2019-10-24",
+        "commitResults": [
+          {
+            "hash": "1014f88634b719b57a3d40b0679730f5177b1912",
+            "messageTitle": "Fix test failures",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 5
+          },
+          {
+            "hash": "7038f510f329d493d32d37bad4ce64a1423e2fb7",
+            "messageTitle": "Fic checkstyle error",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 1
+          },
+          {
+            "hash": "8886f950423fe18c93b2ef70943050cc0990240a",
+            "messageTitle": "Fix test failures",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 3
+          },
+          {
+            "hash": "fcbf1a492c038d96fbf04f8bf80efd1b65f512fe",
+            "messageTitle": "Fix checkstyle error",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 3
+          },
+          {
+            "hash": "b6d83d6b8f338b7f649925837132735f360bf7d4",
+            "messageTitle": "ModelClassDiagram updated based on team meeting",
+            "messageBody": "",
+            "insertions": 75,
+            "deletions": 46
+          },
+          {
+            "hash": "eece9cd27453754452bc9c2d9102e83fd3868d6e",
+            "messageTitle": "Update StorageClassDiagram",
+            "messageBody": "",
+            "insertions": 21,
+            "deletions": 16
+          },
+          {
+            "hash": "1cf8251303395e1cfb929b23ec29882342a3e7b4",
+            "messageTitle": "Number the diagrams in DeveloperGuide using .Caption format to ensure consistent formatting",
+            "messageBody": "",
+            "insertions": 101,
+            "deletions": 71
+          },
+          {
+            "hash": "d8ce20d3d7738e49ade34cd3f28f4ad1e6c4da2b",
+            "messageTitle": "Update Introduction, Design section of DeveloperGuide",
+            "messageBody": "",
+            "insertions": 61,
+            "deletions": 31
           }
         ]
       }
     ],
     "joloong": [
-      {
-        "insertions": 14,
-        "deletions": 7,
-        "date": "2019-09-23",
-        "commitResults": [
-          {
-            "hash": "8ff3d798206d3b883d40054cbfe8ecc4f1405d25",
-            "messageTitle": "Update User Stories",
-            "messageBody": "",
-            "insertions": 12,
-            "deletions": 5
-          },
-          {
-            "hash": "6216615273961ba4137037c9f00148fa6317b906",
-            "messageTitle": "Remove trailing whitespaces",
-            "messageBody": "",
-            "insertions": 2,
-            "deletions": 2
-          }
-        ]
-      },
       {
         "insertions": 1,
         "deletions": 0,
@@ -851,8 +879,8 @@
         ]
       },
       {
-        "insertions": 1180,
-        "deletions": 857,
+        "insertions": 1183,
+        "deletions": 858,
         "date": "2019-10-23",
         "commitResults": [
           {
@@ -860,6 +888,13 @@
             "messageTitle": "Fix bug where OutCommand is not processing tags/categories",
             "messageBody": "",
             "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "609f6f6d2e8a59e1346ce24fa0ec8e996c927565",
+            "messageTitle": "Fix bug where OutCommand was not taking in tags/categories and person/name",
+            "messageBody": "",
+            "insertions": 3,
             "deletions": 1
           },
           {
@@ -1170,41 +1205,6 @@
     ],
     "wallacelim97": [
       {
-        "insertions": 29,
-        "deletions": 29,
-        "date": "2019-09-23",
-        "commitResults": [
-          {
-            "hash": "188b864dbe66d4e219f896fa06f8695c15e3e116",
-            "messageTitle": "Update AboutUs.adoc",
-            "messageBody": "",
-            "insertions": 27,
-            "deletions": 27
-          },
-          {
-            "hash": "736da5d074555a0fea0c61a78401f453a1195278",
-            "messageTitle": "Update AboutUs.adoc",
-            "messageBody": "",
-            "insertions": 1,
-            "deletions": 1
-          },
-          {
-            "hash": "e03f184eaf5c16273a45cbdf1aa66a916ae0f0f9",
-            "messageTitle": "Update AboutUs.adoc",
-            "messageBody": "",
-            "insertions": 1,
-            "deletions": 1
-          },
-          {
-            "hash": "382006f690c93c7b7ceb570018b9db3d8eaf4c7e",
-            "messageTitle": "Add files via upload",
-            "messageBody": "",
-            "insertions": 0,
-            "deletions": 0
-          }
-        ]
-      },
-      {
         "insertions": 130,
         "deletions": 3,
         "date": "2019-10-07",
@@ -1389,48 +1389,6 @@
     ],
     "Berttwm": [
       {
-        "insertions": 95,
-        "deletions": 80,
-        "date": "2019-09-23",
-        "commitResults": [
-          {
-            "hash": "415a885b2b1f132c52e514876533d93a761d3c27",
-            "messageTitle": "Update ContactUs.adoc",
-            "messageBody": "",
-            "insertions": 3,
-            "deletions": 3
-          },
-          {
-            "hash": "0825b6f5a88da0241a54d7d9e5469bf9bb02348c",
-            "messageTitle": "Update ContactUs.adoc",
-            "messageBody": "",
-            "insertions": 1,
-            "deletions": 1
-          },
-          {
-            "hash": "a33481db6a7bf4dcaf9cafc32e9a09b2d884427f",
-            "messageTitle": "Update UserGuide.adoc",
-            "messageBody": "",
-            "insertions": 23,
-            "deletions": 20
-          },
-          {
-            "hash": "7233cc81a3b0007ede49297f2e39948aad2b8188",
-            "messageTitle": "Update UserGuide.adoc",
-            "messageBody": "",
-            "insertions": 67,
-            "deletions": 55
-          },
-          {
-            "hash": "aa2f33950d0553d3194fb69dc7d1694dccd9c3cf",
-            "messageTitle": "Update UserGuide.adoc",
-            "messageBody": "",
-            "insertions": 1,
-            "deletions": 1
-          }
-        ]
-      },
-      {
         "insertions": 57,
         "deletions": 2,
         "date": "2019-10-08",
@@ -1613,8 +1571,8 @@
         ]
       },
       {
-        "insertions": 789,
-        "deletions": 181,
+        "insertions": 828,
+        "deletions": 201,
         "date": "2019-10-23",
         "commitResults": [
           {
@@ -1658,50 +1616,109 @@
             "messageBody": "",
             "insertions": 60,
             "deletions": 31
+          },
+          {
+            "hash": "8c8d73b9100347147cd97d4cff308d231236e1d8",
+            "messageTitle": "Updatecommand fixed for out commands",
+            "messageBody": "",
+            "insertions": 17,
+            "deletions": 5
+          },
+          {
+            "hash": "0de1b3dd253037b9946a9e41140b5d793b7f1f72",
+            "messageTitle": "UpdateCommand equals method",
+            "messageBody": "",
+            "insertions": 18,
+            "deletions": 1
+          },
+          {
+            "hash": "58d16c96de64aacd897730fac8f1863d9b44114c",
+            "messageTitle": "UpdateCommand conditional statements comment",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 14
+          }
+        ]
+      },
+      {
+        "insertions": 280,
+        "deletions": 17,
+        "date": "2019-10-24",
+        "commitResults": [
+          {
+            "hash": "b49543d6a94e0488b7cbc133f5003f93ffca0f58",
+            "messageTitle": "UpdateCommand updates andfixed OutTransaction to handle negative amounts",
+            "messageBody": "",
+            "insertions": 13,
+            "deletions": 6
+          },
+          {
+            "hash": "2a527bcf44aabd9bfe0e2bb7e7538801e9f6bcb4",
+            "messageTitle": "Fix In/Out Transactions to take in duplicates. Fix JsonAdaptedTransactions to read negative amounts",
+            "messageBody": "",
+            "insertions": 247,
+            "deletions": 10
+          },
+          {
+            "hash": "82e54ff670696a7cc06e769e2ea7eead872a2619",
+            "messageTitle": "Added in Transacton Feature",
+            "messageBody": "",
+            "insertions": 20,
+            "deletions": 1
           }
         ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 990,
-    "joloong": 2963,
-    "dingyuchen": 1351,
-    "wallacelim97": 534,
-    "Berttwm": 840
+    "yewon0303": 1369,
+    "joloong": 2907,
+    "dingyuchen": 1337,
+    "wallacelim97": 508,
+    "Berttwm": 1103
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
-      "adoc": 6,
-      "adoc": 52,
-      "adoc": 93,
-      "puml": 64,
+      "adoc": 156,
+      "adoc": 99,
+      "puml": 3,
+      "puml": 14,
+      "puml": 11,
+      "puml": 110,
+      "puml": 10,
+      "puml": 16,
+      "java": 1,
       "java": 3,
       "java": 7,
+      "java": 27,
+      "java": 3,
       "java": 1,
       "java": 13,
       "java": 1,
       "java": 44,
       "java": 2,
+      "java": 39,
       "java": 9,
+      "java": 2,
       "java": 3,
-      "java": 1,
+      "java": 13,
       "java": 45,
-      "java": 36,
-      "java": 12,
-      "java": 8,
+      "java": 4,
+      "java": 56,
+      "java": 16,
+      "java": 14,
       "java": 3,
       "java": 40,
       "java": 117,
       "java": 4,
-      "java": 4,
+      "java": 3,
       "java": 3,
       "java": 4,
       "java": 136,
       "java": 18,
       "java": 71,
       "java": 2,
-      "java": 10,
+      "java": 14,
       "java": 55,
       "java": 46,
       "java": 1,
@@ -1718,15 +1735,23 @@
       "fxml": 1,
       "fxml": 1,
       "fxml": 1,
+      "java": 8,
+      "java": 19,
+      "java": 10,
+      "java": 5,
+      "java": 2,
+      "java": 4,
+      "java": 2,
+      "java": 4,
       "java": 9,
       "fxml": 1
     },
     "joloong": {
-      "adoc": 2,
+      "adoc": 4,
       "json": 39,
       "gradle": 3,
       "adoc": 11,
-      "adoc": 99,
+      "adoc": 53,
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
@@ -1740,7 +1765,7 @@
       "java": 4,
       "java": 1,
       "java": 23,
-      "java": 8,
+      "java": 9,
       "java": 18,
       "java": 1,
       "java": 50,
@@ -1765,15 +1790,15 @@
       "java": 15,
       "java": 33,
       "java": 20,
-      "java": 5,
+      "java": 6,
       "java": 16,
       "java": 5,
       "java": 33,
       "java": 15,
       "java": 36,
       "java": 53,
-      "java": 31,
-      "java": 45,
+      "java": 38,
+      "java": 46,
       "java": 1,
       "java": 10,
       "java": 109,
@@ -1783,7 +1808,7 @@
       "java": 2,
       "java": 12,
       "java": 29,
-      "java": 22,
+      "java": 20,
       "java": 8,
       "java": 58,
       "java": 44,
@@ -1794,9 +1819,9 @@
       "java": 11,
       "java": 14,
       "java": 10,
-      "java": 70,
+      "java": 69,
       "java": 17,
-      "java": 68,
+      "java": 63,
       "java": 4,
       "java": 4,
       "java": 44,
@@ -1820,7 +1845,7 @@
       "java": 9,
       "java": 20,
       "java": 32,
-      "java": 35,
+      "java": 30,
       "java": 58,
       "java": 2,
       "java": 2,
@@ -1834,12 +1859,12 @@
       "java": 43,
       "java": 23,
       "java": 8,
-      "java": 7,
+      "java": 4,
       "java": 1,
-      "java": 2,
+      "java": 1,
       "java": 31,
       "java": 35,
-      "java": 19,
+      "java": 17,
       "java": 2,
       "java": 62,
       "java": 43,
@@ -1856,15 +1881,15 @@
       "java": 8,
       "java": 9,
       "java": 6,
-      "java": 71,
+      "java": 68,
       "java": 3,
       "java": 6,
       "java": 57
     },
     "dingyuchen": {
       "gitignore": 6,
-      "adoc": 30,
-      "adoc": 14,
+      "adoc": 20,
+      "adoc": 16,
       "java": 15,
       "java": 17,
       "java": 13,
@@ -1881,13 +1906,13 @@
       "java": 2,
       "java": 1,
       "java": 2,
-      "java": 2,
+      "java": 1,
       "java": 59,
       "java": 1,
       "java": 57,
       "java": 67,
       "java": 46,
-      "java": 32,
+      "java": 31,
       "java": 31,
       "java": 5,
       "java": 15,
@@ -1901,13 +1926,13 @@
       "java": 10,
       "java": 17,
       "java": 39,
-      "java": 11,
+      "java": 10,
       "java": 43,
       "java": 39,
       "java": 73,
       "java": 17,
       "java": 11,
-      "java": 108,
+      "java": 105,
       "java": 10,
       "java": 25,
       "java": 1,
@@ -1939,7 +1964,6 @@
       "java": 21
     },
     "wallacelim97": {
-      "adoc": 27,
       "adoc": 12,
       "puml": 93,
       "java": 3,
@@ -1954,6 +1978,7 @@
       "java": 17,
       "java": 38,
       "java": 4,
+      "java": 1,
       "java": 46,
       "java": 2,
       "java": 2,
@@ -1967,8 +1992,8 @@
       "java": 2
     },
     "Berttwm": {
-      "adoc": 3,
-      "adoc": 38,
+      "adoc": 13,
+      "adoc": 5,
       "java": 1,
       "java": 1,
       "java": 1,
@@ -1978,31 +2003,35 @@
       "java": 1,
       "java": 1,
       "java": 22,
-      "java": 157,
+      "java": 175,
       "java": 33,
-      "java": 49,
+      "java": 52,
       "java": 1,
-      "java": 61,
+      "java": 60,
       "java": 9,
-      "java": 7,
-      "java": 7,
+      "java": 6,
+      "java": 8,
+      "java": 15,
       "java": 1,
-      "java": 7,
+      "java": 12,
       "java": 9,
       "java": 11,
-      "java": 2,
+      "java": 10,
       "java": 3,
       "java": 1,
       "java": 84,
-      "java": 273
+      "java": 273,
+      "java": 159,
+      "java": 10,
+      "java": 69
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 19300.926,
-    "joloong": 166729.86,
-    "dingyuchen": 39076.875,
-    "wallacelim97": 10497.412,
-    "Berttwm": 30444.822
+    "yewon0303": 25568.463,
+    "joloong": 167442.69,
+    "dingyuchen": 39076.88,
+    "wallacelim97": 10510.811,
+    "Berttwm": 35452.414
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
