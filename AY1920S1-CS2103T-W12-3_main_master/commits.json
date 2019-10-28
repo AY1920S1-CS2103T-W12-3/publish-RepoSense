@@ -357,6 +357,62 @@
             "deletions": 31
           }
         ]
+      },
+      {
+        "insertions": 445,
+        "deletions": 27,
+        "date": "2019-10-28",
+        "commitResults": [
+          {
+            "hash": "9e913d6515da84cb6eac28a1a7d66e9ffcfc0263",
+            "messageTitle": "Add SetCommandTest, BudgetBuilder",
+            "messageBody": "",
+            "insertions": 356,
+            "deletions": 8
+          },
+          {
+            "hash": "c28f1d8d8d28f93f4f4f74138c48eb35d26117e3",
+            "messageTitle": "Add DuplicateBudgetException and BudgetNotFoundException",
+            "messageBody": "",
+            "insertions": 28,
+            "deletions": 10
+          },
+          {
+            "hash": "ee34800dda0ee8c5c198035cbc235813e6013bf6",
+            "messageTitle": "Fix bud: duplicate budget does not show error message to the user",
+            "messageBody": "",
+            "insertions": 20,
+            "deletions": 3
+          },
+          {
+            "hash": "43e7537b017ca6f843b43cf214d05707e0c91fcb",
+            "messageTitle": "Fix bug: duplicate budgets do not show error mesage to the user",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "44b81e0591f53e7020c47be707e2ed47ad99e155",
+            "messageTitle": "Modify test cases",
+            "messageBody": "",
+            "insertions": 17,
+            "deletions": 2
+          },
+          {
+            "hash": "cc5d196551188c7943353c8d266c0936c660ce15",
+            "messageTitle": "Fix bug: duplicate transactions should display an error message to the user",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 3
+          },
+          {
+            "hash": "6f243cfd5f6717dee969164a263e34ed7f033bd7",
+            "messageTitle": "Modify how Transaction is displayed on user screen",
+            "messageBody": "",
+            "insertions": 15,
+            "deletions": 0
+          }
+        ]
       }
     ],
     "joloong": [
@@ -1839,9 +1895,9 @@
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1354,
-    "joloong": 3843,
-    "dingyuchen": 1206,
+    "yewon0303": 1780,
+    "joloong": 3830,
+    "dingyuchen": 1207,
     "wallacelim97": 502,
     "Berttwm": 1221
   },
@@ -1859,9 +1915,9 @@
       "java": 7,
       "java": 27,
       "java": 1,
-      "java": 13,
+      "java": 18,
       "java": 1,
-      "java": 44,
+      "java": 50,
       "java": 2,
       "java": 39,
       "java": 9,
@@ -1871,17 +1927,19 @@
       "java": 45,
       "java": 3,
       "java": 55,
-      "java": 16,
-      "java": 14,
+      "java": 30,
+      "java": 18,
       "java": 3,
       "java": 39,
       "java": 116,
-      "java": 4,
-      "java": 2,
+      "java": 9,
+      "java": 7,
       "java": 3,
-      "java": 3,
+      "java": 8,
       "java": 136,
       "java": 18,
+      "java": 7,
+      "java": 11,
       "java": 71,
       "java": 2,
       "java": 14,
@@ -1902,12 +1960,15 @@
       "fxml": 1,
       "fxml": 1,
       "java": 8,
-      "java": 19,
-      "java": 10,
+      "java": 24,
+      "java": 15,
+      "java": 285,
       "java": 2,
       "java": 4,
       "java": 2,
       "java": 4,
+      "java": 68,
+      "java": 1,
       "java": 9,
       "fxml": 1
     },
@@ -1939,7 +2000,7 @@
       "java": 4,
       "java": 2,
       "java": 30,
-      "java": 3,
+      "java": 2,
       "java": 48,
       "java": 5,
       "java": 30,
@@ -1959,8 +2020,8 @@
       "java": 15,
       "java": 36,
       "java": 60,
-      "java": 38,
-      "java": 46,
+      "java": 32,
+      "java": 45,
       "java": 1,
       "java": 10,
       "java": 109,
@@ -2056,7 +2117,7 @@
       "java": 8,
       "java": 20,
       "java": 6,
-      "java": 79,
+      "java": 74,
       "java": 3,
       "java": 8,
       "java": 66
@@ -2085,7 +2146,7 @@
       "java": 56,
       "java": 66,
       "java": 46,
-      "java": 31,
+      "java": 32,
       "java": 31,
       "java": 5,
       "java": 15,
@@ -2182,7 +2243,7 @@
       "java": 3,
       "java": 60,
       "java": 9,
-      "java": 6,
+      "java": 7,
       "java": 8,
       "java": 15,
       "java": 2,
@@ -2203,16 +2264,16 @@
       "java": 84,
       "java": 273,
       "java": 159,
-      "java": 11,
+      "java": 10,
       "java": 69
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 25568.465,
-    "joloong": 279838.0,
-    "dingyuchen": 39076.88,
-    "wallacelim97": 10485.724,
-    "Berttwm": 39940.684
+    "yewon0303": 30382.768,
+    "joloong": 279837.94,
+    "dingyuchen": 39076.887,
+    "wallacelim97": 10485.726,
+    "Berttwm": 39940.68
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
