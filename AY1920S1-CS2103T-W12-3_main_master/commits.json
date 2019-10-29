@@ -1164,6 +1164,69 @@
             "deletions": 13
           }
         ]
+      },
+      {
+        "insertions": 86,
+        "deletions": 78,
+        "date": "2019-10-28",
+        "commitResults": [
+          {
+            "hash": "11582aa9d5586aadfde5d0866de7c1874641880d",
+            "messageTitle": "Update README",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 0
+          },
+          {
+            "hash": "371805efb8f91b8476e09a9809c38ca87a87d24f",
+            "messageTitle": "Update developer guide",
+            "messageBody": "",
+            "insertions": 85,
+            "deletions": 78
+          }
+        ]
+      },
+      {
+        "insertions": 121,
+        "deletions": 62,
+        "date": "2019-10-29",
+        "commitResults": [
+          {
+            "hash": "7d0abcc1b8e91ec6867f62ee641857a17154f18e",
+            "messageTitle": "Add class diagram for filter",
+            "messageBody": "",
+            "insertions": 58,
+            "deletions": 14
+          },
+          {
+            "hash": "9ea0c42d70f2aa661409fc782cda039945f864d1",
+            "messageTitle": "Fix new line error",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "de56843180bb1ee8ac5370d248a2ca81fbc19a47",
+            "messageTitle": "Add more info to developer guide",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 9
+          },
+          {
+            "hash": "d534420da343eaf3894b8266145eefccdc9b500d",
+            "messageTitle": "Update UserGuide",
+            "messageBody": "",
+            "insertions": 37,
+            "deletions": 23
+          },
+          {
+            "hash": "a0a8196aa91a3ae775af63dbc54e63be29751e73",
+            "messageTitle": "Update UserGuide",
+            "messageBody": "",
+            "insertions": 17,
+            "deletions": 15
+          }
+        ]
       }
     ],
     "dingyuchen": [
@@ -1895,16 +1958,16 @@
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1780,
-    "joloong": 3830,
+    "yewon0303": 1729,
+    "joloong": 3974,
     "dingyuchen": 1207,
-    "wallacelim97": 502,
-    "Berttwm": 1221
+    "wallacelim97": 487,
+    "Berttwm": 1212
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
-      "adoc": 156,
-      "adoc": 99,
+      "adoc": 133,
+      "adoc": 71,
       "puml": 3,
       "puml": 14,
       "puml": 11,
@@ -1973,16 +2036,17 @@
       "fxml": 1
     },
     "joloong": {
-      "adoc": 4,
+      "adoc": 5,
       "json": 39,
       "gradle": 3,
       "adoc": 11,
-      "adoc": 53,
+      "adoc": 140,
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
-      "adoc": 10,
+      "adoc": 61,
       "puml": 82,
+      "drawio": 1,
       "java": 6,
       "java": 2,
       "java": 23,
@@ -2035,7 +2099,7 @@
       "java": 19,
       "java": 8,
       "java": 55,
-      "java": 44,
+      "java": 48,
       "java": 12,
       "java": 11,
       "java": 7,
@@ -2124,8 +2188,8 @@
     },
     "dingyuchen": {
       "gitignore": 6,
-      "adoc": 20,
-      "adoc": 16,
+      "adoc": 25,
+      "adoc": 11,
       "java": 15,
       "java": 17,
       "java": 13,
@@ -2197,7 +2261,7 @@
       "java": 21
     },
     "wallacelim97": {
-      "adoc": 43,
+      "adoc": 28,
       "puml": 93,
       "java": 3,
       "java": 4,
@@ -2224,8 +2288,8 @@
       "java": 2
     },
     "Berttwm": {
-      "adoc": 13,
-      "adoc": 5,
+      "adoc": 2,
+      "adoc": 7,
       "java": 1,
       "java": 1,
       "java": 3,
@@ -2270,10 +2334,10 @@
   },
   "authorContributionVariance": {
     "yewon0303": 30382.768,
-    "joloong": 279837.94,
+    "joloong": 275295.4,
     "dingyuchen": 39076.887,
     "wallacelim97": 10485.726,
-    "Berttwm": 39940.68
+    "Berttwm": 39940.676
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
