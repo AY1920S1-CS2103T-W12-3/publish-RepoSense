@@ -296,8 +296,8 @@
         ]
       },
       {
-        "insertions": 271,
-        "deletions": 176,
+        "insertions": 289,
+        "deletions": 189,
         "date": "2019-10-24",
         "commitResults": [
           {
@@ -355,6 +355,13 @@
             "messageBody": "",
             "insertions": 61,
             "deletions": 31
+          },
+          {
+            "hash": "2f76eea34069b1d1de8337af716c8544b680bc1c",
+            "messageTitle": "Fix grammar errors on UG",
+            "messageBody": "",
+            "insertions": 18,
+            "deletions": 13
           }
         ]
       },
@@ -411,6 +418,34 @@
             "messageBody": "",
             "insertions": 15,
             "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 41,
+        "deletions": 45,
+        "date": "2019-10-29",
+        "commitResults": [
+          {
+            "hash": "83fa4b708ea22077bc91cd4ce9aa28f5988d6c40",
+            "messageTitle": "Fix merge conflict in Developerguide",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 13
+          },
+          {
+            "hash": "f0798671e9214daaf5acc73e0d4235e55a75c392",
+            "messageTitle": "Update UserGuide to ensure consistency in language and grammar structure. Review the examples and formats for each command.",
+            "messageBody": "",
+            "insertions": 33,
+            "deletions": 30
+          },
+          {
+            "hash": "517804628623709fc0a22d8cab20f9a89b3476a6",
+            "messageTitle": "Update UserGuide Set Command description",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 2
           }
         ]
       }
@@ -2005,8 +2040,8 @@
         ]
       },
       {
-        "insertions": 15,
-        "deletions": 1,
+        "insertions": 76,
+        "deletions": 27,
         "date": "2019-10-29",
         "commitResults": [
           {
@@ -2015,22 +2050,43 @@
             "messageBody": "",
             "insertions": 15,
             "deletions": 1
+          },
+          {
+            "hash": "f65c805eb665fb0c6ac9528e6b485cc7ef7c4655",
+            "messageTitle": "Updated UG for `Update` and `Delete`",
+            "messageBody": "",
+            "insertions": 20,
+            "deletions": 17
+          },
+          {
+            "hash": "c3164db6df357315ea62922ce4c2309d0960cfe3",
+            "messageTitle": "Update UG for In/Out/Update/Delete",
+            "messageBody": "",
+            "insertions": 7,
+            "deletions": 5
+          },
+          {
+            "hash": "96ecd0d93ce7ca05c4fbfe0ab1052fb5925a4eda",
+            "messageTitle": "DG updated for update and delete",
+            "messageBody": "",
+            "insertions": 34,
+            "deletions": 4
           }
         ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1729,
-    "joloong": 3909,
-    "dingyuchen": 1570,
+    "yewon0303": 1761,
+    "joloong": 3915,
+    "dingyuchen": 1568,
     "wallacelim97": 486,
-    "Berttwm": 1213
+    "Berttwm": 1253
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
-      "adoc": 133,
-      "adoc": 76,
+      "adoc": 147,
+      "adoc": 94,
       "puml": 3,
       "puml": 14,
       "puml": 11,
@@ -2102,11 +2158,11 @@
       "json": 39,
       "gradle": 3,
       "adoc": 11,
-      "adoc": 141,
+      "adoc": 154,
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
-      "adoc": 56,
+      "adoc": 49,
       "puml": 82,
       "drawio": 1,
       "java": 6,
@@ -2251,7 +2307,7 @@
     "dingyuchen": {
       "gitignore": 6,
       "adoc": 33,
-      "adoc": 12,
+      "adoc": 10,
       "puml": 51,
       "puml": 3,
       "java": 15,
@@ -2362,8 +2418,8 @@
       "java": 2
     },
     "Berttwm": {
-      "adoc": 2,
-      "adoc": 21,
+      "adoc": 30,
+      "adoc": 33,
       "java": 1,
       "java": 1,
       "java": 3,
@@ -2407,11 +2463,11 @@
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 30382.768,
+    "yewon0303": 30886.59,
     "joloong": 275225.94,
     "dingyuchen": 50406.934,
     "wallacelim97": 10485.726,
-    "Berttwm": 39880.945
+    "Berttwm": 39835.87
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
