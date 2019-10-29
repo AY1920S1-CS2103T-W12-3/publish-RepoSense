@@ -1187,8 +1187,8 @@
         ]
       },
       {
-        "insertions": 121,
-        "deletions": 62,
+        "insertions": 123,
+        "deletions": 64,
         "date": "2019-10-29",
         "commitResults": [
           {
@@ -1225,6 +1225,13 @@
             "messageBody": "",
             "insertions": 17,
             "deletions": 15
+          },
+          {
+            "hash": "25a5e4f67fc327a47e93c754e43f5ea81e44ac2d",
+            "messageTitle": "Fix minor naming differences",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 2
           }
         ]
       }
@@ -1444,6 +1451,41 @@
             "messageBody": "",
             "insertions": 47,
             "deletions": 7
+          }
+        ]
+      },
+      {
+        "insertions": 487,
+        "deletions": 203,
+        "date": "2019-10-29",
+        "commitResults": [
+          {
+            "hash": "1e51ccd28058dd53d09bd0f15063599192591347",
+            "messageTitle": "Implement LedgerOperationBuilder",
+            "messageBody": "",
+            "insertions": 197,
+            "deletions": 80
+          },
+          {
+            "hash": "ddf74c8a2b32d617bf4765143fdc1ac4ba5a930e",
+            "messageTitle": "Fix UniqueTransactionListTest",
+            "messageBody": "",
+            "insertions": 24,
+            "deletions": 20
+          },
+          {
+            "hash": "c235146db27dc1432cd3b6c1941ccf4cce50f940",
+            "messageTitle": "Add test for LendMoney",
+            "messageBody": "",
+            "insertions": 103,
+            "deletions": 39
+          },
+          {
+            "hash": "0441e148877a1b74ec886e0cb87e1bff6d00a938",
+            "messageTitle": "Update UML diagrams and fix checkstyle errors",
+            "messageBody": "",
+            "insertions": 163,
+            "deletions": 64
           }
         ]
       }
@@ -1958,11 +2000,11 @@
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1729,
-    "joloong": 3974,
-    "dingyuchen": 1207,
-    "wallacelim97": 487,
-    "Berttwm": 1212
+    "yewon0303": 1724,
+    "joloong": 3914,
+    "dingyuchen": 1569,
+    "wallacelim97": 486,
+    "Berttwm": 1199
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
@@ -1971,7 +2013,7 @@
       "puml": 3,
       "puml": 14,
       "puml": 11,
-      "puml": 110,
+      "puml": 106,
       "puml": 10,
       "puml": 16,
       "java": 3,
@@ -2031,7 +2073,6 @@
       "java": 2,
       "java": 4,
       "java": 68,
-      "java": 1,
       "java": 9,
       "fxml": 1
     },
@@ -2040,7 +2081,7 @@
       "json": 39,
       "gradle": 3,
       "adoc": 11,
-      "adoc": 140,
+      "adoc": 141,
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
@@ -2090,7 +2131,7 @@
       "java": 10,
       "java": 109,
       "java": 58,
-      "java": 13,
+      "java": 11,
       "java": 58,
       "java": 2,
       "java": 14,
@@ -2137,10 +2178,10 @@
       "java": 18,
       "java": 1,
       "java": 34,
-      "java": 12,
+      "java": 11,
       "java": 9,
       "java": 20,
-      "java": 42,
+      "java": 41,
       "java": 30,
       "java": 2,
       "java": 72,
@@ -2162,7 +2203,7 @@
       "java": 35,
       "java": 113,
       "java": 36,
-      "java": 116,
+      "java": 101,
       "java": 62,
       "java": 43,
       "java": 62,
@@ -2170,26 +2211,28 @@
       "java": 6,
       "java": 2,
       "java": 4,
-      "java": 82,
-      "java": 171,
+      "java": 74,
+      "java": 145,
       "java": 4,
       "java": 115,
       "java": 51,
       "java": 4,
       "java": 14,
       "java": 31,
-      "java": 8,
+      "java": 67,
+      "java": 7,
       "java": 20,
       "java": 6,
-      "java": 74,
       "java": 3,
       "java": 8,
       "java": 66
     },
     "dingyuchen": {
       "gitignore": 6,
-      "adoc": 25,
+      "adoc": 33,
       "adoc": 11,
+      "puml": 51,
+      "puml": 3,
       "java": 15,
       "java": 17,
       "java": 13,
@@ -2217,20 +2260,20 @@
       "java": 27,
       "java": 1,
       "java": 9,
-      "java": 34,
-      "java": 9,
-      "java": 23,
+      "java": 42,
+      "java": 16,
+      "java": 27,
       "java": 19,
       "java": 9,
-      "java": 17,
-      "java": 35,
+      "java": 21,
+      "java": 36,
       "java": 10,
-      "java": 39,
+      "java": 47,
       "java": 35,
-      "java": 71,
+      "java": 76,
       "java": 15,
       "java": 11,
-      "java": 97,
+      "java": 101,
       "java": 10,
       "java": 20,
       "java": 1,
@@ -2245,23 +2288,33 @@
       "fxml": 1,
       "fxml": 33,
       "fxml": 7,
-      "java": 1,
-      "java": 4,
+      "java": 2,
+      "java": 6,
+      "java": 3,
+      "java": 30,
+      "java": 5,
       "java": 3,
       "java": 25,
-      "java": 35,
       "java": 2,
       "java": 2,
       "java": 2,
       "java": 1,
+      "java": 30,
+      "java": 24,
+      "java": 4,
+      "java": 4,
+      "java": 8,
+      "java": 26,
       "java": 1,
       "java": 4,
+      "java": 12,
+      "java": 138,
+      "java": 11,
       "java": 3,
-      "java": 4,
       "java": 21
     },
     "wallacelim97": {
-      "adoc": 28,
+      "adoc": 27,
       "puml": 93,
       "java": 3,
       "java": 4,
@@ -2325,17 +2378,17 @@
       "java": 19,
       "java": 3,
       "java": 1,
-      "java": 84,
-      "java": 273,
-      "java": 159,
+      "java": 79,
+      "java": 268,
+      "java": 156,
       "java": 10,
       "java": 69
     }
   },
   "authorContributionVariance": {
     "yewon0303": 30382.768,
-    "joloong": 275295.4,
-    "dingyuchen": 39076.887,
+    "joloong": 275266.88,
+    "dingyuchen": 50406.934,
     "wallacelim97": 10485.726,
     "Berttwm": 39940.676
   },
