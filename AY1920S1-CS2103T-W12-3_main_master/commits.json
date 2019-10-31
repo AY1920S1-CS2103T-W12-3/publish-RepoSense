@@ -448,6 +448,20 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 12,
+        "deletions": 6,
+        "date": "2019-10-31",
+        "commitResults": [
+          {
+            "hash": "b4aca194dbb0221c44ef166bd3f70bf4f1f5818f",
+            "messageTitle": "Update SetCommand section",
+            "messageBody": "",
+            "insertions": 12,
+            "deletions": 6
+          }
+        ]
       }
     ],
     "joloong": [
@@ -1276,6 +1290,27 @@
             "deletions": 3
           }
         ]
+      },
+      {
+        "insertions": 69,
+        "deletions": 38,
+        "date": "2019-10-31",
+        "commitResults": [
+          {
+            "hash": "b4ae64a7e9cf2fa69d79e3a09cfa461979b295c9",
+            "messageTitle": "Merge UG/DG updates",
+            "messageBody": "",
+            "insertions": 68,
+            "deletions": 37
+          },
+          {
+            "hash": "eb9249a47e7fe4be739d47b30634d18283f5f6c2",
+            "messageTitle": "Add new line",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "dingyuchen": [
@@ -2073,20 +2108,76 @@
             "deletions": 4
           }
         ]
+      },
+      {
+        "insertions": 97,
+        "deletions": 15,
+        "date": "2019-10-31",
+        "commitResults": [
+          {
+            "hash": "d3a7c1e53fb9d5b03de90a99360cc887364790a3",
+            "messageTitle": "Parser to handle amounts bigger than 1 billion",
+            "messageBody": "",
+            "insertions": 15,
+            "deletions": 1
+          },
+          {
+            "hash": "b1e42dfa8eb140848f5ea53c8b59ceffe61907cd",
+            "messageTitle": "SetCommand to handle amounts bigger than 1 billion",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 0
+          },
+          {
+            "hash": "5f8d8a5627002cd080e8f6132dc63b2df7093bbc",
+            "messageTitle": "Update In/Out/Set command to handle values larger than 1 bil",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 4
+          },
+          {
+            "hash": "336139677dd99c9b5a5d242144bf0ca228d4b926",
+            "messageTitle": "UpdateCommand to handle values larger than 1 billion",
+            "messageBody": "",
+            "insertions": 7,
+            "deletions": 0
+          },
+          {
+            "hash": "928ece27a0b0adce1a8f51d90cc5aa09f59c2298",
+            "messageTitle": "Updated In/Out/Set/Update commands to handle negative values",
+            "messageBody": "",
+            "insertions": 31,
+            "deletions": 7
+          },
+          {
+            "hash": "a1163fd82882ff7bd5a46033b662451b0628bc89",
+            "messageTitle": "Updated UG for amount values",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 3
+          },
+          {
+            "hash": "82ddacdf078b721a249e0e2a97a833bdd5465839",
+            "messageTitle": "Handles 0 amounts",
+            "messageBody": "",
+            "insertions": 31,
+            "deletions": 0
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1761,
-    "joloong": 3915,
-    "dingyuchen": 1568,
+    "yewon0303": 1746,
+    "joloong": 3980,
+    "dingyuchen": 1561,
     "wallacelim97": 486,
-    "Berttwm": 1253
+    "Berttwm": 1337
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
       "adoc": 147,
-      "adoc": 94,
+      "adoc": 79,
       "puml": 3,
       "puml": 14,
       "puml": 11,
@@ -2158,12 +2249,13 @@
       "json": 39,
       "gradle": 3,
       "adoc": 11,
-      "adoc": 154,
+      "adoc": 171,
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
-      "adoc": 49,
+      "adoc": 96,
       "puml": 82,
+      "drawio": 1,
       "drawio": 1,
       "java": 6,
       "java": 2,
@@ -2307,7 +2399,7 @@
     "dingyuchen": {
       "gitignore": 6,
       "adoc": 33,
-      "adoc": 10,
+      "adoc": 3,
       "puml": 51,
       "puml": 3,
       "java": 15,
@@ -2419,23 +2511,24 @@
     },
     "Berttwm": {
       "adoc": 30,
-      "adoc": 33,
+      "adoc": 36,
       "java": 1,
       "java": 1,
-      "java": 3,
-      "java": 53,
+      "java": 6,
+      "java": 56,
       "java": 1,
-      "java": 1,
+      "java": 4,
       "java": 1,
       "java": 22,
-      "java": 191,
+      "java": 194,
       "java": 20,
-      "java": 3,
-      "java": 52,
+      "java": 21,
+      "java": 67,
+      "java": 4,
       "java": 15,
-      "java": 1,
+      "java": 17,
       "java": 3,
-      "java": 60,
+      "java": 76,
       "java": 9,
       "java": 7,
       "java": 8,
@@ -2463,11 +2556,11 @@
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 30886.59,
-    "joloong": 275225.94,
-    "dingyuchen": 50406.934,
-    "wallacelim97": 10485.726,
-    "Berttwm": 39835.87
+    "yewon0303": 30075.244,
+    "joloong": 267704.7,
+    "dingyuchen": 49144.324,
+    "wallacelim97": 10191.463,
+    "Berttwm": 38647.15
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
