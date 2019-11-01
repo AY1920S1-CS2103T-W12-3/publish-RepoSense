@@ -450,8 +450,8 @@
         ]
       },
       {
-        "insertions": 12,
-        "deletions": 6,
+        "insertions": 14,
+        "deletions": 7,
         "date": "2019-10-31",
         "commitResults": [
           {
@@ -460,6 +460,41 @@
             "messageBody": "",
             "insertions": 12,
             "deletions": 6
+          },
+          {
+            "hash": "d982bd4afc6d0a59cdc1556fccd333da2739a802",
+            "messageTitle": "Update SetCommand section",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 10,
+        "deletions": 10,
+        "date": "2019-11-01",
+        "commitResults": [
+          {
+            "hash": "6e9b141528136adda899ad51845d63bb3a2658e4",
+            "messageTitle": "Update UserGuide to indicate (V1.4) feature",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "dfe5cc67691b468f1732e02e7dda041b5aaaac43",
+            "messageTitle": "Indicate features that are only available in V1.4",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 8
+          },
+          {
+            "hash": "5e52392123945f2e77b9c04ed25bace9ba7ac996",
+            "messageTitle": "REmove trailing whitespace",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
           }
         ]
       }
@@ -1565,6 +1600,20 @@
             "deletions": 64
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-11-01",
+        "commitResults": [
+          {
+            "hash": "638c0aa00a2e100aeb97810b503d3bb4a8a9f081",
+            "messageTitle": "Indicate Split is WIP",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "wallacelim97": [
@@ -2168,16 +2217,16 @@
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1746,
-    "joloong": 3980,
-    "dingyuchen": 1561,
+    "yewon0303": 1762,
+    "joloong": 3978,
+    "dingyuchen": 1562,
     "wallacelim97": 486,
-    "Berttwm": 1337
+    "Berttwm": 1332
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
       "adoc": 147,
-      "adoc": 79,
+      "adoc": 95,
       "puml": 3,
       "puml": 14,
       "puml": 11,
@@ -2253,7 +2302,7 @@
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
-      "adoc": 96,
+      "adoc": 94,
       "puml": 82,
       "drawio": 1,
       "drawio": 1,
@@ -2399,7 +2448,7 @@
     "dingyuchen": {
       "gitignore": 6,
       "adoc": 33,
-      "adoc": 3,
+      "adoc": 4,
       "puml": 51,
       "puml": 3,
       "java": 15,
@@ -2511,7 +2560,7 @@
     },
     "Berttwm": {
       "adoc": 30,
-      "adoc": 36,
+      "adoc": 31,
       "java": 1,
       "java": 1,
       "java": 6,
@@ -2556,9 +2605,9 @@
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 30075.244,
-    "joloong": 267704.7,
-    "dingyuchen": 49144.324,
+    "yewon0303": 29965.738,
+    "joloong": 267704.72,
+    "dingyuchen": 49132.125,
     "wallacelim97": 10191.463,
     "Berttwm": 38647.15
   },
