@@ -240,7 +240,7 @@
       {
         "lineNumber": 6,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
         "content": "https://app.netlify.com/sites/gitgud-palpay/deploys[image:https://api.netlify.com/api/v1/badges/7fa7e814-fc6b-484b-885b-9b3fa95579b1/deploy-status[Netlify Status]]"
       },
@@ -456,8 +456,8 @@
       }
     ],
     "authorContributionMap": {
-      "joloong": 5,
-      "-": 31
+      "joloong": 4,
+      "-": 32
     }
   },
   {
@@ -10658,7 +10658,7 @@
         "author": {
           "gitId": "joloong"
         },
-        "content": "Shows all possible views +"
+        "content": "Want to switch tabs without using your mouse? You can switch to another tab with the `view` command. +"
       },
       {
         "lineNumber": 169,
@@ -10686,28 +10686,28 @@
         "author": {
           "gitId": "joloong"
         },
-        "content": "* `TAB` input only accepts `transaction` and `budget` in v1.3."
+        "content": "* `TAB` input only accepts `transaction`, `budget` and `ledger` in v1.4."
       },
       {
         "lineNumber": 173,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "* `view transaction` shows a list of all your transactions."
+        "content": "****"
       },
       {
         "lineNumber": 174,
         "author": {
-          "gitId": "joloong"
+          "gitId": "-"
         },
-        "content": "* `view budget` shows a list of all your budgets."
+        "content": ""
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "-"
         },
-        "content": "****"
+        "content": "Examples:"
       },
       {
         "lineNumber": 176,
@@ -10719,135 +10719,135 @@
       {
         "lineNumber": 177,
         "author": {
-          "gitId": "-"
-        },
-        "content": "Examples:"
-      },
-      {
-        "lineNumber": 178,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 179,
-        "author": {
           "gitId": "joloong"
         },
         "content": "* `view transaction`"
       },
       {
-        "lineNumber": 180,
+        "lineNumber": 178,
         "author": {
           "gitId": "joloong"
         },
         "content": "* `view budget`"
       },
       {
-        "lineNumber": 181,
+        "lineNumber": 179,
         "author": {
           "gitId": "joloong"
         },
         "content": "// end::view[]"
       },
       {
-        "lineNumber": 182,
+        "lineNumber": 180,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 183,
+        "lineNumber": 181,
         "author": {
           "gitId": "-"
         },
         "content": "// tag::delete[]"
       },
       {
-        "lineNumber": 184,
+        "lineNumber": 182,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "\u003d\u003d\u003d Deleting Finance : `delete`"
       },
       {
-        "lineNumber": 185,
+        "lineNumber": 183,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 186,
+        "lineNumber": 184,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "Deletes the specified Transaction or Budget from the finance manager. +"
       },
       {
-        "lineNumber": 187,
+        "lineNumber": 185,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "Format: `delete TYPE+INDEX`"
       },
       {
-        "lineNumber": 188,
+        "lineNumber": 186,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 189,
+        "lineNumber": 187,
         "author": {
           "gitId": "-"
         },
         "content": "****"
       },
       {
-        "lineNumber": 190,
+        "lineNumber": 188,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "* `INDEX` refers to the target item number. (Items are sorted starting from the **latest** input added)"
       },
       {
-        "lineNumber": 191,
+        "lineNumber": 189,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "* `TYPE` only accepts `t` (Transaction) or `b` (Budget). (e.g. `delete b1` refers to deleting an *Budget* of index 1)"
       },
       {
-        "lineNumber": 192,
+        "lineNumber": 190,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "* `TYPE+INDEX` requires the TYPE and INDEX to be placed in sequential order (e.g. `delete b 1` or `delete 1` or `delete 1b` will not work)"
       },
       {
-        "lineNumber": 193,
+        "lineNumber": 191,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "* You can only delete an existing transaction or budget. Nothing will be deleted if the transaction or budget with `INDEX` does not exists."
       },
       {
-        "lineNumber": 194,
+        "lineNumber": 192,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "* Example: `delete t1` will delete the first transaction from the list of transactions."
       },
       {
-        "lineNumber": 195,
+        "lineNumber": 193,
         "author": {
           "gitId": "-"
         },
         "content": "****"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Examples:"
       },
       {
         "lineNumber": 196,
@@ -10859,30 +10859,30 @@
       {
         "lineNumber": 197,
         "author": {
-          "gitId": "-"
+          "gitId": "Berttwm"
         },
-        "content": "Examples:"
+        "content": "* `delete t1`"
       },
       {
         "lineNumber": 198,
+        "author": {
+          "gitId": "Berttwm"
+        },
+        "content": "* `delete b3`"
+      },
+      {
+        "lineNumber": 199,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 199,
-        "author": {
-          "gitId": "Berttwm"
-        },
-        "content": "* `delete t1`"
-      },
-      {
         "lineNumber": 200,
         "author": {
           "gitId": "Berttwm"
         },
-        "content": "* `delete b3`"
+        "content": "\u003d\u003d\u003d Updating Finance : `update`"
       },
       {
         "lineNumber": 201,
@@ -10894,100 +10894,100 @@
       {
         "lineNumber": 202,
         "author": {
-          "gitId": "Berttwm"
-        },
-        "content": "\u003d\u003d\u003d Updating Finance : `update`"
-      },
-      {
-        "lineNumber": 203,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 204,
-        "author": {
           "gitId": "-"
         },
         "content": "Updates the specified income or expenditure from the finance manager. +"
       },
       {
-        "lineNumber": 205,
+        "lineNumber": 203,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "Format: `update TYPE+INDEX [$/AMOUNT] [d/date] [n/ITEM] [c/CATEGORY]`"
       },
       {
-        "lineNumber": 206,
+        "lineNumber": 204,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 207,
+        "lineNumber": 205,
         "author": {
           "gitId": "-"
         },
         "content": "****"
       },
       {
-        "lineNumber": 208,
+        "lineNumber": 206,
         "author": {
           "gitId": "joloong"
         },
         "content": "* `AMOUNT` accepts a non-negative value less than or equal to 1,000,000 to update the target Transaction or Budget"
       },
       {
-        "lineNumber": 209,
+        "lineNumber": 207,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "* `INDEX` refers to the target item number. (Items are sorted starting from the **latest** input added)"
       },
       {
-        "lineNumber": 210,
+        "lineNumber": 208,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "* `TYPE` only accepts `t` (Transaction) or `b` (Budget). (e.g. `update b1 ...` refers to updating a *Budget* of index 1)"
       },
       {
-        "lineNumber": 211,
+        "lineNumber": 209,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "* `TYPE+INDEX` requires the TYPE and INDEX to be placed in sequential order (e.g. `update b 1 ..` or `update 1 ..` or `update 1b ..` will not work)"
       },
       {
-        "lineNumber": 212,
+        "lineNumber": 210,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "* `update` requires at least one field to be updated but also allows more than one field to be updated (e.g. `update t1 $/20 d/10102019 n/milk` and `update t1 $/10` will both be accepted but `update t1` will not be accepted)."
       },
       {
-        "lineNumber": 213,
+        "lineNumber": 211,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "* You can only update an existing transaction or budget. Nothing will be updated if the transaction or budget with `INDEX` does not exists."
       },
       {
-        "lineNumber": 214,
+        "lineNumber": 212,
         "author": {
           "gitId": "yewon0303"
         },
         "content": "* Example: `update t1 $/3000 d/10102019` will update the first transaction from the list of transactions by changing it\u0027s *Amount* to $1000 and *Date* to 10/10/2019."
       },
       {
-        "lineNumber": 215,
+        "lineNumber": 213,
         "author": {
           "gitId": "-"
         },
         "content": "****"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Examples:"
       },
       {
         "lineNumber": 216,
@@ -10999,72 +10999,72 @@
       {
         "lineNumber": 217,
         "author": {
-          "gitId": "-"
-        },
-        "content": "Examples:"
-      },
-      {
-        "lineNumber": 218,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 219,
-        "author": {
           "gitId": "Berttwm"
         },
         "content": "* `update t1 $/20 n/coke c/drinks d/12122019`"
       },
       {
-        "lineNumber": 220,
+        "lineNumber": 218,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "* `update b2 $/300`"
       },
       {
-        "lineNumber": 221,
+        "lineNumber": 219,
         "author": {
           "gitId": "Berttwm"
         },
         "content": "* `update t4 $/30 d/12102019`"
       },
       {
-        "lineNumber": 222,
+        "lineNumber": 220,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 223,
+        "lineNumber": 221,
         "author": {
           "gitId": "joloong"
         },
         "content": "// tag::sort[]"
       },
       {
-        "lineNumber": 224,
+        "lineNumber": 222,
         "author": {
           "gitId": "joloong"
         },
         "content": "\u003d\u003d\u003d Sorting Transactions : `sort`"
       },
       {
-        "lineNumber": 225,
+        "lineNumber": 223,
         "author": {
           "gitId": "joloong"
         },
         "content": ""
       },
       {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "Have you ever wonder which is the most expensive transaction you ever made?"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "Or wondered which is the latest transaction you made? Fret not!"
+      },
+      {
         "lineNumber": 226,
         "author": {
           "gitId": "joloong"
         },
-        "content": "Sorts all transactions with given `PREDICATE` +"
+        "content": "You can now `sort` your transactions according to `date` or `amount`. +"
       },
       {
         "lineNumber": 227,
@@ -11181,9 +11181,9 @@
       {
         "lineNumber": 243,
         "author": {
-          "gitId": "yewon0303"
+          "gitId": "joloong"
         },
-        "content": "Shows all relevant transactions with given `CATEGORY` +"
+        "content": "PalPay gives you the power to filter your transactions with your desired `CATEGORY`. +"
       },
       {
         "lineNumber": 244,
@@ -11873,8 +11873,8 @@
       }
     ],
     "authorContributionMap": {
-      "yewon0303": 87,
-      "joloong": 102,
+      "yewon0303": 86,
+      "joloong": 103,
       "dingyuchen": 10,
       "wallacelim97": 4,
       "Berttwm": 27,
@@ -23799,7 +23799,7 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        Projection projection \u003d new Projection(transactionHistory, date, model);"
+        "content": "        Projection projection \u003d new Projection(transactionHistory, date);"
       },
       {
         "lineNumber": 54,
@@ -24574,7 +24574,7 @@
         "author": {
           "gitId": "joloong"
         },
-        "content": " * Lists all persons in the address book to the user."
+        "content": " * Sorts all transactions in the bank account to the user."
       },
       {
         "lineNumber": 13,
@@ -27319,98 +27319,98 @@
         "author": {
           "gitId": "joloong"
         },
-        "content": "import seedu.address.model.Model;"
+        "content": "import static java.util.Objects.requireNonNull;"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "joloong"
         },
-        "content": "import seedu.address.ui.tab.Tab;"
+        "content": ""
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "import seedu.address.model.Model;"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "joloong"
         },
-        "content": "/**"
+        "content": "import seedu.address.ui.tab.Tab;"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "joloong"
         },
-        "content": " * Views the different kind of modes in PalPay."
+        "content": ""
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "joloong"
         },
-        "content": " */"
+        "content": "/**"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "joloong"
         },
-        "content": "public class ViewCommand extends Command {"
+        "content": " * Views the different kind of modes in PalPay."
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    public static final String COMMAND_WORD \u003d \"view\";"
+        "content": " */"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "public class ViewCommand extends Command {"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    public static final String MESSAGE_USAGE \u003d ViewCommand.COMMAND_WORD + \": View the bank account.\\n\""
+        "content": "    public static final String COMMAND_WORD \u003d \"view\";"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        + \"Parameter: SIMI\\n\""
+        "content": ""
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        + \"Example: \" + ViewCommand.COMMAND_WORD + \" transaction\";"
+        "content": "    public static final String MESSAGE_USAGE \u003d ViewCommand.COMMAND_WORD + \": View the bank account.\\n\""
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "        + \"Parameter: SIMI\\n\""
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    public static final String MESSAGE_SUCCESS \u003d \"Tab switched!\";"
+        "content": "        + \"Example: \" + ViewCommand.COMMAND_WORD + \" transaction\";"
       },
       {
         "lineNumber": 17,
@@ -27424,7 +27424,7 @@
         "author": {
           "gitId": "joloong"
         },
-        "content": "    private final Tab tab;"
+        "content": "    public static final String MESSAGE_SUCCESS \u003d \"Tab switched!\";"
       },
       {
         "lineNumber": 19,
@@ -27438,59 +27438,80 @@
         "author": {
           "gitId": "joloong"
         },
-        "content": "    public ViewCommand(Tab tab) {"
+        "content": "    private final Tab tab;"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        this.tab \u003d tab;"
+        "content": ""
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    }"
+        "content": "    public ViewCommand(Tab tab) {"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "        this.tab \u003d tab;"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    @Override"
+        "content": "    }"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    public CommandResult execute(Model model) {"
+        "content": ""
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        return new CommandResult(MESSAGE_SUCCESS, false, false, tab);"
+        "content": "    @Override"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    }"
+        "content": "    public CommandResult execute(Model model) {"
       },
       {
         "lineNumber": 28,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        requireNonNull(model);"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        return new CommandResult(MESSAGE_SUCCESS, false, false, tab);"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 31,
         "author": {
           "gitId": "joloong"
         },
@@ -27498,7 +27519,7 @@
       }
     ],
     "authorContributionMap": {
-      "joloong": 28
+      "joloong": 31
     }
   },
   {
@@ -32632,7 +32653,7 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "                ArgumentTokenizer.tokenize(userInput, PREFIX_DATE);"
+        "content": "            ArgumentTokenizer.tokenize(userInput, PREFIX_DATE);"
       },
       {
         "lineNumber": 22,
@@ -32653,7 +32674,7 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "                || !argMultimap.getPreamble().isEmpty()) {"
+        "content": "            || !argMultimap.getPreamble().isEmpty()) {"
       },
       {
         "lineNumber": 25,
@@ -32695,115 +32716,101 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        System.out.println(\"checking date\");"
+        "content": "        if (date.compareTo(Date.now()) \u003c\u003d 0) {"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        if (date.compareTo(Date.now()) \u003c\u003d 0) {"
+        "content": "            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_USAGE, ProjectCommand.MESSAGE_INVALID_DATE));"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            System.out.println(\"check failed\");"
+        "content": "        }"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_USAGE, ProjectCommand.MESSAGE_INVALID_DATE));"
+        "content": ""
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        }"
+        "content": "        return new ProjectCommand(date);"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        return new ProjectCommand(date);"
+        "content": ""
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "    /**"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "     * Returns true if none of the prefixes contains empty {@code Optional} values in the given"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    /**"
+        "content": "     * {@code ArgumentMultimap}."
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     * Returns true if none of the prefixes contains empty {@code Optional} values in the given"
+        "content": "     */"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     * {@code ArgumentMultimap}."
+        "content": "    private static boolean arePrefixesPresent(ArgumentMultimap argumentMultimap, Prefix... prefixes) {"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     */"
+        "content": "        return Stream.of(prefixes).allMatch(prefix -\u003e argumentMultimap.getValue(prefix).isPresent());"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private static boolean arePrefixesPresent(ArgumentMultimap argumentMultimap, Prefix... prefixes) {"
-      },
-      {
-        "lineNumber": 44,
-        "author": {
-          "gitId": "wallacelim97"
-        },
-        "content": "        return Stream.of(prefixes).allMatch(prefix -\u003e argumentMultimap.getValue(prefix).isPresent());"
-      },
-      {
-        "lineNumber": 45,
-        "author": {
-          "gitId": "wallacelim97"
-        },
         "content": "    }"
       },
       {
-        "lineNumber": 46,
+        "lineNumber": 44,
         "author": {
           "gitId": "wallacelim97"
         },
@@ -32812,7 +32819,7 @@
     ],
     "authorContributionMap": {
       "dingyuchen": 1,
-      "wallacelim97": 45
+      "wallacelim97": 43
     }
   },
   {
@@ -39967,238 +39974,238 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "import seedu.address.model.transaction.Amount;"
+        "content": "import javafx.stage.Stage;"
       },
       {
         "lineNumber": 5,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "wallacelim97"
         },
-        "content": "import seedu.address.model.transaction.BankAccountOperation;"
+        "content": "import seedu.address.model.transaction.Amount;"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "dingyuchen"
         },
-        "content": "import seedu.address.model.util.Date;"
+        "content": "import seedu.address.model.transaction.BankAccountOperation;"
       },
       {
         "lineNumber": 7,
         "author": {
-          "gitId": "wallacelim97"
+          "gitId": "dingyuchen"
         },
-        "content": "import seedu.address.model.util.GradientDescent;"
+        "content": "import seedu.address.model.util.Date;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "import seedu.address.model.util.GradientDescent;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "/**"
+        "content": ""
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": " * Represents a projection of user\u0027s balance at a set date in the future"
+        "content": "/**"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": " */"
+        "content": " * Represents a projection of user\u0027s balance at a set date in the future\\"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "public class Projection {"
+        "content": " * TODO: implement processData() to process data into 2D matrix before passing into gradient descent"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": " */"
       },
       {
         "lineNumber": 14,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "wallacelim97"
         },
-        "content": "    public final ObservableList\u003cBankAccountOperation\u003e transactionHistory;"
+        "content": "public class Projection {"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    public final Date date;"
+        "content": ""
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    public final Model model;"
+        "content": "    private final ObservableList\u003cBankAccountOperation\u003e transactionHistory;"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private Amount projection;"
+        "content": "    private final Date date;"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "    private Amount projection;"
       },
       {
         "lineNumber": 19,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "wallacelim97"
         },
-        "content": "    public Projection(ObservableList\u003cBankAccountOperation\u003e transactionHistory, Date date, Model model) {"
+        "content": "    private GradientDescent projector;"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        this.transactionHistory \u003d transactionHistory;"
+        "content": ""
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        this.date \u003d date;"
+        "content": "    public Projection(ObservableList\u003cBankAccountOperation\u003e transactionHistory, Date date) {"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        this.model \u003d model;"
+        "content": "        this.transactionHistory \u003d transactionHistory;"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        this.project();"
+        "content": "        this.date \u003d date;"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "        this.project();"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     * Computes projection for specified date based on transactionHistory"
+        "content": "    /**"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     * TODO: Consider using Gradient Descent / Linear Regression to project income"
+        "content": "     * Computes projection for specified date based on transactionHistory"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     * TODO: Explore matrix operations using json, considering switching Tx history to csv"
+        "content": "     * TODO: Consider using Gradient Descent / Linear Regression to project income"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     */"
+        "content": "     * TODO: Explore matrix operations using json, considering switching Tx history to csv"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    public void project() {"
+        "content": "     */"
       },
       {
         "lineNumber": 32,
         "author": {
-          "gitId": "joloong"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "    public void project() {"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        GradientDescent projector \u003d new GradientDescent(this.transactionHistory);"
+        "content": "        double [] balances \u003d extractBalances();"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        int daysToProject \u003d Date.daysBetween(this.date, Date.now());"
+        "content": "        double [] dates \u003d extractDates();"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        // TODO: SLAP or find appropriate rounding method in java library"
+        "content": "        this.projector \u003d new GradientDescent(balances, dates);"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        double projectionAmount \u003d Math.floor(projector.predict(daysToProject) * 100) / 100;"
+        "content": "        int daysToProject \u003d Date.daysBetween(Date.now(), this.date);"
       },
       {
         "lineNumber": 37,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "wallacelim97"
         },
-        "content": "        // System.out.println(projectionAmount);"
+        "content": "        double projectionAmount \u003d Math.round(projector.predict(daysToProject)) / 100.0;"
       },
       {
         "lineNumber": 38,
@@ -40212,66 +40219,262 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "        Stage graph \u003d new ProjectionLineGraph(this);"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "        graph.show();"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    public Amount getProjection() {"
+        "content": "    }"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        return this.projection;"
+        "content": ""
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "    public GradientDescent getProjector() {"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "        return this.projector;"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    public String toString() {"
+        "content": "    }"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        return this.projection.toString();"
+        "content": ""
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "    public String toString() {"
       },
       {
         "lineNumber": 48,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return this.projection.toString();"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     * Populates an array with the number of days from each transaction till the date which this projection is"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     * initialized"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    private double[] extractDates() {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        double[] daysFromNow \u003d new double[this.transactionHistory.size()];"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        for (int i \u003d 0; i \u003c daysFromNow.length; i++) {"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "            daysFromNow[i] \u003d Date.daysBetween(Date.now(), transactionHistory.get(i).getDate());"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return daysFromNow;"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     * Populates an array with the cumulative balance values"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     * at the point of each transaction in {@code transactionHistory}"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    private double[] extractBalances() {"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        double[] balances \u003d new double[this.transactionHistory.size()];"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        double cumulativeBalance \u003d 0;"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        for (int i \u003d 0; i \u003c balances.length; i++) {"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "            cumulativeBalance +\u003d transactionHistory.get(i).getAmount().getIntegerValue();"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "            balances[i] \u003d cumulativeBalance;"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return balances;"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 76,
         "author": {
           "gitId": "wallacelim97"
         },
@@ -40279,9 +40482,563 @@
       }
     ],
     "authorContributionMap": {
-      "joloong": 1,
-      "dingyuchen": 5,
-      "wallacelim97": 42
+      "dingyuchen": 2,
+      "wallacelim97": 74
+    }
+  },
+  {
+    "path": "src/main/java/seedu/address/model/ProjectionLineGraph.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "package seedu.address.model;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "import java.util.stream.IntStream;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "import javafx.scene.Scene;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "import javafx.scene.chart.LineChart;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "import javafx.scene.chart.NumberAxis;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "import javafx.scene.chart.ScatterChart;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "import javafx.scene.chart.XYChart;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "import javafx.scene.layout.StackPane;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "import javafx.stage.Stage;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "import seedu.address.model.util.GradientDescent;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": " * JavaFX class for rendering the projection line + scatter plot graph"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "public class ProjectionLineGraph extends Stage {"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    private GradientDescent gradientDescent;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public ProjectionLineGraph(Projection projection) {"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        this.gradientDescent \u003d projection.getProjector();"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        this.setTitle(\"Balance Projection\");"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        //define the axes"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        final NumberAxis xAxis \u003d new NumberAxis();"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        final NumberAxis yAxis \u003d new NumberAxis();"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        xAxis.setLabel(\"Days From Now\");"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        yAxis.setLabel(\"Balance ($)\");"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        xAxis.setAutoRanging(false);"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        double xUnit \u003d Math.round(gradientDescent.getDataRange() / 10);"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        xAxis.setTickUnit(xUnit);"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        xAxis.setLowerBound(gradientDescent.getMinData() - xUnit);"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        xAxis.setUpperBound(gradientDescent.getMaxData() + xUnit);"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        yAxis.setAutoRanging(false);"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        double yUnit \u003d Math.round(gradientDescent.getOutputRange() / 10);"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        yAxis.setTickUnit(yUnit);"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        yAxis.setLowerBound((gradientDescent.getMinOutput() / yUnit - 1) * yUnit);"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        yAxis.setUpperBound((gradientDescent.getMaxOutput() / yUnit + 1) * yUnit);"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        //creating the chart"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        final ScatterChart\u003cNumber, Number\u003e dataPlot \u003d new ScatterChart\u003c\u003e(xAxis, yAxis);"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        dataPlot.setLegendVisible(false);"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        final LineChart\u003cNumber, Number\u003e projectionLine \u003d new LineChart\u003c\u003e(xAxis, yAxis);"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionLine.setLegendVisible(false);"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionLine.setCreateSymbols(true);"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionLine.setHorizontalGridLinesVisible(false);"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionLine.setVerticalGridLinesVisible(false);"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionLine.getXAxis().setVisible(false);"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionLine.getYAxis().setVisible(false);"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionLine.setTitle(String.format(\"Balance Projection over %.0f days\", gradientDescent.getDataRange()));"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionLine.getStylesheets().addAll(getClass().getResource(\"/view/Chart.css\").toExternalForm());"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        //defining a series"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        XYChart.Series dataSeries \u003d new XYChart.Series();"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        dataSeries.setName(\"Actual Balance\");"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        IntStream.range(0, gradientDescent.getNumInputs()).forEach(x -\u003e"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "                dataSeries.getData().add(new XYChart.Data(gradientDescent.getInputData(x),"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "                        gradientDescent.getActualValue(x)))"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        );"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        XYChart.Series projectionSeries \u003d new XYChart.Series();"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionSeries.setName(\"Projection Line\");"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionSeries.getData().add(new XYChart.Data(gradientDescent.getVariable(), gradientDescent.getResult()));"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionSeries.getData().add(new XYChart.Data(gradientDescent.getMinData(), gradientDescent.getMinOutput()));"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        dataPlot.getData().add(dataSeries);"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        projectionLine.getData().add(projectionSeries);"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        StackPane chart \u003d new StackPane();"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        chart.getChildren().addAll(dataPlot, projectionLine);"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        Scene scene \u003d new Scene(chart, 800, 700);"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        this.setScene(scene);"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "wallacelim97": 78
     }
   },
   {
@@ -57035,30 +57792,30 @@
       {
         "lineNumber": 3,
         "author": {
-          "gitId": "joloong"
+          "gitId": "wallacelim97"
         },
-        "content": "import java.util.stream.IntStream;"
+        "content": "import java.util.stream.DoubleStream;"
       },
       {
         "lineNumber": 4,
         "author": {
-          "gitId": "joloong"
+          "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "import java.util.stream.IntStream;"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "import javafx.collections.ObservableList;"
+        "content": ""
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "import seedu.address.model.transaction.BankAccountOperation;"
+        "content": "import org.apache.commons.math3.exception.MathArithmeticException;"
       },
       {
         "lineNumber": 7,
@@ -57072,21 +57829,21 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "/**"
+        "content": ""
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": " * A utility class for performing 2-variable gradient descent"
+        "content": "/**"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": " * TODO: Add feature normalization"
+        "content": " * A utility class for performing gradient descent for linear regression"
       },
       {
         "lineNumber": 11,
@@ -57114,7 +57871,7 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private static final double LEARNING_RATE \u003d 0.0006;"
+        "content": "    private static final double LEARNING_RATE \u003d 0.001;"
       },
       {
         "lineNumber": 15,
@@ -57135,350 +57892,350 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "    private static final int OUTPUT_SCALE_FACTOR \u003d 100;"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private double theta0;"
+        "content": ""
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private double theta1;"
+        "content": "    private double variable;"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private double[][] data;"
+        "content": "    private double result;"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private int iterations;"
+        "content": "    private final int numInputs;"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private ObservableList\u003cBankAccountOperation\u003e transactionHistory;"
+        "content": "    private double [] inputData;"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "    private double [] actualValues;"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    public GradientDescent(ObservableList\u003cBankAccountOperation\u003e transactionHistory) {"
+        "content": "    private double theta0;"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        this.theta0 \u003d 0;"
+        "content": "    private double theta1;"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        this.theta1 \u003d 0;"
+        "content": "    private double minData;"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        this.iterations \u003d 0;"
+        "content": "    private double maxData;"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        this.transactionHistory \u003d transactionHistory;"
+        "content": "    private double dataMean;"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        this.processData();"
+        "content": "    private double dataRange;"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        this.train();"
+        "content": "    private double minOutput;"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "    private double maxOutput;"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "    private double outputMean;"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    /**"
+        "content": "    private double outputRange;"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     * Populates a 2-column matrix with transaction dates and amounts"
+        "content": "    private int iterations;"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "     */"
+        "content": ""
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    public void processData() {"
+        "content": "    /**"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        this.data \u003d new double[this.transactionHistory.size()][2];"
+        "content": "     * Sole constructor for the Gradient Descent class"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        IntStream.range(0, transactionHistory.size()).forEach(i -\u003e {"
+        "content": "     * @param actualValues the actual values of the target variable (which is to be predicted by the model)"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            BankAccountOperation transaction \u003d transactionHistory.get(i);"
+        "content": "     * @param inputData the values of input variables (which will be used to predict the target variable)"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            this.data[i][0] \u003d Date.daysBetween(transaction.getDate(), Date.now());"
+        "content": "     */"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            this.data[i][1] \u003d transaction.getAmount().getIntegerValue();"
+        "content": "    public GradientDescent(double[] actualValues, double[] inputData) {"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        });"
+        "content": "        this.inputData \u003d inputData;"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "        this.numInputs \u003d this.inputData.length;"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "        this.theta0 \u003d 0;"
       },
       {
         "lineNumber": 45,
         "author": {
-          "gitId": "joloong"
+          "gitId": "wallacelim97"
         },
-        "content": "    /**"
+        "content": "        this.theta1 \u003d 0;"
       },
       {
         "lineNumber": 46,
         "author": {
-          "gitId": "joloong"
+          "gitId": "wallacelim97"
         },
-        "content": "     * TODO"
+        "content": "        this.actualValues \u003d actualValues;"
       },
       {
         "lineNumber": 47,
         "author": {
-          "gitId": "joloong"
+          "gitId": "wallacelim97"
         },
-        "content": "     */"
+        "content": "        this.iterations \u003d 0;"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private double deriveThetaZeroCost() {"
+        "content": "        this.scaleData();"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        Double cost \u003d IntStream.range(0, data[0].length).asDoubleStream().reduce(0, (x, y) -\u003e {"
+        "content": "        this.train();"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            return x + (data[(int) y][0] - predict(data[(int) y][0]));"
+        "content": "    }"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        });"
+        "content": ""
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        return -2 * cost / data[0].length;"
+        "content": "    /**"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "     * Normalise features in data set to optimise gradient descent"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "     */"
       },
       {
         "lineNumber": 55,
         "author": {
-          "gitId": "joloong"
+          "gitId": "wallacelim97"
         },
-        "content": "    /**"
+        "content": "    private void scaleData() {"
       },
       {
         "lineNumber": 56,
         "author": {
-          "gitId": "joloong"
+          "gitId": "wallacelim97"
         },
-        "content": "     * TODO"
+        "content": "        this.dataMean \u003d DoubleStream.of(inputData).sum() / numInputs;"
       },
       {
         "lineNumber": 57,
         "author": {
-          "gitId": "joloong"
+          "gitId": "wallacelim97"
         },
-        "content": "     */"
+        "content": "        this.minData \u003d DoubleStream.of(inputData).min().orElseThrow(MathArithmeticException::new);"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    private double deriveThetaOneCost() {"
+        "content": "        this.maxData \u003d DoubleStream.of(inputData).max().orElseThrow(MathArithmeticException::new);"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        Double cost \u003d IntStream.range(0, data[0].length).asDoubleStream().reduce(0, (x, y) -\u003e {"
+        "content": "        this.dataRange \u003d maxData - minData;"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            return x + (data[(int) y][0] - predict(data[(int) y][0]) * data[(int) y][0]);"
+        "content": "        IntStream.range(0, numInputs).forEach(i -\u003e this.inputData[i] \u003d (this.inputData[i] - dataMean) / dataRange);"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        });"
+        "content": "        this.outputMean \u003d DoubleStream.of(actualValues).sum() / numInputs;"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        return -2 * cost / data[0].length;"
+        "content": "        this.minOutput \u003d DoubleStream.of(actualValues).min().orElseThrow(MathArithmeticException::new);"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "        this.maxOutput \u003d DoubleStream.of(actualValues).max().orElseThrow(MathArithmeticException::new);"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "        this.outputRange \u003d maxOutput - minOutput;"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    public double predict(double x) {"
+        "content": "        IntStream.range(0, numInputs).forEach(i -\u003e"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        return theta0 + theta1 * x;"
+        "content": "                this.actualValues[i] \u003d (this.actualValues[i] - outputMean) / outputRange);"
       },
       {
         "lineNumber": 67,
@@ -57555,94 +58312,640 @@
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            delta0 \u003d LEARNING_RATE * deriveThetaZeroCost();"
+        "content": "            delta0 \u003d LEARNING_RATE * deriveTheta(0);"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            delta1 \u003d LEARNING_RATE * deriveThetaOneCost();"
+        "content": "            delta1 \u003d LEARNING_RATE * deriveTheta(1);"
       },
       {
         "lineNumber": 79,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "wallacelim97"
         },
-        "content": "            // System.out.println((Math.abs(delta0) + Math.abs(delta1)));"
+        "content": "            theta0 -\u003d delta0;"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            double temp0 \u003d theta0 - delta0;"
+        "content": "            theta1 -\u003d delta1;"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            double temp1 \u003d theta1 - delta1;"
+        "content": "        } while((Math.abs(delta0) \u003e TOLERANCE || Math.abs(delta1) \u003e TOLERANCE) \u0026\u0026 iterations \u003c\u003d MAX_ITERATIONS);"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            theta0 \u003d temp0;"
+        "content": "    }"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "            theta1 \u003d temp1;"
+        "content": ""
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        } while ((Math.abs(delta0) + Math.abs(delta1)) \u003e TOLERANCE \u0026\u0026 iterations \u003c\u003d MAX_ITERATIONS);"
+        "content": "    /**"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "     * @param theta the \"independent\" variable"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": ""
+        "content": "     * @return The (partial) derivative of the sum of costs for values of theta"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    public int getIterations() {"
+        "content": "     */"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "        return this.iterations;"
+        "content": "    private double deriveTheta(int theta) {"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "wallacelim97"
         },
-        "content": "    }"
+        "content": "        double cost \u003d 0.0;"
       },
       {
         "lineNumber": 90,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        if (theta \u003d\u003d 0) {"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "            for (int i \u003d 0; i \u003c numInputs; i++) {"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "                cost +\u003d computeHypothesis(inputData[i]) - inputData[i];"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "            for (int i \u003d 0; i \u003c numInputs; i++) {"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "                cost +\u003d (computeHypothesis(inputData[i]) - inputData[i]) * inputData[i];"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return (1.0 / numInputs) * cost;"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     * @param input An independent variable found in the training data"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     * @return A prediction on the dependent variable based on current values of {@code theta0} and {@code theta1}"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    private double computeHypothesis(double input) {"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return theta0 + theta1 * input;"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     * @param input An independent variable specified by the user"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     * @return A prediction on the dependent variable based on the final values of {@code theta0} and {@code theta1}"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public double predict(double input) {"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        this.variable \u003d input;"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        this.minData \u003d Math.min(minData, input);"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        this.maxData \u003d Math.max(maxData, input);"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        double scaledData \u003d (input - dataMean) / dataRange;"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        this.result \u003d computeHypothesis(scaledData) * outputRange + outputMean;"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        this.minOutput \u003d Math.min(minOutput, result);"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        this.maxOutput \u003d Math.max(maxOutput, result);"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return result;"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public double getActualValue(int idx) {"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return (this.actualValues[idx] * outputRange + outputMean) / OUTPUT_SCALE_FACTOR;"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public double getInputData(int idx) {"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return this.inputData[idx] * dataRange + dataMean;"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public int getNumInputs() {"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return this.numInputs;"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public double getMinData() {"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return minData;"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public double getMaxData() {"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return maxData;"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public double getMinOutput() {"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return minOutput / OUTPUT_SCALE_FACTOR;"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public double getMaxOutput() {"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return maxOutput / OUTPUT_SCALE_FACTOR;"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public double getDataRange() {"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return dataRange;"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public double getOutputRange() {"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return outputRange / OUTPUT_SCALE_FACTOR;"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public double getVariable() {"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return variable;"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    public double getResult() {"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "        return result / OUTPUT_SCALE_FACTOR;"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 168,
         "author": {
           "gitId": "wallacelim97"
         },
@@ -57650,9 +58953,7 @@
       }
     ],
     "authorContributionMap": {
-      "joloong": 8,
-      "dingyuchen": 1,
-      "wallacelim97": 81
+      "wallacelim97": 168
     }
   },
   {
@@ -72989,6 +74290,78 @@
     }
   },
   {
+    "path": "src/main/resources/view/Chart.css",
+    "fileType": "css",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ".chart-plot-background {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "-fx-background-color: transparent;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ".default-color0.chart-series-line {"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "-fx-stroke: blue;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": ".default-color0.chart-line-symbol {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "    -fx-background-color: blue, white;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "wallacelim97"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "wallacelim97": 9
+    }
+  },
+  {
     "path": "src/main/resources/view/CommandBox.fxml",
     "fileType": "fxml",
     "lines": [
@@ -81123,390 +82496,817 @@
       {
         "lineNumber": 14,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "    public void equals() {"
+        "content": "    public void getFeedBackToUser() {"
       },
       {
         "lineNumber": 15,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
         "content": "        CommandResult commandResult \u003d new CommandResult(\"feedback\");"
       },
       {
         "lineNumber": 16,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "        String feedback \u003d commandResult.getFeedbackToUser();"
       },
       {
         "lineNumber": 17,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        // same values -\u003e returns true"
+        "content": ""
       },
       {
         "lineNumber": 18,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        assertTrue(commandResult.equals(new CommandResult(\"feedback\")));"
+        "content": "        // same values -\u003e returns true"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        assertTrue(commandResult.equals("
+        "content": "        assertEquals(feedback, new CommandResult(\"feedback\").getFeedbackToUser());"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            new CommandResult(\"feedback\", false, false, null)));"
+        "content": ""
       },
       {
         "lineNumber": 21,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "        // different values -\u003e returns false"
       },
       {
         "lineNumber": 22,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        // same object -\u003e returns true"
+        "content": "        assertNotEquals(feedback, new CommandResult(\"false\").getFeedbackToUser());"
       },
       {
         "lineNumber": 23,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        assertTrue(commandResult.equals(commandResult));"
+        "content": "    }"
       },
       {
         "lineNumber": 24,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
         "content": ""
       },
       {
         "lineNumber": 25,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        // null -\u003e returns false"
+        "content": "    @Test"
       },
       {
         "lineNumber": 26,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        assertFalse(commandResult.equals(null));"
+        "content": "    public void isShowHelp() {"
       },
       {
         "lineNumber": 27,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "        CommandResult commandResult \u003d"
       },
       {
         "lineNumber": 28,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        // different types -\u003e returns false"
+        "content": "            new CommandResult(\"feedback\", true, false, null);"
       },
       {
         "lineNumber": 29,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        assertFalse(commandResult.equals(0.5f));"
+        "content": "        boolean showHelp \u003d commandResult.isShowHelp();"
       },
       {
         "lineNumber": 30,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
         "content": ""
       },
       {
         "lineNumber": 31,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        // different feedbackToUser value -\u003e returns false"
+        "content": "        // same values -\u003e returns true"
       },
       {
         "lineNumber": 32,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        assertFalse(commandResult.equals(new CommandResult(\"different\")));"
+        "content": "        assertEquals(showHelp,"
       },
       {
         "lineNumber": 33,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "            new CommandResult(\"feedback\", true, false, null).isShowHelp());"
       },
       {
         "lineNumber": 34,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        // different showHelp value -\u003e returns false"
+        "content": ""
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        assertFalse(commandResult.equals("
+        "content": "        // different values -\u003e returns false"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            new CommandResult(\"feedback\", true, false, null)));"
+        "content": "        assertNotEquals(showHelp,"
       },
       {
         "lineNumber": 37,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "            new CommandResult(\"feedback\", false, false, null).isShowHelp());"
       },
       {
         "lineNumber": 38,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        // different exit value -\u003e returns false"
+        "content": "    }"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        assertFalse(commandResult.equals("
+        "content": ""
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            new CommandResult(\"feedback\", false, true, null)));"
+        "content": "    @Test"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "    public void isExit() {"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        // different switchTab value -\u003e returns false"
+        "content": "        CommandResult commandResult \u003d"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        assertFalse(commandResult.equals("
+        "content": "            new CommandResult(\"feedback\", true, false, null);"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            new CommandResult(\"feedback\", false, false, Tab.BUDGET)));"
+        "content": "        boolean exit \u003d commandResult.isExit();"
       },
       {
         "lineNumber": 45,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 46,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "        // same values -\u003e returns true"
       },
       {
         "lineNumber": 47,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "    @Test"
+        "content": "        assertEquals(exit,"
       },
       {
         "lineNumber": 48,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "    public void hashcode() {"
+        "content": "            new CommandResult(\"feedback\", true, false, null).isExit());"
       },
       {
         "lineNumber": 49,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        CommandResult commandResult \u003d new CommandResult(\"feedback\");"
+        "content": ""
       },
       {
         "lineNumber": 50,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "        // different values -\u003e returns false"
       },
       {
         "lineNumber": 51,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        // same values -\u003e returns same hashcode"
+        "content": "        assertNotEquals(exit,"
       },
       {
         "lineNumber": 52,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        assertEquals(commandResult.hashCode(), new CommandResult(\"feedback\").hashCode());"
+        "content": "            new CommandResult(\"feedback\", false, true, null).isExit());"
       },
       {
         "lineNumber": 53,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 54,
         "author": {
-          "gitId": "-"
-        },
-        "content": "        // different feedbackToUser value -\u003e returns different hashcode"
-      },
-      {
-        "lineNumber": 55,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        assertNotEquals(commandResult.hashCode(), new CommandResult(\"different\").hashCode());"
-      },
-      {
-        "lineNumber": 56,
-        "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
         "content": ""
       },
       {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "    public void isSwitchTab() {"
+      },
+      {
         "lineNumber": 57,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        // different showHelp value -\u003e returns different hashcode"
+        "content": "        CommandResult commandResult \u003d"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        assertNotEquals(commandResult.hashCode(),"
+        "content": "            new CommandResult(\"feedback\", true, false, Tab.BUDGET);"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            new CommandResult(\"feedback\", true, false, null).hashCode());"
+        "content": "        Tab tab \u003d commandResult.getTab();"
       },
       {
         "lineNumber": 60,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": ""
+        "content": "        boolean switchTab \u003d commandResult.isSwitchTab();"
       },
       {
         "lineNumber": 61,
         "author": {
-          "gitId": "-"
+          "gitId": "joloong"
         },
-        "content": "        // different exit value -\u003e returns different hashcode"
+        "content": ""
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        assertNotEquals(commandResult.hashCode(),"
+        "content": "        // same values -\u003e returns true"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            new CommandResult(\"feedback\", false, true, null).hashCode());"
+        "content": "        assertEquals(tab,"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "            new CommandResult(\"feedback\", true, false, Tab.BUDGET).getTab());"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        // different switchTabValue -\u003e returns different hashcode"
+        "content": "        assertEquals(switchTab,"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        assertNotEquals(commandResult.hashCode(),"
+        "content": "            new CommandResult(\"feedback\", true, false, Tab.BUDGET).isSwitchTab());"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            new CommandResult(\"feedback\", false, false, Tab.BUDGET).hashCode());"
+        "content": ""
       },
       {
         "lineNumber": 68,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        // different values -\u003e returns false"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertNotEquals(tab,"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            new CommandResult(\"feedback\", false, false, Tab.TRANSACTION).getTab());"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void equals() {"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        CommandResult commandResult \u003d new CommandResult(\"feedback\");"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // same values -\u003e returns true"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertTrue(commandResult.equals(new CommandResult(\"feedback\")));"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertTrue(commandResult.equals("
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            new CommandResult(\"feedback\", false, false, null)));"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // same object -\u003e returns true"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertTrue(commandResult.equals(commandResult));"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // null -\u003e returns false"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertFalse(commandResult.equals(null));"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // different types -\u003e returns false"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertFalse(commandResult.equals(0.5f));"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // different feedbackToUser value -\u003e returns false"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertFalse(commandResult.equals(new CommandResult(\"different\")));"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // different showHelp value -\u003e returns false"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertFalse(commandResult.equals("
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            new CommandResult(\"feedback\", true, false, null)));"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // different exit value -\u003e returns false"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertFalse(commandResult.equals("
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            new CommandResult(\"feedback\", false, true, null)));"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        // different switchTab value -\u003e returns false"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertFalse(commandResult.equals("
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            new CommandResult(\"feedback\", false, false, Tab.BUDGET)));"
+      },
+      {
+        "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 69,
+        "lineNumber": 107,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void hashcode() {"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        CommandResult commandResult \u003d new CommandResult(\"feedback\");"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // same values -\u003e returns same hashcode"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertEquals(commandResult.hashCode(), new CommandResult(\"feedback\").hashCode());"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // different feedbackToUser value -\u003e returns different hashcode"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertNotEquals(commandResult.hashCode(), new CommandResult(\"different\").hashCode());"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // different showHelp value -\u003e returns different hashcode"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertNotEquals(commandResult.hashCode(),"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            new CommandResult(\"feedback\", true, false, null).hashCode());"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // different exit value -\u003e returns different hashcode"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertNotEquals(commandResult.hashCode(),"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            new CommandResult(\"feedback\", false, true, null).hashCode());"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        // different switchTabValue -\u003e returns different hashcode"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertNotEquals(commandResult.hashCode(),"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            new CommandResult(\"feedback\", false, false, Tab.BUDGET).hashCode());"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
@@ -81514,7 +83314,7 @@
       }
     ],
     "authorContributionMap": {
-      "joloong": 20,
+      "joloong": 81,
       "-": 49
     }
   },
@@ -86331,173 +88131,110 @@
       {
         "lineNumber": 16,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "-"
         },
-        "content": "// TODO: delete class?"
+        "content": "public class ListCommandTest {"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "-"
         },
-        "content": "public class ListCommandTest {"
+        "content": ""
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    private Model model;"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
-        "content": "    private Model model;"
+        "content": "    private Model expectedModel;"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
-        "content": "    private Model expectedModel;"
+        "content": ""
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    @BeforeEach"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": "    @BeforeEach"
-      },
-      {
-        "lineNumber": 23,
-        "author": {
-          "gitId": "-"
-        },
         "content": "    public void setUp() {"
       },
       {
-        "lineNumber": 24,
+        "lineNumber": 23,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "        model \u003d new ModelManager(getTypicalUserState(), new UserPrefs());"
       },
       {
-        "lineNumber": 25,
+        "lineNumber": 24,
         "author": {
           "gitId": "dingyuchen"
         },
         "content": "        expectedModel \u003d new ModelManager(model.getUserState(), new UserPrefs());"
       },
       {
-        "lineNumber": 26,
+        "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    @Test"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": "    public void execute_listIsNotFiltered_showsSameList() {"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void execute_listIsNotFiltered_showsSameList() {"
+        "content": "        assertCommandSuccess(new ListCommand(), model, ListCommand.MESSAGE_SUCCESS, expectedModel);"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
-        "content": "        assertCommandSuccess(new ListCommand(), model, ListCommand.MESSAGE_SUCCESS, expectedModel);"
+        "content": "    }"
       },
       {
         "lineNumber": 31,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 32,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 33,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "    /*"
-      },
-      {
-        "lineNumber": 34,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    @Test"
-      },
-      {
-        "lineNumber": 35,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    public void execute_listIsFiltered_showsEverything() {"
-      },
-      {
-        "lineNumber": 36,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "        showPersonAtIndex(model, INDEX_FIRST_TRANSACTION);"
-      },
-      {
-        "lineNumber": 37,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        assertCommandSuccess(new ListCommand(), model, ListCommand.MESSAGE_SUCCESS, expectedModel);"
-      },
-      {
-        "lineNumber": 38,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 39,
-        "author": {
-          "gitId": "joloong"
-        },
-        "content": "     */"
-      },
-      {
-        "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
@@ -86505,9 +88242,8 @@
       }
     ],
     "authorContributionMap": {
-      "joloong": 3,
-      "dingyuchen": 4,
-      "-": 33
+      "dingyuchen": 3,
+      "-": 28
     }
   },
   {
@@ -90969,28 +92705,28 @@
         "author": {
           "gitId": "joloong"
         },
-        "content": "import static seedu.address.logic.commands.CommandTestUtil.assertCommandSuccess;"
+        "content": "import static org.junit.jupiter.api.Assertions.assertFalse;"
       },
       {
         "lineNumber": 4,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
-        "content": "import static seedu.address.testutil.TypicalTransactions.getTypicalUnsortedUserState;"
+        "content": "import static org.junit.jupiter.api.Assertions.assertTrue;"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "import static seedu.address.logic.commands.CommandTestUtil.assertCommandSuccess;"
       },
       {
         "lineNumber": 6,
         "author": {
-          "gitId": "joloong"
+          "gitId": "dingyuchen"
         },
-        "content": "import java.util.List;"
+        "content": "import static seedu.address.testutil.TypicalTransactions.getTypicalUnsortedUserState;"
       },
       {
         "lineNumber": 7,
@@ -91004,311 +92740,472 @@
         "author": {
           "gitId": "joloong"
         },
-        "content": "import org.junit.jupiter.api.BeforeEach;"
+        "content": "import java.util.List;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "joloong"
         },
-        "content": "import org.junit.jupiter.api.Test;"
+        "content": ""
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "import org.junit.jupiter.api.BeforeEach;"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "joloong"
         },
-        "content": "import seedu.address.logic.comparator.AmountComparator;"
+        "content": "import org.junit.jupiter.api.Test;"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "joloong"
         },
-        "content": "import seedu.address.logic.comparator.DateComparator;"
+        "content": ""
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "joloong"
         },
-        "content": "import seedu.address.model.Model;"
+        "content": "import seedu.address.logic.comparator.AmountComparator;"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "joloong"
         },
-        "content": "import seedu.address.model.ModelManager;"
+        "content": "import seedu.address.logic.comparator.DateComparator;"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "joloong"
         },
-        "content": "import seedu.address.model.UserPrefs;"
+        "content": "import seedu.address.model.Model;"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "joloong"
         },
-        "content": "import seedu.address.model.transaction.BankAccountOperation;"
+        "content": "import seedu.address.model.ModelManager;"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "import seedu.address.model.UserPrefs;"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "joloong"
         },
-        "content": "/**"
+        "content": "import seedu.address.model.transaction.BankAccountOperation;"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "joloong"
         },
-        "content": " * Contains integration tests (interaction with the Model) and unit tests for SortCommand."
+        "content": ""
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "joloong"
         },
-        "content": " */"
+        "content": "/**"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "joloong"
         },
-        "content": "public class SortCommandTest {"
+        "content": " * Contains integration tests (interaction with the Model) and unit tests for SortCommand."
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    private Model model;"
+        "content": " */"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    private Model expectedSortedByAmountModel;"
+        "content": "public class SortCommandTest {"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "    private Model model;"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    @BeforeEach"
+        "content": "    private Model expectedSortedByAmountModel;"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    public void setUp() {"
+        "content": ""
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        model \u003d new ModelManager(getTypicalUnsortedUserState(), new UserPrefs());"
+        "content": "    @BeforeEach"
       },
       {
         "lineNumber": 28,
         "author": {
-          "gitId": "dingyuchen"
+          "gitId": "joloong"
         },
-        "content": "        expectedSortedByAmountModel \u003d new ModelManager(getTypicalUnsortedUserState(), new UserPrefs());"
+        "content": "    public void setUp() {"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    }"
+        "content": "        model \u003d new ModelManager(getTypicalUnsortedUserState(), new UserPrefs());"
       },
       {
         "lineNumber": 30,
         "author": {
-          "gitId": "joloong"
+          "gitId": "dingyuchen"
         },
-        "content": ""
+        "content": "        expectedSortedByAmountModel \u003d new ModelManager(getTypicalUnsortedUserState(), new UserPrefs());"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    @Test"
+        "content": "    }"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    public void execute_sortByAmount_success() {"
+        "content": ""
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        AmountComparator amountComparator \u003d new AmountComparator();"
+        "content": "    @Test"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        List\u003cBankAccountOperation\u003e sortedTransactionHistory \u003d"
+        "content": "    public void execute_sortByAmount_success() {"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            expectedSortedByAmountModel.getBankAccount().getSortedTransactionHistory(amountComparator);"
+        "content": "        AmountComparator amountComparator \u003d new AmountComparator();"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        expectedSortedByAmountModel.setTransactions(sortedTransactionHistory);"
+        "content": "        List\u003cBankAccountOperation\u003e sortedTransactionHistory \u003d"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        expectedSortedByAmountModel.commitUserState();"
+        "content": "            expectedSortedByAmountModel.getBankAccount().getSortedTransactionHistory(amountComparator);"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        assertCommandSuccess(new SortCommand(amountComparator), model,"
+        "content": "        expectedSortedByAmountModel.setTransactions(sortedTransactionHistory);"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            SortCommand.MESSAGE_SUCCESS, expectedSortedByAmountModel);"
+        "content": "        expectedSortedByAmountModel.commitUserState();"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    }"
+        "content": "        assertCommandSuccess(new SortCommand(amountComparator), model,"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "joloong"
         },
-        "content": ""
+        "content": "            SortCommand.MESSAGE_SUCCESS, expectedSortedByAmountModel);"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    @Test"
+        "content": "    }"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    public void execute_sortByDate_success() {"
+        "content": ""
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        DateComparator dateComparator \u003d new DateComparator();"
+        "content": "    @Test"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        List\u003cBankAccountOperation\u003e sortedTransactionHistory \u003d"
+        "content": "    public void execute_sortByDate_success() {"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            expectedSortedByAmountModel.getBankAccount().getSortedTransactionHistory(dateComparator);"
+        "content": "        DateComparator dateComparator \u003d new DateComparator();"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        expectedSortedByAmountModel.setTransactions(sortedTransactionHistory);"
+        "content": "        List\u003cBankAccountOperation\u003e sortedTransactionHistory \u003d"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        expectedSortedByAmountModel.commitUserState();"
+        "content": "            expectedSortedByAmountModel.getBankAccount().getSortedTransactionHistory(dateComparator);"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "joloong"
         },
-        "content": "        assertCommandSuccess(new SortCommand(dateComparator), model,"
+        "content": "        expectedSortedByAmountModel.setTransactions(sortedTransactionHistory);"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "joloong"
         },
-        "content": "            SortCommand.MESSAGE_SUCCESS, expectedSortedByAmountModel);"
+        "content": "        expectedSortedByAmountModel.commitUserState();"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "joloong"
         },
-        "content": "    }"
+        "content": "        assertCommandSuccess(new SortCommand(dateComparator), model,"
       },
       {
         "lineNumber": 52,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "            SortCommand.MESSAGE_SUCCESS, expectedSortedByAmountModel);"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "    public void equals() {"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        SortCommand amountSort \u003d new SortCommand(new AmountComparator());"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        SortCommand dateSort \u003d new SortCommand(new DateComparator());"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        // same object -\u003e returns true"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertTrue(amountSort.equals(amountSort));"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        // same values -\u003e returns true"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertTrue(amountSort.equals(new SortCommand(new AmountComparator())));"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        // different types -\u003e returns false"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertFalse(amountSort.equals(\"1\"));"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        // null -\u003e returns false"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertFalse(amountSort.equals(null));"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        // different sort -\u003e returns false"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "        assertFalse(amountSort.equals(dateSort));"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "joloong"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 75,
         "author": {
           "gitId": "joloong"
         },
@@ -91316,7 +93213,7 @@
       }
     ],
     "authorContributionMap": {
-      "joloong": 50,
+      "joloong": 73,
       "dingyuchen": 2
     }
   },

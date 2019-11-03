@@ -508,20 +508,6 @@
     ],
     "joloong": [
       {
-        "insertions": 1,
-        "deletions": 0,
-        "date": "2019-10-02",
-        "commitResults": [
-          {
-            "hash": "c0e6e77efccbef3af2e4dab213079c3e3a9f7273",
-            "messageTitle": "Add Netlify Status Badge",
-            "messageBody": "",
-            "insertions": 1,
-            "deletions": 0
-          }
-        ]
-      },
-      {
         "insertions": 2,
         "deletions": 3,
         "date": "2019-10-08",
@@ -1654,6 +1640,34 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 96,
+        "deletions": 20,
+        "date": "2019-11-03",
+        "commitResults": [
+          {
+            "hash": "710988741706af54a8eaf1c3a3d0b43157f4304e",
+            "messageTitle": "Update UG",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 6
+          },
+          {
+            "hash": "74a5279fcc3d60971fc35ea0774623ac918e2a25",
+            "messageTitle": "Remove SOPL",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 4
+          },
+          {
+            "hash": "dcd9803fd39ccb5ccb8ded5d85c2b782463f89e9",
+            "messageTitle": "Add some test cases",
+            "messageBody": "",
+            "insertions": 88,
+            "deletions": 10
+          }
+        ]
       }
     ],
     "dingyuchen": [
@@ -2330,6 +2344,55 @@
             "deletions": 25
           }
         ]
+      },
+      {
+        "insertions": 156,
+        "deletions": 50,
+        "date": "2019-11-02",
+        "commitResults": [
+          {
+            "hash": "f8e3ada2dff2cdb7552f1f728cc8a6326993c0f0",
+            "messageTitle": "Fix and optimised GradientDescent for Projection, add feature normalisation",
+            "messageBody": "",
+            "insertions": 156,
+            "deletions": 50
+          }
+        ]
+      },
+      {
+        "insertions": 242,
+        "deletions": 147,
+        "date": "2019-11-03",
+        "commitResults": [
+          {
+            "hash": "717979efa0ff121de808a56bfb7da4180a1aa23f",
+            "messageTitle": "Enabled graph rendering for balance projection",
+            "messageBody": "",
+            "insertions": 212,
+            "deletions": 79
+          },
+          {
+            "hash": "15609e4a339ccba01daf5a6367152c18f3452b84",
+            "messageTitle": "Fix checkstyle errors",
+            "messageBody": "",
+            "insertions": 27,
+            "deletions": 65
+          },
+          {
+            "hash": "cd83e9ddcf8189297ee14a6f6c0fb0c854abe790",
+            "messageTitle": "Add newline to Chart.css to pass Travis CI test",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "cf685fdcc468730aa1c6d4bcee0131ed1c02c6cc",
+            "messageTitle": "Fix checkstyle errors",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
       }
     ],
     "Berttwm": [
@@ -2728,16 +2791,16 @@
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1726,
-    "joloong": 4523,
-    "dingyuchen": 2388,
-    "wallacelim97": 635,
+    "yewon0303": 1725,
+    "joloong": 4598,
+    "dingyuchen": 2383,
+    "wallacelim97": 839,
     "Berttwm": 1252
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
       "adoc": 146,
-      "adoc": 87,
+      "adoc": 86,
       "puml": 3,
       "puml": 14,
       "puml": 11,
@@ -2805,7 +2868,7 @@
       "fxml": 1
     },
     "joloong": {
-      "adoc": 5,
+      "adoc": 4,
       "json": 39,
       "gradle": 3,
       "adoc": 11,
@@ -2813,7 +2876,7 @@
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
-      "adoc": 102,
+      "adoc": 103,
       "puml": 82,
       "drawio": 1,
       "drawio": 1,
@@ -2839,7 +2902,7 @@
       "java": 8,
       "java": 30,
       "java": 29,
-      "java": 28,
+      "java": 31,
       "java": 22,
       "java": 14,
       "java": 6,
@@ -2858,7 +2921,6 @@
       "java": 10,
       "java": 41,
       "java": 48,
-      "java": 1,
       "java": 10,
       "java": 1,
       "java": 3,
@@ -2884,7 +2946,6 @@
       "java": 11,
       "java": 7,
       "java": 47,
-      "java": 8,
       "java": 10,
       "java": 3,
       "java": 5,
@@ -2929,18 +2990,17 @@
       "java": 22,
       "java": 8,
       "java": 6,
-      "java": 20,
+      "java": 81,
       "java": 41,
       "java": 26,
       "java": 2,
       "java": 70,
       "java": 2,
       "java": 60,
-      "java": 3,
       "java": 16,
       "java": 44,
       "java": 13,
-      "java": 50,
+      "java": 73,
       "java": 40,
       "java": 58,
       "java": 30,
@@ -3008,7 +3068,7 @@
       "java": 90,
       "java": 34,
       "java": 45,
-      "java": 5,
+      "java": 2,
       "java": 19,
       "java": 30,
       "java": 8,
@@ -3030,7 +3090,6 @@
       "java": 98,
       "java": 101,
       "java": 10,
-      "java": 1,
       "java": 20,
       "java": 1,
       "java": 43,
@@ -3063,7 +3122,7 @@
       "java": 7,
       "java": 4,
       "java": 41,
-      "java": 4,
+      "java": 3,
       "java": 24,
       "java": 3,
       "java": 17,
@@ -3108,20 +3167,22 @@
       "java": 3,
       "java": 30,
       "java": 15,
-      "java": 45,
+      "java": 43,
       "java": 5,
       "java": 1,
-      "java": 42,
+      "java": 74,
+      "java": 78,
       "java": 2,
       "java": 1,
       "java": 1,
       "java": 1,
       "java": 64,
-      "java": 81,
+      "java": 168,
       "java": 30,
       "java": 54,
       "java": 6,
       "java": 2,
+      "css": 9,
       "java": 2
     },
     "Berttwm": {
@@ -3171,9 +3232,9 @@
   },
   "authorContributionVariance": {
     "yewon0303": 29885.75,
-    "joloong": 272930.56,
-    "dingyuchen": 73553.09,
-    "wallacelim97": 11232.182,
+    "joloong": 270782.78,
+    "dingyuchen": 73553.1,
+    "wallacelim97": 15414.354,
     "Berttwm": 38598.773
   },
   "authorDisplayNameMap": {
