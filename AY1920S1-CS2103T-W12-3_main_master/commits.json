@@ -422,10 +422,17 @@
         ]
       },
       {
-        "insertions": 41,
-        "deletions": 45,
+        "insertions": 42,
+        "deletions": 46,
         "date": "2019-10-29",
         "commitResults": [
+          {
+            "hash": "c1c7933d6f3f2af74b1d374839725565f7ddd5cc",
+            "messageTitle": "Update Budget Card",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
           {
             "hash": "83fa4b708ea22077bc91cd4ce9aa28f5988d6c40",
             "messageTitle": "Fix merge conflict in Developerguide",
@@ -502,6 +509,62 @@
             "messageBody": "",
             "insertions": 1,
             "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 47,
+        "deletions": 21,
+        "date": "2019-11-03",
+        "commitResults": [
+          {
+            "hash": "3c5cbb86132868840fe2c5c3f21308e06e0b61c9",
+            "messageTitle": "Update BudgetCard to show the remaining number of days",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "10db3548bdc6fd25e5cbcb2f0819bf13e49ee56f",
+            "messageTitle": "Fix the calculation of number of days in between to shwo the correct number of days",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "b56d2f8a1d7fdc6a5d73979943330f3f5c19d059",
+            "messageTitle": "Fix bug to allow two budgets with all the same details except the categories to be created without throwing duplicate budget error",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 1
+          },
+          {
+            "hash": "2d7949310e0c14a64f97e69ad0ef9bea66169b54",
+            "messageTitle": "Update error message to reflect Budget not Transaction",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 4
+          },
+          {
+            "hash": "fde23c4b32ed9ecfea775d2f7076da2fe452b2e8",
+            "messageTitle": "Update SetCommand to take in only days from today or in the future. Users cannot set a budget for the past.",
+            "messageBody": "",
+            "insertions": 18,
+            "deletions": 8
+          },
+          {
+            "hash": "e26d3e5d4bfe2d30feab5ec43d1174a408ce066a",
+            "messageTitle": "Fix bug that cuases Budget Amount to increase when Out Transactions are made",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "13614b5f6d4c551a220a8964b8b488d9247f7d3c",
+            "messageTitle": "Update BankAccount such that budgets will be affected only if they have the same category as OutTransaction",
+            "messageBody": "",
+            "insertions": 21,
+            "deletions": 5
           }
         ]
       }
@@ -1642,8 +1705,8 @@
         ]
       },
       {
-        "insertions": 96,
-        "deletions": 20,
+        "insertions": 231,
+        "deletions": 28,
         "date": "2019-11-03",
         "commitResults": [
           {
@@ -1666,6 +1729,34 @@
             "messageBody": "",
             "insertions": 88,
             "deletions": 10
+          },
+          {
+            "hash": "aee65511a5f81e3a6047f294cc8b9346c7c42512",
+            "messageTitle": "Add ViewCommandParser test cases",
+            "messageBody": "",
+            "insertions": 77,
+            "deletions": 6
+          },
+          {
+            "hash": "9858e12bb3a99f55769ddee60da171faa114f11f",
+            "messageTitle": "Fix checkstyleTest errors",
+            "messageBody": "",
+            "insertions": 24,
+            "deletions": 1
+          },
+          {
+            "hash": "003d70bc9947512a343cdb734038d7c8393789d9",
+            "messageTitle": "Add ViewCommandTest cases",
+            "messageBody": "",
+            "insertions": 27,
+            "deletions": 1
+          },
+          {
+            "hash": "d565f2bca78ff36eca6fb4ad3fd6ce07b03b6213",
+            "messageTitle": "Add ViewCommandParserTest cases",
+            "messageBody": "",
+            "insertions": 7,
+            "deletions": 0
           }
         ]
       }
@@ -2791,16 +2882,16 @@
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1725,
-    "joloong": 4598,
+    "yewon0303": 1759,
+    "joloong": 4719,
     "dingyuchen": 2383,
     "wallacelim97": 839,
-    "Berttwm": 1252
+    "Berttwm": 1249
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
       "adoc": 146,
-      "adoc": 86,
+      "adoc": 88,
       "puml": 3,
       "puml": 14,
       "puml": 11,
@@ -2813,21 +2904,21 @@
       "java": 1,
       "java": 18,
       "java": 1,
-      "java": 47,
+      "java": 50,
       "java": 2,
       "java": 38,
       "java": 9,
       "java": 2,
       "java": 3,
       "java": 13,
-      "java": 45,
+      "java": 51,
       "java": 3,
-      "java": 53,
+      "java": 58,
       "java": 27,
       "java": 16,
       "java": 3,
       "java": 37,
-      "java": 135,
+      "java": 146,
       "java": 9,
       "java": 7,
       "java": 3,
@@ -2836,10 +2927,11 @@
       "java": 18,
       "java": 7,
       "java": 11,
+      "java": 6,
       "java": 1,
       "java": 71,
       "java": 10,
-      "java": 57,
+      "java": 58,
       "java": 46,
       "java": 1,
       "java": 10,
@@ -2876,7 +2968,7 @@
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
-      "adoc": 103,
+      "adoc": 101,
       "puml": 82,
       "drawio": 1,
       "drawio": 1,
@@ -2897,12 +2989,12 @@
       "java": 5,
       "java": 2,
       "java": 30,
-      "java": 5,
+      "java": 4,
       "java": 48,
       "java": 8,
       "java": 30,
       "java": 29,
-      "java": 31,
+      "java": 45,
       "java": 22,
       "java": 14,
       "java": 6,
@@ -2931,7 +3023,7 @@
       "java": 11,
       "java": 67,
       "java": 2,
-      "java": 15,
+      "java": 14,
       "java": 16,
       "java": 27,
       "java": 2,
@@ -2961,7 +3053,7 @@
       "java": 4,
       "java": 13,
       "java": 45,
-      "java": 5,
+      "java": 4,
       "java": 3,
       "java": 7,
       "java": 44,
@@ -2995,7 +3087,7 @@
       "java": 26,
       "java": 2,
       "java": 70,
-      "java": 2,
+      "java": 17,
       "java": 60,
       "java": 16,
       "java": 44,
@@ -3003,17 +3095,18 @@
       "java": 73,
       "java": 40,
       "java": 58,
-      "java": 30,
+      "java": 56,
       "java": 41,
       "java": 41,
       "java": 8,
       "java": 1,
-      "java": 25,
+      "java": 47,
       "java": 1,
       "java": 31,
       "java": 35,
       "java": 113,
       "java": 36,
+      "java": 49,
       "java": 87,
       "java": 62,
       "java": 33,
@@ -3193,7 +3286,7 @@
       "java": 5,
       "java": 55,
       "java": 1,
-      "java": 3,
+      "java": 1,
       "java": 1,
       "java": 22,
       "java": 189,
@@ -3202,7 +3295,7 @@
       "java": 63,
       "java": 4,
       "java": 15,
-      "java": 18,
+      "java": 17,
       "java": 3,
       "java": 63,
       "java": 9,
@@ -3231,11 +3324,11 @@
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 29885.75,
-    "joloong": 270782.78,
-    "dingyuchen": 73553.1,
-    "wallacelim97": 15414.354,
-    "Berttwm": 38598.773
+    "yewon0303": 30331.72,
+    "joloong": 273511.56,
+    "dingyuchen": 75138.92,
+    "wallacelim97": 15793.085,
+    "Berttwm": 39677.68
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
