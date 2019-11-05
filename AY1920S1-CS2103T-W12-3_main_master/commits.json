@@ -3186,20 +3186,48 @@
             "deletions": 4
           }
         ]
+      },
+      {
+        "insertions": 197,
+        "deletions": 7,
+        "date": "2019-11-05",
+        "commitResults": [
+          {
+            "hash": "a3648a09d4c3c5badfbdf32567acebc7d1b9d7ed",
+            "messageTitle": "AmountTest updated",
+            "messageBody": "",
+            "insertions": 15,
+            "deletions": 0
+          },
+          {
+            "hash": "aa2b22a6d364d0f8f704afd4a64bf42306c2d972",
+            "messageTitle": "Description Test",
+            "messageBody": "",
+            "insertions": 48,
+            "deletions": 0
+          },
+          {
+            "hash": "786d84a4a72c2b4b040c799e40b8ef3dc24c3c1c",
+            "messageTitle": "Update Parser to check overflow, Addted InCommandParser test cases",
+            "messageBody": "",
+            "insertions": 134,
+            "deletions": 7
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 2011,
-    "joloong": 5107,
+    "yewon0303": 2009,
+    "joloong": 5105,
     "dingyuchen": 2504,
-    "wallacelim97": 1634,
-    "Berttwm": 1235
+    "wallacelim97": 1632,
+    "Berttwm": 1431
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
       "adoc": 146,
-      "adoc": 88,
+      "adoc": 87,
       "puml": 3,
       "puml": 14,
       "puml": 11,
@@ -3219,7 +3247,7 @@
       "java": 3,
       "java": 9,
       "java": 7,
-      "java": 51,
+      "java": 50,
       "java": 3,
       "java": 58,
       "java": 18,
@@ -3278,7 +3306,7 @@
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
-      "adoc": 101,
+      "adoc": 99,
       "puml": 82,
       "drawio": 1,
       "drawio": 1,
@@ -3600,11 +3628,11 @@
       "java": 56,
       "java": 171,
       "java": 2,
-      "java": 90
+      "java": 88
     },
     "Berttwm": {
       "adoc": 30,
-      "adoc": 27,
+      "adoc": 30,
       "java": 1,
       "java": 1,
       "java": 5,
@@ -3614,14 +3642,14 @@
       "java": 1,
       "java": 20,
       "java": 187,
-      "java": 19,
+      "java": 24,
       "java": 17,
-      "java": 63,
+      "java": 68,
       "java": 4,
       "java": 15,
-      "java": 17,
+      "java": 18,
       "java": 3,
-      "java": 63,
+      "java": 68,
       "java": 9,
       "java": 3,
       "java": 3,
@@ -3639,11 +3667,16 @@
       "java": 11,
       "java": 6,
       "java": 18,
+      "java": 20,
       "java": 1,
-      "java": 70,
-      "java": 238,
+      "java": 72,
+      "java": 240,
       "java": 152,
+      "java": 93,
+      "java": 11,
+      "java": 48,
       "java": 10,
+      "java": 1,
       "java": 69
     }
   },
@@ -3652,7 +3685,7 @@
     "joloong": 270525.38,
     "dingyuchen": 74455.94,
     "wallacelim97": 39233.49,
-    "Berttwm": 38598.77
+    "Berttwm": 38957.8
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
