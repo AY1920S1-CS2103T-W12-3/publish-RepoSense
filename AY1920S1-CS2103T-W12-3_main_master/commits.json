@@ -1859,8 +1859,8 @@
         ]
       },
       {
-        "insertions": 428,
-        "deletions": 360,
+        "insertions": 450,
+        "deletions": 372,
         "date": "2019-11-05",
         "commitResults": [
           {
@@ -1953,6 +1953,13 @@
             "messageBody": "",
             "insertions": 51,
             "deletions": 48
+          },
+          {
+            "hash": "64897804edd82fb4d2c4470949096f4c2fde0d87",
+            "messageTitle": "Fix Ledger UI",
+            "messageBody": "",
+            "insertions": 22,
+            "deletions": 12
           }
         ]
       }
@@ -3184,7 +3191,7 @@
   },
   "authorFinalContributionMap": {
     "yewon0303": 2011,
-    "joloong": 5092,
+    "joloong": 5107,
     "dingyuchen": 2504,
     "wallacelim97": 1634,
     "Berttwm": 1235
@@ -3367,7 +3374,7 @@
       "java": 1,
       "java": 8,
       "fxml": 1,
-      "css": 2,
+      "css": 17,
       "fxml": 33,
       "fxml": 8,
       "fxml": 41,
@@ -3642,7 +3649,7 @@
   },
   "authorContributionVariance": {
     "yewon0303": 32079.244,
-    "joloong": 269652.9,
+    "joloong": 270525.38,
     "dingyuchen": 74455.94,
     "wallacelim97": 39233.49,
     "Berttwm": 38598.77
