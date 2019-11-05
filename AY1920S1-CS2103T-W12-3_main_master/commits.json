@@ -567,6 +567,48 @@
             "deletions": 5
           }
         ]
+      },
+      {
+        "insertions": 344,
+        "deletions": 48,
+        "date": "2019-11-05",
+        "commitResults": [
+          {
+            "hash": "2746819c601e0123dcb480569230419804296e51",
+            "messageTitle": "Add BudgetTest test cases to increase coverage",
+            "messageBody": "",
+            "insertions": 80,
+            "deletions": 2
+          },
+          {
+            "hash": "5cd5e5e98840106a80b3a6c8bbd18c3c7a696451",
+            "messageTitle": "Add UniqueBudgetListTest test cases",
+            "messageBody": "",
+            "insertions": 151,
+            "deletions": 0
+          },
+          {
+            "hash": "93dc4ffb6664864b78b04e9b903cebadfbdc2f79",
+            "messageTitle": "Fix checkstyle errors",
+            "messageBody": "",
+            "insertions": 27,
+            "deletions": 24
+          },
+          {
+            "hash": "bf70ff44ec63d9a9d756af87521cccaf126e197c",
+            "messageTitle": "Add JsonAdaptedBudgetTest test cases",
+            "messageBody": "",
+            "insertions": 51,
+            "deletions": 0
+          },
+          {
+            "hash": "14ca06b64ed6e09c1d1ae52a1d25447d19f2879e",
+            "messageTitle": "Add more BudgetTest test cases",
+            "messageBody": "",
+            "insertions": 35,
+            "deletions": 22
+          }
+        ]
       }
     ],
     "joloong": [
@@ -1817,8 +1859,8 @@
         ]
       },
       {
-        "insertions": 206,
-        "deletions": 40,
+        "insertions": 428,
+        "deletions": 360,
         "date": "2019-11-05",
         "commitResults": [
           {
@@ -1869,6 +1911,48 @@
             "messageBody": "",
             "insertions": 21,
             "deletions": 5
+          },
+          {
+            "hash": "c6474ecfbb12b2e3b336e050c344a44a0bd70d01",
+            "messageTitle": "Fix LogicManagerTest",
+            "messageBody": "",
+            "insertions": 37,
+            "deletions": 30
+          },
+          {
+            "hash": "8b873f1d0b54f677e35e7ce66947027c2a739035",
+            "messageTitle": "Remove unused import",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 1
+          },
+          {
+            "hash": "7790f209380670de18c7b526f1f0882b7b7bec4c",
+            "messageTitle": "Add test cases",
+            "messageBody": "",
+            "insertions": 38,
+            "deletions": 3
+          },
+          {
+            "hash": "08b507cf0cb806a4f1d4413938e47b3a5b9c1382",
+            "messageTitle": "Add test cases",
+            "messageBody": "",
+            "insertions": 73,
+            "deletions": 0
+          },
+          {
+            "hash": "4682e18adc2d797e0d94f1aa602f0b601e3eaa75",
+            "messageTitle": "Add test cases",
+            "messageBody": "",
+            "insertions": 23,
+            "deletions": 238
+          },
+          {
+            "hash": "f555c97452bac5ffd20de3b7ff92cffbff3e8d36",
+            "messageTitle": "Add test cases",
+            "messageBody": "",
+            "insertions": 51,
+            "deletions": 48
           }
         ]
       }
@@ -3099,10 +3183,10 @@
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1725,
-    "joloong": 5016,
-    "dingyuchen": 2607,
-    "wallacelim97": 1635,
+    "yewon0303": 2011,
+    "joloong": 5092,
+    "dingyuchen": 2504,
+    "wallacelim97": 1634,
     "Berttwm": 1235
   },
   "authorFileTypeContributionMap": {
@@ -3135,7 +3219,7 @@
       "java": 15,
       "java": 3,
       "java": 37,
-      "java": 146,
+      "java": 144,
       "java": 9,
       "java": 7,
       "java": 3,
@@ -3147,7 +3231,6 @@
       "java": 6,
       "java": 1,
       "java": 71,
-      "java": 10,
       "java": 58,
       "java": 46,
       "java": 1,
@@ -3171,8 +3254,11 @@
       "java": 2,
       "java": 4,
       "java": 2,
-      "java": 4,
+      "java": 101,
+      "java": 121,
+      "java": 50,
       "java": 68,
+      "java": 30,
       "java": 9,
       "fxml": 1
     },
@@ -3259,14 +3345,11 @@
       "java": 14,
       "java": 10,
       "java": 3,
-      "java": 5,
       "java": 79,
       "java": 11,
       "java": 14,
       "java": 72,
       "java": 10,
-      "java": 10,
-      "java": 53,
       "java": 87,
       "java": 74,
       "java": 4,
@@ -3300,7 +3383,7 @@
       "json": 15,
       "java": 18,
       "java": 1,
-      "java": 22,
+      "java": 67,
       "java": 8,
       "java": 6,
       "java": 74,
@@ -3330,7 +3413,7 @@
       "java": 49,
       "java": 87,
       "java": 52,
-      "java": 32,
+      "java": 99,
       "java": 62,
       "java": 65,
       "java": 8,
@@ -3340,17 +3423,18 @@
       "java": 74,
       "java": 145,
       "java": 4,
-      "java": 44,
+      "java": 45,
       "java": 5,
-      "java": 91,
-      "java": 11,
+      "java": 113,
+      "java": 17,
       "java": 67,
       "java": 7,
       "java": 20,
       "java": 6,
+      "java": 2,
       "java": 3,
       "java": 8,
-      "java": 75
+      "java": 76
     },
     "dingyuchen": {
       "gitignore": 6,
@@ -3411,11 +3495,8 @@
       "java": 10,
       "java": 20,
       "java": 1,
-      "java": 43,
       "java": 7,
       "java": 54,
-      "java": 12,
-      "java": 22,
       "java": 8,
       "java": 1,
       "java": 1,
@@ -3434,7 +3515,7 @@
       "json": 2,
       "json": 2,
       "json": 3,
-      "java": 14,
+      "java": 11,
       "java": 5,
       "java": 4,
       "java": 6,
@@ -3460,9 +3541,7 @@
       "java": 17,
       "java": 8,
       "java": 26,
-      "java": 7,
-      "java": 19,
-      "java": 3,
+      "java": 6,
       "java": 12,
       "java": 138,
       "java": 11,
@@ -3514,7 +3593,7 @@
       "java": 56,
       "java": 171,
       "java": 2,
-      "java": 91
+      "java": 90
     },
     "Berttwm": {
       "adoc": 30,
@@ -3562,8 +3641,8 @@
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 29649.164,
-    "joloong": 265196.25,
+    "yewon0303": 32079.244,
+    "joloong": 269652.9,
     "dingyuchen": 74455.94,
     "wallacelim97": 39233.49,
     "Berttwm": 38598.77
