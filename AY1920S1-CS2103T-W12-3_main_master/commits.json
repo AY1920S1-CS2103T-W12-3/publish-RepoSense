@@ -609,6 +609,69 @@
             "deletions": 22
           }
         ]
+      },
+      {
+        "insertions": 154,
+        "deletions": 28,
+        "date": "2019-11-06",
+        "commitResults": [
+          {
+            "hash": "5255586c06aac20c00c8ff2c3926902e7b5dffbd",
+            "messageTitle": "Update Budget to be affected correctly when undoing and redoing OutTransaction",
+            "messageBody": "",
+            "insertions": 7,
+            "deletions": 5
+          },
+          {
+            "hash": "c9146994ef0c0c576ca3961af0884ebaf4808003",
+            "messageTitle": "Add of remaining amount, need to improve on UI",
+            "messageBody": "",
+            "insertions": 14,
+            "deletions": 1
+          },
+          {
+            "hash": "132602f90bd5a72fd717e9c52d606fd37486938d",
+            "messageTitle": "Add placeholder for percentage remaining and number of days separate from Categories",
+            "messageBody": "",
+            "insertions": 34,
+            "deletions": 2
+          },
+          {
+            "hash": "0e273fa7881eb6d89f611aa849653aa6312e37cf",
+            "messageTitle": "Change the placeholder colours of budget details to be different from categories",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "b38a32c96f7bd3cee36858b6e3c7b556d869b8e0",
+            "messageTitle": "Add Amount test cases to improve coverage for new methods added",
+            "messageBody": "",
+            "insertions": 58,
+            "deletions": 1
+          },
+          {
+            "hash": "ee6386297a1d3afee4e471c0ce891a9a51dd8652",
+            "messageTitle": "Add missing JavaDoc for new method",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 3
+          },
+          {
+            "hash": "64e90acb0f604a25635441b6eb0fba676fe68733",
+            "messageTitle": "Add more test cases to test new methods added",
+            "messageBody": "",
+            "insertions": 33,
+            "deletions": 14
+          },
+          {
+            "hash": "1116be4b60a3f7dcf3b066d4477c1242fcc1d579",
+            "messageTitle": "Fix test error",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "joloong": [
@@ -2456,8 +2519,8 @@
         ]
       },
       {
-        "insertions": 17,
-        "deletions": 2,
+        "insertions": 192,
+        "deletions": 35,
         "date": "2019-11-04",
         "commitResults": [
           {
@@ -2466,6 +2529,69 @@
             "messageBody": "",
             "insertions": 17,
             "deletions": 2
+          },
+          {
+            "hash": "53b914e0bd98e33fab3489bb0d3c8437323b197c",
+            "messageTitle": "Update DeveloperGuide with UML diagrams.",
+            "messageBody": "",
+            "insertions": 175,
+            "deletions": 33
+          }
+        ]
+      },
+      {
+        "insertions": 131,
+        "deletions": 51,
+        "date": "2019-11-06",
+        "commitResults": [
+          {
+            "hash": "69095a2b98369a712519cb6d9f3348d554a6a555",
+            "messageTitle": "Remove broken constructors",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 11
+          },
+          {
+            "hash": "6719a96341537c8b05fef195d76f3acac8d73076",
+            "messageTitle": "Add newline to .puml EOF",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 1
+          },
+          {
+            "hash": "1707769eb3cd38c5d76515285c85fbfdd126187a",
+            "messageTitle": "Fix checkstyle errors",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 3
+          },
+          {
+            "hash": "026cd6f9695914314334fb48f7524e6cce075928",
+            "messageTitle": "Remove UndoableAction. Fixes #137",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 14
+          },
+          {
+            "hash": "065c0af6eab8461ce61d4ef40e6b38b4f0358aab",
+            "messageTitle": "Implement remove people with 0 debt. Fixes #215",
+            "messageBody": "",
+            "insertions": 11,
+            "deletions": 0
+          },
+          {
+            "hash": "19aa07e92c7e869cec022e0fee4d26c5b2bb23c5",
+            "messageTitle": "Change Ledger string type to \u0027l\u0027",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "cb0f57b8488825afc6939f0933ff54e8231921f9",
+            "messageTitle": "Implement update for LedgerOperations",
+            "messageBody": "",
+            "insertions": 115,
+            "deletions": 21
           }
         ]
       }
@@ -3389,20 +3515,83 @@
             "deletions": 13
           }
         ]
+      },
+      {
+        "insertions": 505,
+        "deletions": 122,
+        "date": "2019-11-06",
+        "commitResults": [
+          {
+            "hash": "545c080fa8d098447a71bee520bebc202c4d3806",
+            "messageTitle": "OutCommandParser Test and Fixed InCommandParserTest",
+            "messageBody": "",
+            "insertions": 126,
+            "deletions": 1
+          },
+          {
+            "hash": "addbc716914030d4661ec11e906f164c3fa5f524",
+            "messageTitle": "UpdateCommand and UpdateCommandTest updates.",
+            "messageBody": "",
+            "insertions": 86,
+            "deletions": 55
+          },
+          {
+            "hash": "5fdc851393a8930cb42ebbff1751cf7167096f08",
+            "messageTitle": "UG updated to reflect update changes",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 0
+          },
+          {
+            "hash": "8b9999faeb3e163f3c81af376ec91d75d66d8091",
+            "messageTitle": "Fix InCommand and OutCommand Parser tests, added InTransactionTest",
+            "messageBody": "",
+            "insertions": 27,
+            "deletions": 6
+          },
+          {
+            "hash": "e869345c28a942cdc641b245c599f8500bb0bb4a",
+            "messageTitle": "Updated Max Amount to 1 billion, Test cases for BankAccount and In/Out Transaction",
+            "messageBody": "",
+            "insertions": 165,
+            "deletions": 9
+          },
+          {
+            "hash": "f93f94a3d893a0be84f3967746b94d121596715d",
+            "messageTitle": "Delete Ledger for deleteCommand",
+            "messageBody": "",
+            "insertions": 47,
+            "deletions": 4
+          },
+          {
+            "hash": "a41f347c04eb30660e7d17e3fb091782052fb3c9",
+            "messageTitle": "Remove duplicate checks for In/Out",
+            "messageBody": "",
+            "insertions": 43,
+            "deletions": 43
+          },
+          {
+            "hash": "e2eb540f82a76bb468caade9913c74f42dfe90d3",
+            "messageTitle": "JavaDoc",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 4
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1843,
-    "joloong": 5194,
-    "dingyuchen": 2428,
-    "wallacelim97": 2511,
-    "Berttwm": 1340
+    "yewon0303": 1938,
+    "joloong": 5179,
+    "dingyuchen": 2694,
+    "wallacelim97": 2500,
+    "Berttwm": 1737
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
       "adoc": 146,
-      "adoc": 87,
+      "adoc": 74,
       "puml": 3,
       "puml": 14,
       "puml": 11,
@@ -3413,11 +3602,11 @@
       "java": 7,
       "java": 23,
       "java": 1,
-      "java": 16,
+      "java": 13,
       "java": 1,
       "java": 47,
       "java": 2,
-      "java": 34,
+      "java": 20,
       "java": 2,
       "java": 3,
       "java": 9,
@@ -3425,11 +3614,11 @@
       "java": 50,
       "java": 3,
       "java": 58,
-      "java": 26,
-      "java": 18,
+      "java": 23,
+      "java": 17,
       "java": 3,
-      "java": 37,
-      "java": 142,
+      "java": 52,
+      "java": 169,
       "java": 9,
       "java": 7,
       "java": 3,
@@ -3441,15 +3630,16 @@
       "java": 6,
       "java": 1,
       "java": 71,
-      "java": 58,
+      "java": 59,
       "java": 46,
       "java": 1,
       "java": 10,
       "java": 3,
       "java": 4,
-      "fxml": 33,
+      "fxml": 34,
       "fxml": 8,
       "fxml": 1,
+      "css": 14,
       "fxml": 1,
       "fxml": 1,
       "fxml": 1,
@@ -3461,7 +3651,8 @@
       "java": 2,
       "java": 4,
       "java": 2,
-      "java": 101,
+      "java": 52,
+      "java": 120,
       "java": 121,
       "java": 50,
       "java": 68,
@@ -3474,11 +3665,11 @@
       "json": 39,
       "gradle": 3,
       "adoc": 11,
-      "adoc": 171,
+      "adoc": 167,
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
-      "adoc": 99,
+      "adoc": 98,
       "puml": 82,
       "drawio": 1,
       "drawio": 1,
@@ -3496,9 +3687,9 @@
       "java": 1,
       "java": 52,
       "java": 1,
-      "java": 29,
+      "java": 27,
       "java": 2,
-      "java": 19,
+      "java": 11,
       "java": 2,
       "java": 8,
       "java": 30,
@@ -3506,7 +3697,7 @@
       "java": 49,
       "java": 11,
       "java": 30,
-      "java": 35,
+      "java": 33,
       "java": 45,
       "java": 22,
       "java": 14,
@@ -3525,8 +3716,8 @@
       "java": 37,
       "java": 59,
       "java": 17,
-      "java": 45,
-      "java": 51,
+      "java": 55,
+      "java": 52,
       "java": 10,
       "java": 1,
       "java": 3,
@@ -3537,17 +3728,17 @@
       "java": 11,
       "java": 67,
       "java": 2,
-      "java": 14,
+      "java": 12,
       "java": 16,
-      "java": 27,
+      "java": 24,
       "java": 4,
       "java": 7,
-      "java": 20,
+      "java": 19,
       "java": 7,
       "java": 14,
-      "java": 55,
       "java": 48,
-      "java": 41,
+      "java": 48,
+      "java": 40,
       "java": 17,
       "java": 11,
       "java": 7,
@@ -3576,7 +3767,7 @@
       "java": 1,
       "java": 8,
       "fxml": 1,
-      "css": 6,
+      "css": 11,
       "fxml": 2,
       "fxml": 33,
       "fxml": 8,
@@ -3650,16 +3841,19 @@
     },
     "dingyuchen": {
       "gitignore": 6,
-      "adoc": 33,
-      "adoc": 10,
+      "adoc": 75,
+      "adoc": 12,
       "puml": 51,
       "puml": 3,
+      "puml": 107,
+      "puml": 17,
       "java": 11,
+      "java": 1,
       "java": 15,
       "java": 17,
       "java": 2,
-      "java": 3,
       "java": 5,
+      "java": 4,
       "java": 3,
       "java": 3,
       "java": 44,
@@ -3667,7 +3861,7 @@
       "java": 5,
       "java": 28,
       "java": 2,
-      "java": 2,
+      "java": 69,
       "java": 2,
       "java": 2,
       "java": 1,
@@ -3680,18 +3874,18 @@
       "java": 71,
       "java": 1,
       "java": 63,
-      "java": 89,
-      "java": 45,
-      "java": 52,
+      "java": 110,
+      "java": 50,
+      "java": 59,
       "java": 19,
       "java": 32,
       "java": 8,
-      "java": 97,
+      "java": 101,
       "java": 15,
       "java": 43,
       "java": 16,
       "java": 2,
-      "java": 46,
+      "java": 45,
       "java": 19,
       "java": 9,
       "java": 22,
@@ -3700,9 +3894,8 @@
       "java": 47,
       "java": 41,
       "java": 93,
-      "java": 15,
-      "java": 11,
-      "java": 98,
+      "java": 12,
+      "java": 99,
       "java": 101,
       "java": 10,
       "java": 20,
@@ -3747,7 +3940,8 @@
       "java": 14,
       "java": 2,
       "java": 1,
-      "java": 58,
+      "java": 7,
+      "java": 57,
       "java": 34,
       "java": 32,
       "java": 17,
@@ -3773,7 +3967,7 @@
       "java": 27,
       "java": 27,
       "java": 71,
-      "java": 27,
+      "java": 26,
       "java": 1,
       "java": 9,
       "java": 102,
@@ -3787,8 +3981,8 @@
       "java": 48,
       "java": 2,
       "java": 45,
+      "java": 17,
       "java": 21,
-      "java": 20,
       "java": 7,
       "java": 1,
       "java": 13,
@@ -3814,7 +4008,7 @@
       "java": 46,
       "java": 2,
       "css": 11,
-      "css": 27,
+      "css": 22,
       "fxml": 11,
       "fxml": 14,
       "css": 11,
@@ -3828,25 +4022,25 @@
       "java": 11,
       "java": 10,
       "java": 67,
-      "java": 192,
+      "java": 190,
       "java": 2,
       "java": 88
     },
     "Berttwm": {
-      "adoc": 30,
-      "adoc": 30,
+      "adoc": 27,
+      "adoc": 47,
       "java": 1,
-      "java": 1,
-      "java": 5,
+      "java": 13,
+      "java": 8,
       "java": 54,
       "java": 1,
       "java": 1,
       "java": 1,
       "java": 20,
-      "java": 187,
-      "java": 25,
+      "java": 197,
+      "java": 34,
       "java": 17,
-      "java": 68,
+      "java": 77,
       "java": 4,
       "java": 15,
       "java": 19,
@@ -3854,18 +4048,20 @@
       "java": 67,
       "java": 9,
       "java": 6,
-      "java": 3,
-      "java": 15,
+      "java": 11,
+      "java": 7,
+      "java": 5,
+      "java": 16,
       "java": 2,
       "java": 1,
       "java": 39,
-      "java": 7,
       "java": 4,
-      "java": 16,
+      "java": 4,
+      "java": 9,
       "java": 4,
       "java": 4,
       "java": 11,
-      "java": 13,
+      "java": 8,
       "java": 11,
       "java": 6,
       "java": 18,
@@ -3873,21 +4069,26 @@
       "java": 1,
       "java": 64,
       "java": 124,
-      "java": 152,
-      "java": 121,
+      "java": 169,
+      "java": 123,
+      "java": 123,
+      "java": 43,
+      "java": 5,
       "java": 11,
       "java": 48,
+      "java": 67,
+      "java": 67,
       "java": 10,
       "java": 1,
-      "java": 69
+      "java": 79
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 32079.244,
+    "yewon0303": 31911.102,
     "joloong": 268357.6,
-    "dingyuchen": 74455.94,
+    "dingyuchen": 72870.9,
     "wallacelim97": 199865.22,
-    "Berttwm": 39497.113
+    "Berttwm": 48311.227
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
