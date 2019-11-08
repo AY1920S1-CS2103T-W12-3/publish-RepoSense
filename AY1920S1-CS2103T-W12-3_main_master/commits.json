@@ -2,20 +2,6 @@
   "authorDailyContributionsMap": {
     "yewon0303": [
       {
-        "insertions": 67,
-        "deletions": 30,
-        "date": "2019-10-07",
-        "commitResults": [
-          {
-            "hash": "ae0c5002fda5debb4cf01ce2cc2c64f402e10173",
-            "messageTitle": "Add Amount class, Update BankAccount, Transaction classes, Delete Balance class",
-            "messageBody": "",
-            "insertions": 67,
-            "deletions": 30
-          }
-        ]
-      },
-      {
         "insertions": 15,
         "deletions": 11,
         "date": "2019-10-12",
@@ -688,8 +674,8 @@
         ]
       },
       {
-        "insertions": 60,
-        "deletions": 19,
+        "insertions": 68,
+        "deletions": 24,
         "date": "2019-11-07",
         "commitResults": [
           {
@@ -726,6 +712,34 @@
             "messageBody": "",
             "insertions": 0,
             "deletions": 4
+          },
+          {
+            "hash": "36c77524fdd33a2c4b2a07e6234f118437bec924",
+            "messageTitle": "Add General category for non-tagged budgets",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 5
+          }
+        ]
+      },
+      {
+        "insertions": 13,
+        "deletions": 8,
+        "date": "2019-11-08",
+        "commitResults": [
+          {
+            "hash": "39260b8523906746a1feb3bde0a531b75acc4974",
+            "messageTitle": "Improve UI of budget card",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 1
+          },
+          {
+            "hash": "d2f299dce177d722f16e69ec22ecbea0b9b7f6e8",
+            "messageTitle": "Correct equals check to check for duplicate budget, two budgets are considered duplicate if they share the same initialAmount, not remaining Amount",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 7
           }
         ]
       }
@@ -2153,8 +2167,8 @@
         ]
       },
       {
-        "insertions": 949,
-        "deletions": 1067,
+        "insertions": 1029,
+        "deletions": 1095,
         "date": "2019-11-07",
         "commitResults": [
           {
@@ -2317,46 +2331,81 @@
             "messageBody": "",
             "insertions": 2,
             "deletions": 2
+          },
+          {
+            "hash": "089b28c39449bc5346962363897bb300f235d7ec",
+            "messageTitle": "Update Sort in UG",
+            "messageBody": "",
+            "insertions": 38,
+            "deletions": 17
+          },
+          {
+            "hash": "9be4efc7d17539e62b9fd5798667fb4d0df2de1f",
+            "messageTitle": "Fix Sort tests",
+            "messageBody": "",
+            "insertions": 22,
+            "deletions": 6
+          },
+          {
+            "hash": "ac10e2111ed8cb54bb99d4a021d89903fb956f25",
+            "messageTitle": "Add images for View in UG",
+            "messageBody": "",
+            "insertions": 20,
+            "deletions": 5
+          }
+        ]
+      },
+      {
+        "insertions": 262,
+        "deletions": 83,
+        "date": "2019-11-08",
+        "commitResults": [
+          {
+            "hash": "5d2b488217d84ed57817345310b7e78599df1d30",
+            "messageTitle": "Add PersonTest cases",
+            "messageBody": "",
+            "insertions": 46,
+            "deletions": 2
+          },
+          {
+            "hash": "ef70144d6b7d2c5a6a61a141b3667df50f6c6174",
+            "messageTitle": "Minor BankAccountTest edit",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 5
+          },
+          {
+            "hash": "fe7e36889bbb71168c7f0099f083c2d8cf3884be",
+            "messageTitle": "Update undo in UG",
+            "messageBody": "",
+            "insertions": 95,
+            "deletions": 58
+          },
+          {
+            "hash": "573d348567637802df3521b1f498627a32b5480e",
+            "messageTitle": "Update redo in UG",
+            "messageBody": "",
+            "insertions": 32,
+            "deletions": 2
+          },
+          {
+            "hash": "1f6da11885e921f36b35dcf77964ffaf0cd0cd7a",
+            "messageTitle": "Fix bugs",
+            "messageBody": "",
+            "insertions": 27,
+            "deletions": 16
+          },
+          {
+            "hash": "c74cb5ab2c1fc7f80fc64476d36eb1d72e7f30ed",
+            "messageTitle": "Add test cases",
+            "messageBody": "",
+            "insertions": 54,
+            "deletions": 0
           }
         ]
       }
     ],
     "dingyuchen": [
-      {
-        "insertions": 111,
-        "deletions": 14,
-        "date": "2019-10-07",
-        "commitResults": [
-          {
-            "hash": "bbc2ff4f3b373404571ebf4f5842702ad6193b0e",
-            "messageTitle": "create incomplete classes for balance and bankaccount",
-            "messageBody": "",
-            "insertions": 15,
-            "deletions": 0
-          },
-          {
-            "hash": "960f43cfae64087eddc887214dcdb1b7cf14c28b",
-            "messageTitle": "create incomplete class for transaction",
-            "messageBody": "",
-            "insertions": 15,
-            "deletions": 0
-          },
-          {
-            "hash": "ea63819dbed7f30bab75e5556adff8d84fd55175",
-            "messageTitle": "create class for in and out transaction",
-            "messageBody": "",
-            "insertions": 71,
-            "deletions": 14
-          },
-          {
-            "hash": "bdaef04c2b0547f5e8be4043736fc03ef841213c",
-            "messageTitle": "fix compile error",
-            "messageBody": "",
-            "insertions": 10,
-            "deletions": 0
-          }
-        ]
-      },
       {
         "insertions": 416,
         "deletions": 151,
@@ -2834,8 +2883,8 @@
         ]
       },
       {
-        "insertions": 325,
-        "deletions": 1015,
+        "insertions": 460,
+        "deletions": 1045,
         "date": "2019-11-07",
         "commitResults": [
           {
@@ -2935,25 +2984,53 @@
             "messageBody": "",
             "insertions": 8,
             "deletions": 4
+          },
+          {
+            "hash": "dcb9cf574f1e545ba24af985e54a6e6d8db2c360",
+            "messageTitle": "Add new test cases to ReceiveMoneyTest",
+            "messageBody": "",
+            "insertions": 84,
+            "deletions": 28
+          },
+          {
+            "hash": "4649e6e472b23e733685ecdf770c5ad236f382a7",
+            "messageTitle": "Add new tests to SplitTest",
+            "messageBody": "",
+            "insertions": 51,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 293,
+        "deletions": 43,
+        "date": "2019-11-08",
+        "commitResults": [
+          {
+            "hash": "53788c244bba56bfd432d3a645b997cb7405575f",
+            "messageTitle": "Add new testcases to SplitCommandParserTest",
+            "messageBody": "",
+            "insertions": 149,
+            "deletions": 3
+          },
+          {
+            "hash": "e74fd3982332044361084e43282909d2fbdee2fa",
+            "messageTitle": "Add new test cases to ReceiveCommandParserTest",
+            "messageBody": "",
+            "insertions": 126,
+            "deletions": 22
+          },
+          {
+            "hash": "f41416bd33c5214101bc750ae0f24d5ba253464e",
+            "messageTitle": "Fix checkstyle errors",
+            "messageBody": "",
+            "insertions": 18,
+            "deletions": 18
           }
         ]
       }
     ],
     "wallacelim97": [
-      {
-        "insertions": 130,
-        "deletions": 3,
-        "date": "2019-10-07",
-        "commitResults": [
-          {
-            "hash": "97aded19086b65e2f94d1093e5afaf590618c9a0",
-            "messageTitle": "add entry point to BankAccount",
-            "messageBody": "",
-            "insertions": 130,
-            "deletions": 3
-          }
-        ]
-      },
       {
         "insertions": 70,
         "deletions": 60,
@@ -3471,6 +3548,27 @@
             "deletions": 150
           }
         ]
+      },
+      {
+        "insertions": 66,
+        "deletions": 45,
+        "date": "2019-11-08",
+        "commitResults": [
+          {
+            "hash": "e5f10b4b68932ae43e5a56d50fad0f6fbe15c29e",
+            "messageTitle": "Correct y-axis offset in GradientDescent",
+            "messageBody": "",
+            "insertions": 25,
+            "deletions": 19
+          },
+          {
+            "hash": "0f2c5858079ce4751043266a166c8f4151dc9bdf",
+            "messageTitle": "rework projection to work sensibly with budgets",
+            "messageBody": "",
+            "insertions": 41,
+            "deletions": 26
+          }
+        ]
       }
     ],
     "Berttwm": [
@@ -3965,8 +4063,8 @@
         ]
       },
       {
-        "insertions": 5,
-        "deletions": 46,
+        "insertions": 82,
+        "deletions": 91,
         "date": "2019-11-07",
         "commitResults": [
           {
@@ -3982,22 +4080,64 @@
             "messageBody": "",
             "insertions": 5,
             "deletions": 29
+          },
+          {
+            "hash": "00ccbe40f5c19f90098c4c14416b6aa66804e18f",
+            "messageTitle": "Fix update command to handle BankAccount balance",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 1
+          },
+          {
+            "hash": "ae06fae1c06030b5aef403ee93bd84a0ce507701",
+            "messageTitle": "OutCommand category fix",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "18667e0ae1b782ee3e77edbe3727fd53ec1d7c4f",
+            "messageTitle": "Message Fix, test case fix",
+            "messageBody": "",
+            "insertions": 11,
+            "deletions": 38
+          },
+          {
+            "hash": "801b817959fd296162326a73afa2963604cc941b",
+            "messageTitle": "Update and delete out transactions to change budget",
+            "messageBody": "",
+            "insertions": 63,
+            "deletions": 5
+          }
+        ]
+      },
+      {
+        "insertions": 14,
+        "deletions": 5,
+        "date": "2019-11-08",
+        "commitResults": [
+          {
+            "hash": "673ff3f48d14682d970d170581482516260286a0",
+            "messageTitle": "Update transaction fix for budget",
+            "messageBody": "",
+            "insertions": 14,
+            "deletions": 5
           }
         ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1983,
-    "joloong": 5565,
-    "dingyuchen": 2901,
-    "wallacelim97": 2753,
-    "Berttwm": 1636
+    "yewon0303": 1937,
+    "joloong": 5804,
+    "dingyuchen": 3225,
+    "wallacelim97": 2717,
+    "Berttwm": 1676
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
       "adoc": 146,
-      "adoc": 63,
+      "adoc": 58,
       "puml": 3,
       "puml": 14,
       "puml": 11,
@@ -4005,29 +4145,30 @@
       "puml": 10,
       "puml": 16,
       "java": 3,
+      "java": 3,
       "java": 7,
       "java": 18,
       "java": 13,
       "java": 1,
-      "java": 47,
+      "java": 45,
       "java": 2,
       "java": 16,
       "java": 2,
       "java": 3,
       "java": 9,
       "java": 6,
-      "java": 46,
+      "java": 52,
       "java": 2,
-      "java": 58,
+      "java": 53,
       "java": 17,
       "java": 18,
       "java": 3,
-      "java": 52,
-      "java": 188,
-      "java": 9,
-      "java": 7,
+      "java": 20,
+      "java": 186,
+      "java": 6,
+      "java": 5,
       "java": 3,
-      "java": 8,
+      "java": 4,
       "java": 136,
       "java": 16,
       "java": 7,
@@ -4044,7 +4185,7 @@
       "fxml": 35,
       "fxml": 8,
       "fxml": 1,
-      "css": 20,
+      "css": 33,
       "fxml": 1,
       "fxml": 1,
       "fxml": 1,
@@ -4056,7 +4197,7 @@
       "java": 2,
       "java": 2,
       "java": 52,
-      "java": 133,
+      "java": 120,
       "java": 121,
       "java": 56,
       "java": 68,
@@ -4074,7 +4215,7 @@
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
-      "adoc": 122,
+      "adoc": 248,
       "puml": 82,
       "drawio": 1,
       "drawio": 1,
@@ -4091,13 +4232,13 @@
       "java": 2,
       "java": 66,
       "java": 1,
-      "java": 27,
+      "java": 23,
       "java": 2,
-      "java": 11,
+      "java": 10,
       "java": 2,
       "java": 5,
       "java": 30,
-      "java": 7,
+      "java": 6,
       "java": 49,
       "java": 11,
       "java": 30,
@@ -4108,19 +4249,19 @@
       "java": 3,
       "java": 1,
       "java": 119,
-      "java": 19,
+      "java": 13,
       "java": 47,
       "java": 7,
-      "java": 66,
+      "java": 70,
       "java": 7,
-      "java": 4,
-      "java": 33,
+      "java": 5,
+      "java": 36,
       "java": 27,
       "java": 37,
-      "java": 59,
+      "java": 58,
       "java": 16,
-      "java": 68,
-      "java": 49,
+      "java": 69,
+      "java": 48,
       "java": 10,
       "java": 1,
       "java": 3,
@@ -4128,11 +4269,12 @@
       "java": 19,
       "java": 94,
       "java": 57,
-      "java": 67,
+      "java": 1,
+      "java": 65,
       "java": 2,
       "java": 12,
       "java": 16,
-      "java": 24,
+      "java": 21,
       "java": 4,
       "java": 2,
       "java": 19,
@@ -4208,16 +4350,17 @@
       "java": 1,
       "java": 1,
       "java": 46,
-      "java": 188,
+      "java": 190,
       "java": 191,
-      "java": 36,
+      "java": 50,
       "java": 53,
-      "java": 87,
+      "java": 90,
       "java": 52,
       "java": 179,
       "java": 62,
       "java": 65,
-      "java": 1,
+      "java": 40,
+      "java": 64,
       "java": 19,
       "java": 4,
       "java": 10,
@@ -4240,13 +4383,13 @@
     "dingyuchen": {
       "gitignore": 6,
       "adoc": 75,
-      "adoc": 12,
+      "adoc": 7,
       "puml": 51,
       "puml": 3,
       "puml": 107,
       "puml": 17,
       "java": 11,
-      "java": 5,
+      "java": 2,
       "java": 17,
       "java": 22,
       "java": 2,
@@ -4254,10 +4397,10 @@
       "java": 4,
       "java": 3,
       "java": 3,
-      "java": 49,
+      "java": 61,
       "java": 2,
       "java": 5,
-      "java": 31,
+      "java": 42,
       "java": 2,
       "java": 59,
       "java": 2,
@@ -4266,34 +4409,34 @@
       "java": 2,
       "java": 4,
       "java": 1,
-      "java": 68,
+      "java": 69,
       "java": 1,
       "java": 54,
       "java": 73,
       "java": 11,
       "java": 1,
-      "java": 63,
+      "java": 53,
       "java": 127,
-      "java": 57,
-      "java": 74,
+      "java": 55,
+      "java": 73,
       "java": 19,
       "java": 32,
       "java": 8,
       "java": 101,
       "java": 15,
-      "java": 31,
+      "java": 30,
       "java": 16,
       "java": 2,
-      "java": 59,
+      "java": 56,
       "java": 19,
-      "java": 9,
+      "java": 4,
       "java": 23,
       "java": 39,
-      "java": 10,
+      "java": 5,
       "java": 62,
       "java": 44,
       "java": 98,
-      "java": 12,
+      "java": 3,
       "java": 99,
       "java": 95,
       "java": 10,
@@ -4330,18 +4473,20 @@
       "java": 7,
       "java": 9,
       "java": 4,
-      "java": 17,
+      "java": 16,
       "java": 3,
-      "java": 10,
+      "java": 9,
       "java": 3,
       "java": 4,
       "java": 2,
       "java": 3,
       "java": 7,
-      "java": 4,
+      "java": 6,
       "java": 5,
       "java": 4,
       "java": 2,
+      "java": 78,
+      "java": 146,
       "java": 38,
       "java": 2,
       "java": 17,
@@ -4351,14 +4496,15 @@
       "java": 10,
       "java": 8,
       "java": 79,
+      "java": 13,
       "java": 34,
-      "java": 32,
-      "java": 17,
+      "java": 90,
+      "java": 61,
       "java": 26,
       "java": 7,
       "java": 4,
       "java": 12,
-      "java": 138,
+      "java": 143,
       "java": 8,
       "java": 3,
       "java": 12,
@@ -4369,7 +4515,6 @@
       "gradle": 4,
       "adoc": 5,
       "adoc": 27,
-      "adoc": 3,
       "puml": 93,
       "java": 3,
       "java": 6,
@@ -4378,40 +4523,39 @@
       "java": 27,
       "java": 14,
       "java": 71,
-      "java": 19,
+      "java": 3,
       "java": 1,
       "java": 1,
       "java": 108,
       "java": 1,
       "java": 4,
       "java": 8,
-      "java": 3,
+      "java": 1,
       "java": 31,
-      "java": 31,
+      "java": 9,
       "java": 38,
       "java": 1,
-      "java": 28,
+      "java": 26,
       "java": 48,
-      "java": 4,
       "java": 2,
       "java": 45,
-      "java": 19,
-      "java": 137,
+      "java": 20,
+      "java": 136,
       "java": 7,
       "java": 1,
       "java": 13,
       "java": 2,
-      "java": 233,
-      "java": 199,
+      "java": 235,
+      "java": 205,
       "java": 135,
       "java": 11,
       "java": 7,
       "java": 17,
       "java": 2,
-      "java": 6,
+      "java": 15,
       "java": 4,
       "java": 83,
-      "java": 169,
+      "java": 173,
       "java": 30,
       "java": 54,
       "java": 9,
@@ -4437,7 +4581,6 @@
       "java": 11,
       "java": 104,
       "java": 21,
-      "java": 8,
       "java": 1,
       "java": 11,
       "java": 10,
@@ -4448,35 +4591,35 @@
     },
     "Berttwm": {
       "adoc": 27,
-      "adoc": 48,
+      "adoc": 40,
       "java": 1,
       "java": 12,
-      "java": 8,
-      "java": 55,
+      "java": 6,
+      "java": 53,
       "java": 1,
       "java": 1,
       "java": 1,
       "java": 20,
       "java": 193,
-      "java": 16,
+      "java": 13,
       "java": 17,
       "java": 61,
       "java": 15,
       "java": 3,
       "java": 2,
       "java": 52,
-      "java": 9,
+      "java": 40,
       "java": 6,
-      "java": 6,
+      "java": 5,
       "java": 3,
       "java": 5,
-      "java": 16,
+      "java": 13,
       "java": 2,
-      "java": 1,
+      "java": 43,
       "java": 39,
       "java": 4,
       "java": 4,
-      "java": 9,
+      "java": 6,
       "java": 4,
       "java": 4,
       "java": 11,
@@ -4486,10 +4629,10 @@
       "java": 18,
       "java": 21,
       "java": 1,
-      "java": 63,
-      "java": 124,
+      "java": 54,
+      "java": 115,
       "java": 169,
-      "java": 111,
+      "java": 118,
       "java": 118,
       "java": 43,
       "java": 11,
@@ -4503,11 +4646,11 @@
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 31883.625,
-    "joloong": 340177.56,
-    "dingyuchen": 112833.95,
-    "wallacelim97": 225518.48,
-    "Berttwm": 48076.41
+    "yewon0303": 32112.93,
+    "joloong": 344376.62,
+    "dingyuchen": 125072.1,
+    "wallacelim97": 225612.38,
+    "Berttwm": 48041.29
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
