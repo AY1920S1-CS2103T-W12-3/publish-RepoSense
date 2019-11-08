@@ -674,8 +674,8 @@
         ]
       },
       {
-        "insertions": 68,
-        "deletions": 24,
+        "insertions": 115,
+        "deletions": 34,
         "date": "2019-11-07",
         "commitResults": [
           {
@@ -719,12 +719,33 @@
             "messageBody": "",
             "insertions": 8,
             "deletions": 5
+          },
+          {
+            "hash": "d97ba1d1f0f29878db7ea4a8ef8eb60896d7a7bb",
+            "messageTitle": "Add picture to enhance readability in UserGuide",
+            "messageBody": "",
+            "insertions": 13,
+            "deletions": 6
+          },
+          {
+            "hash": "4606630a0d762112b330dc88cd2174a06c0f3734",
+            "messageTitle": "Add screenshots to enhance readability of UserGuide",
+            "messageBody": "",
+            "insertions": 23,
+            "deletions": 2
+          },
+          {
+            "hash": "9de43755adf224939b4f8b5a0f1160fa4a160673",
+            "messageTitle": "Edit phrasing for UserGuide",
+            "messageBody": "",
+            "insertions": 11,
+            "deletions": 2
           }
         ]
       },
       {
-        "insertions": 13,
-        "deletions": 8,
+        "insertions": 47,
+        "deletions": 18,
         "date": "2019-11-08",
         "commitResults": [
           {
@@ -740,6 +761,27 @@
             "messageBody": "",
             "insertions": 4,
             "deletions": 7
+          },
+          {
+            "hash": "92e2af50b3cebf730b277ac155c4a8ff03c0ec1a",
+            "messageTitle": "Add missing UserGuide explanation",
+            "messageBody": "",
+            "insertions": 28,
+            "deletions": 4
+          },
+          {
+            "hash": "616b598712d47018f2aad2224960b4742b069961",
+            "messageTitle": "Change error message from Transaction to Budget",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "ddb70df8bdecb549cf53e4cfdd114d4e06fec576",
+            "messageTitle": "Minor changes to plantUML diagrams",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 4
           }
         ]
       }
@@ -3002,8 +3044,8 @@
         ]
       },
       {
-        "insertions": 293,
-        "deletions": 43,
+        "insertions": 364,
+        "deletions": 61,
         "date": "2019-11-08",
         "commitResults": [
           {
@@ -3026,6 +3068,34 @@
             "messageBody": "",
             "insertions": 18,
             "deletions": 18
+          },
+          {
+            "hash": "6e164f6042b0214ff0667674745d951fcc7ef39c",
+            "messageTitle": "Add green label to amounts in Ledger",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "51dd73c5e46b0cb8351414ee022f03e282f2aeda",
+            "messageTitle": "Update LedgerOperations to latest syntax",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 5
+          },
+          {
+            "hash": "adf6beb294f8040f57e7c295ca5c09d60ed42209",
+            "messageTitle": "Update UG for Split and Receive",
+            "messageBody": "",
+            "insertions": 64,
+            "deletions": 11
+          },
+          {
+            "hash": "efb4a2c55248152599c3aef7cc5ba2a480e2a02c",
+            "messageTitle": "Include missing images",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
           }
         ]
       }
@@ -4128,26 +4198,27 @@
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1937,
-    "joloong": 5804,
-    "dingyuchen": 3225,
-    "wallacelim97": 2717,
-    "Berttwm": 1676
+    "yewon0303": 1968,
+    "joloong": 5796,
+    "dingyuchen": 3290,
+    "wallacelim97": 2716,
+    "Berttwm": 1673
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
       "adoc": 146,
-      "adoc": 58,
+      "adoc": 83,
       "puml": 3,
       "puml": 14,
-      "puml": 11,
+      "puml": 12,
+      "puml": 3,
       "puml": 106,
       "puml": 10,
       "puml": 16,
       "java": 3,
       "java": 3,
       "java": 7,
-      "java": 18,
+      "java": 19,
       "java": 13,
       "java": 1,
       "java": 45,
@@ -4185,7 +4256,7 @@
       "fxml": 35,
       "fxml": 8,
       "fxml": 1,
-      "css": 33,
+      "css": 34,
       "fxml": 1,
       "fxml": 1,
       "fxml": 1,
@@ -4215,7 +4286,7 @@
       "adoc": 4,
       "adoc": 12,
       "adoc": 4,
-      "adoc": 248,
+      "adoc": 240,
       "puml": 82,
       "drawio": 1,
       "drawio": 1,
@@ -4383,7 +4454,7 @@
     "dingyuchen": {
       "gitignore": 6,
       "adoc": 75,
-      "adoc": 7,
+      "adoc": 71,
       "puml": 51,
       "puml": 3,
       "puml": 107,
@@ -4457,6 +4528,7 @@
       "java": 53,
       "java": 41,
       "java": 1,
+      "css": 1,
       "fxml": 2,
       "fxml": 4,
       "fxml": 19,
@@ -4521,7 +4593,7 @@
       "java": 3,
       "java": 6,
       "java": 27,
-      "java": 14,
+      "java": 13,
       "java": 71,
       "java": 3,
       "java": 1,
@@ -4591,7 +4663,7 @@
     },
     "Berttwm": {
       "adoc": 27,
-      "adoc": 40,
+      "adoc": 37,
       "java": 1,
       "java": 12,
       "java": 6,
@@ -4646,9 +4718,9 @@
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 32112.93,
+    "yewon0303": 31951.182,
     "joloong": 344376.62,
-    "dingyuchen": 125072.1,
+    "dingyuchen": 125853.18,
     "wallacelim97": 225612.38,
     "Berttwm": 48041.29
   },
