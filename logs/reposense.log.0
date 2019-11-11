@@ -1,18 +1,18 @@
-Nov 08, 2019 1:57:06 PM reposense.report.RepoCloner spawnCloneProcess
+Nov 11, 2019 3:59:52 PM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/AY1920S1-CS2103T-W12-3/main.git...
-Nov 08, 2019 1:57:06 PM reposense.report.RepoCloner waitForCloneProcess
+Nov 11, 2019 3:59:52 PM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/AY1920S1-CS2103T-W12-3/main.git to complete...
-Nov 08, 2019 1:57:07 PM reposense.report.RepoCloner waitForCloneProcess
+Nov 11, 2019 3:59:54 PM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/AY1920S1-CS2103T-W12-3/main.git completed!
-Nov 08, 2019 1:57:07 PM reposense.report.ReportGenerator analyzeRepos
+Nov 11, 2019 3:59:54 PM reposense.report.ReportGenerator analyzeRepos
 INFO: [1/1] Analyzing https://github.com/AY1920S1-CS2103T-W12-3/main.git (master)...
-Nov 08, 2019 1:57:08 PM reposense.commits.CommitInfoExtractor extractCommitInfos
+Nov 11, 2019 3:59:54 PM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/AY1920S1-CS2103T-W12-3/main.git (master)...
-Nov 08, 2019 1:57:08 PM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Nov 11, 2019 3:59:55 PM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/AY1920S1-CS2103T-W12-3/main.git (master)...
-Nov 08, 2019 1:57:08 PM reposense.authorship.FileInfoExtractor extractFileInfos
+Nov 11, 2019 3:59:55 PM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/AY1920S1-CS2103T-W12-3/main.git (master)...
-Nov 08, 2019 1:57:14 PM reposense.report.ReportGenerator analyzeRepo
+Nov 11, 2019 4:00:03 PM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/AY1920S1-CS2103T-W12-3/main.git (master) completed!
-Nov 08, 2019 1:57:14 PM reposense.report.ReportGenerator generateReposReport
+Nov 11, 2019 4:00:03 PM reposense.report.ReportGenerator generateReposReport
 INFO: The report is generated at /home/travis/build/AY1920S1-CS2103T-W12-3/publish-RepoSense/reposense-report

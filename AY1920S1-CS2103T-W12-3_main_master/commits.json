@@ -784,23 +784,338 @@
             "deletions": 4
           }
         ]
-      }
-    ],
-    "joloong": [
+      },
       {
-        "insertions": 2,
-        "deletions": 3,
-        "date": "2019-10-08",
+        "insertions": 59,
+        "deletions": 25,
+        "date": "2019-11-09",
         "commitResults": [
           {
-            "hash": "dd4b9be0860e635e92d3f851630991c112d87a7f",
-            "messageTitle": "Update build.gradle to change site-name",
+            "hash": "c09b5f74ac0067976171c8181035f2e3bd55eb5b",
+            "messageTitle": "Update SetCommand UG section to state budget does not take into consideration past transactions",
             "messageBody": "",
-            "insertions": 2,
-            "deletions": 3
+            "insertions": 21,
+            "deletions": 5
+          },
+          {
+            "hash": "b4c879e17b0e47b5bb53bec9cebd332776340bb5",
+            "messageTitle": "Check from top of document for discrepancy for DG",
+            "messageBody": "",
+            "insertions": 38,
+            "deletions": 20
           }
         ]
       },
+      {
+        "insertions": 87,
+        "deletions": 15,
+        "date": "2019-11-10",
+        "commitResults": [
+          {
+            "hash": "0c9e9b0a8d1d0f5194c0c9f792cbd4054b7bb4df",
+            "messageTitle": "Fixes the bug that budget should not be deducted if OutTransactions dated beyond deadline are made",
+            "messageBody": "",
+            "insertions": 20,
+            "deletions": 9
+          },
+          {
+            "hash": "0a36d8f0566b2b65f5f82a354c134e026e6aa015",
+            "messageTitle": "Improve User usability, show Past as the days remaining placeholder once past deadline",
+            "messageBody": "",
+            "insertions": 7,
+            "deletions": 2
+          },
+          {
+            "hash": "11e3edd12ccc054fcebd4594d1e28ffc0bdcb714",
+            "messageTitle": "Improve explanation of Set Budget in DG",
+            "messageBody": "",
+            "insertions": 32,
+            "deletions": 4
+          },
+          {
+            "hash": "136314d4582e0b45eb2ad72e90ee005f6f9e39fa",
+            "messageTitle": "Add explanation for Set Command DG",
+            "messageBody": "",
+            "insertions": 28,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 5674,
+        "deletions": 465,
+        "date": "2019-11-11",
+        "commitResults": [
+          {
+            "hash": "27bfd74731bae6e2301b24b5c2019cbcf1f9ce84",
+            "messageTitle": "Make minor formatting changes",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 5
+          },
+          {
+            "hash": "a17beab3d22fdbb3e900a75f644ee0dd3196ce9a",
+            "messageTitle": "Add additional detail on UG that deadline is inclusive",
+            "messageBody": "",
+            "insertions": 21,
+            "deletions": 3
+          },
+          {
+            "hash": "13d33f91370d035e7ce352d68664f5e27c9915d8",
+            "messageTitle": "Add ClassDiagram for Budget class",
+            "messageBody": "",
+            "insertions": 12,
+            "deletions": 46
+          },
+          {
+            "hash": "43261b8c70e7fd4e7e3d3a78d236a851a19526e9",
+            "messageTitle": "Improve flow of explanation for SetCommand DG",
+            "messageBody": "",
+            "insertions": 12,
+            "deletions": 4
+          },
+          {
+            "hash": "9a68046da437504c3249aab1c73c1e013f5a4c5e",
+            "messageTitle": "Add Parameter Restrictions to UG",
+            "messageBody": "",
+            "insertions": 20,
+            "deletions": 1
+          },
+          {
+            "hash": "6e923ce3fd091c6adaa9ad4c3e339e7d3fa622bd",
+            "messageTitle": "Add prefix",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 8
+          },
+          {
+            "hash": "ea5e3501ca8dc907ec0088ddebd4ed03d449de95",
+            "messageTitle": "Improve on Update functionality for budget",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 2
+          },
+          {
+            "hash": "77fb88f1ba58b72293f573e63a7fba250644b70e",
+            "messageTitle": "Fix errors for percentage displayed in budget card",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 115
+          },
+          {
+            "hash": "7f15a512794153bac0b0d564551fb176261033c5",
+            "messageTitle": "Updated budget cannot be a duplicate of existing budget erorr thrown",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 0
+          },
+          {
+            "hash": "a54dbbe9bd5aee8b202f5ec52b03f8d655005b21",
+            "messageTitle": "Fix bug for update budget",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 1
+          },
+          {
+            "hash": "2071840577564ab0669e04790b8d54c884302911",
+            "messageTitle": "Add additional tests for BdugetTest",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 0
+          },
+          {
+            "hash": "c36a89186f6a557435d7d512fb4369a40ed06868",
+            "messageTitle": "Fix checkstyle error",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 1
+          },
+          {
+            "hash": "fb78edd2d3ad7fc70acc106ff750f252606b48ab",
+            "messageTitle": "Fix test failures for budgetTest",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 2
+          },
+          {
+            "hash": "7c20f4d0c3a34e540b73df8825b50d8f2c6dbc15",
+            "messageTitle": "Fix minor bug when displaying budget",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "3bdd3339bf0dacec1c5a7af0ba1aabdbeef2a88f",
+            "messageTitle": "Fix UserGuide to match behaviour of code",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 2
+          },
+          {
+            "hash": "00e38787b5121addd8e14aa3ed50b6ff2193ba10",
+            "messageTitle": "Update BudgetTest",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 6
+          },
+          {
+            "hash": "f61252a4fb65ea786ed7615ac26637b72a91b1c2",
+            "messageTitle": "Add Example usage fo SetCommand DG",
+            "messageBody": "",
+            "insertions": 33,
+            "deletions": 2
+          },
+          {
+            "hash": "3f3d5ba855acbf7e792b737981d1aef8feabb59f",
+            "messageTitle": "Fix checkstyle error",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 1
+          },
+          {
+            "hash": "47253d07c58eb9e9ae8593f1675255008a73f841",
+            "messageTitle": "Update UG pictures",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "a0598c78430af20b287cbd98a879931de8cf114b",
+            "messageTitle": "Improve UG Set Command",
+            "messageBody": "",
+            "insertions": 25,
+            "deletions": 4
+          },
+          {
+            "hash": "ed09a592a2eb43041f9c91d05a3a5e745c73f972",
+            "messageTitle": "Add PPP",
+            "messageBody": "",
+            "insertions": 111,
+            "deletions": 1
+          },
+          {
+            "hash": "cd4a652cb6928f08fe16529dd8f4a81517755e72",
+            "messageTitle": "Update PPP",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 1
+          },
+          {
+            "hash": "5f1cc49d4d80f0e97ef16cf94577dc579d6c055b",
+            "messageTitle": "Update UG",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 24
+          },
+          {
+            "hash": "f4f37a140c5b81a68f9d06d7839eb9b73a1cfbfa",
+            "messageTitle": "Update UG",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 4
+          },
+          {
+            "hash": "6b685b8a4061ced00895e8b36fbe8544d540c30f",
+            "messageTitle": "Update UG captions",
+            "messageBody": "",
+            "insertions": 22,
+            "deletions": 19
+          },
+          {
+            "hash": "c021313f37d48edeea7dd903aa8508d1aa844974",
+            "messageTitle": "Update UG",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 0
+          },
+          {
+            "hash": "1edd617d5b3f54ee709e5f7c681e877eb1e2d611",
+            "messageTitle": "Update UG",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "b972c20addb7222329a2ac76fe2e53c5bd6df468",
+            "messageTitle": "Update Diagram for increased accuracy",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 3
+          },
+          {
+            "hash": "4a9dc2cb4c0b3210c8d8254a2ce9c2dfaeb8911f",
+            "messageTitle": "Update Diagram for improved accuracy",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "f1c0d12861b88fad875cabdd4eafb36473ab49e0",
+            "messageTitle": "Update PPP",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 3
+          },
+          {
+            "hash": "e60778e0bd11766c4ad31826bb7eacacadafb25a",
+            "messageTitle": "Update UG formatting",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 4
+          },
+          {
+            "hash": "4b58975e6f9c2ef14de303840434654dc2f3bce1",
+            "messageTitle": "Update PPP",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 5
+          },
+          {
+            "hash": "efd2a0f48d955ce4697da6ed2def0f5539621942",
+            "messageTitle": "Update PPP",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 72
+          },
+          {
+            "hash": "78adbf9f635f2c05acb6a36f5b67d959720365e4",
+            "messageTitle": "Adjust formatting",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 89
+          },
+          {
+            "hash": "e5d8977436f2246c1cd163425d6543f50a73087e",
+            "messageTitle": "Latest update",
+            "messageBody": "",
+            "insertions": 31,
+            "deletions": 20
+          },
+          {
+            "hash": "5456d03e62e120d7d7e65cadff14fca65e9ab2b9",
+            "messageTitle": "Fix bugs",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 6
+          },
+          {
+            "hash": "4580e0fff208eda367f27413a20f9fd997b835f4",
+            "messageTitle": "HTML files for PPP",
+            "messageBody": "",
+            "insertions": 5273,
+            "deletions": 0
+          },
+          {
+            "hash": "49b4fc07e2cbb4ea52b5ec34d662e30fe2acce18",
+            "messageTitle": "Fix checksytle error",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 5
+          }
+        ]
+      }
+    ],
+    "joloong": [
       {
         "insertions": 394,
         "deletions": 69,
@@ -2445,6 +2760,328 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 2490,
+        "deletions": 2351,
+        "date": "2019-11-09",
+        "commitResults": [
+          {
+            "hash": "c5d82dcce3805d7ac94fb5f46a946731e770b8c3",
+            "messageTitle": "Update UG",
+            "messageBody": "",
+            "insertions": 55,
+            "deletions": 22
+          },
+          {
+            "hash": "4051368c48037c40edfbfdde6558b796bd82bff2",
+            "messageTitle": "Fix undo/redo images in UG",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "8a15c2b6bf7a9c2bd25e59238808b03ee87d0ead",
+            "messageTitle": "Update UG",
+            "messageBody": "",
+            "insertions": 21,
+            "deletions": 4
+          },
+          {
+            "hash": "47892757ce17fe9518e5b4ba5130f7dbb8287b04",
+            "messageTitle": "Fix balance in UI",
+            "messageBody": "",
+            "insertions": 42,
+            "deletions": 25
+          },
+          {
+            "hash": "e897b7ae25cd7bf35bb847e4e54a224fcc69b77f",
+            "messageTitle": "Update Undo/Redo in DG",
+            "messageBody": "",
+            "insertions": 129,
+            "deletions": 123
+          },
+          {
+            "hash": "77035f65f0dc335a7408ce12f103b95cab95d775",
+            "messageTitle": "Update Undo/Redo in DG",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "8f8063b6a69273603fb0470b2a5772f0be317a53",
+            "messageTitle": "Change Address Book to PalPay",
+            "messageBody": "",
+            "insertions": 224,
+            "deletions": 224
+          },
+          {
+            "hash": "e465fcb9d85e74a362070043d33f9b5957989fd3",
+            "messageTitle": "Update DG",
+            "messageBody": "",
+            "insertions": 1920,
+            "deletions": 0
+          },
+          {
+            "hash": "85f9d6da74b6eb758afbd7b92eed9ea3bd37f0cd",
+            "messageTitle": "Remove DG.html",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 1920
+          },
+          {
+            "hash": "19829a3e40864f442ca86f081799b5204d787aee",
+            "messageTitle": "Modify SortCommand for better OOP",
+            "messageBody": "",
+            "insertions": 18,
+            "deletions": 12
+          },
+          {
+            "hash": "2aece6da1a0e10fa86977047e0a5facf2419cfb3",
+            "messageTitle": "Update Sort in DG",
+            "messageBody": "",
+            "insertions": 81,
+            "deletions": 21
+          }
+        ]
+      },
+      {
+        "insertions": 356,
+        "deletions": 160,
+        "date": "2019-11-10",
+        "commitResults": [
+          {
+            "hash": "c9d7960ce54169095540aa75f5d16585b7e891fa",
+            "messageTitle": "Update Filter",
+            "messageBody": "",
+            "insertions": 76,
+            "deletions": 75
+          },
+          {
+            "hash": "d75a33510f567c1348d4c97de2404a126600ac8b",
+            "messageTitle": "Fix all errors",
+            "messageBody": "",
+            "insertions": 7,
+            "deletions": 7
+          },
+          {
+            "hash": "5d951edbd236fb96013a63264799afbeaf3e9634",
+            "messageTitle": "Fix Undo/Redo for Filter and List",
+            "messageBody": "",
+            "insertions": 89,
+            "deletions": 11
+          },
+          {
+            "hash": "b36a6e6cab5bcefa229b92ef13c1028673e18c51",
+            "messageTitle": "Fix parseAmount with $ sign",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 5
+          },
+          {
+            "hash": "e85c20212ef03dcc4b9ad242cef08384bf7707a5",
+            "messageTitle": "Update FilterClassDiagram",
+            "messageBody": "",
+            "insertions": 7,
+            "deletions": 6
+          },
+          {
+            "hash": "c4e81b7ec2864aa22e56f8226e964d2cfe3ba3ca",
+            "messageTitle": "Still updating filter in DG",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 0
+          },
+          {
+            "hash": "acbfff94cf0eff2720c8728c7da6164d6a563131",
+            "messageTitle": "Update Filter in DG with ActivityDiagram",
+            "messageBody": "",
+            "insertions": 55,
+            "deletions": 28
+          },
+          {
+            "hash": "beadcc53053bfa0eeb4a65e66ba885e84f99198e",
+            "messageTitle": "Fix EOF error",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "7d5be3a2ac4dbb2093c695e72866f66f03feedb4",
+            "messageTitle": "Update UG",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 7
+          },
+          {
+            "hash": "fd051ba4a5e5a85dc44c917f495b30fd0988145f",
+            "messageTitle": "Update PPP",
+            "messageBody": "",
+            "insertions": 25,
+            "deletions": 11
+          },
+          {
+            "hash": "a1b8f86f880d2167b8b1868f8f91e1918b04cd1a",
+            "messageTitle": "Update PPP",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 3
+          },
+          {
+            "hash": "5c40f32769fa71ddd914f54a3435a0913c5d9033",
+            "messageTitle": "Update ViewActivityDiagram",
+            "messageBody": "",
+            "insertions": 37,
+            "deletions": 0
+          },
+          {
+            "hash": "db55a39faf4a23d668e0589ad2d5838fbdd76926",
+            "messageTitle": "Update View in DG",
+            "messageBody": "",
+            "insertions": 25,
+            "deletions": 3
+          },
+          {
+            "hash": "b64d04a784c87e29ef15423f85407588363046d3",
+            "messageTitle": "Update PPP",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 3
+          }
+        ]
+      },
+      {
+        "insertions": 252,
+        "deletions": 113,
+        "date": "2019-11-11",
+        "commitResults": [
+          {
+            "hash": "aef57d7fd6391836041866b986c554f44cc8ccaf",
+            "messageTitle": "Update PPP",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 3
+          },
+          {
+            "hash": "932a18ff2d95f39a31dd785037c9b0563e4d57ef",
+            "messageTitle": "Still updating PPP",
+            "messageBody": "",
+            "insertions": 40,
+            "deletions": 41
+          },
+          {
+            "hash": "f27c2a3cb604dba125c30bb88d236826bc9af199",
+            "messageTitle": "Remove PDF",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "5c600515c5ede74a08d4a1052cd562c95a0ed90f",
+            "messageTitle": "Update PPP",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 10
+          },
+          {
+            "hash": "c7a518a263e6c804cf18eecdf47619fe6efded92",
+            "messageTitle": "Update images",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "19ba79c0d824457da450ad644acd8674ead6c636",
+            "messageTitle": "Fix checkstyle error",
+            "messageBody": "",
+            "insertions": 32,
+            "deletions": 32
+          },
+          {
+            "hash": "2196315fa62402a3f8d47afdd3e1550b0c89f20b",
+            "messageTitle": "Update DG",
+            "messageBody": "",
+            "insertions": 14,
+            "deletions": 5
+          },
+          {
+            "hash": "b23b41d5cc90792ba3ddc91e28ca452d4ed0bd39",
+            "messageTitle": "Remove PDF",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "c68c3bb20c69c539c241a758b704d801fc4e5f94",
+            "messageTitle": "Update images",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "df369bd3f9509cba0bc26acae5af1db6e05059b8",
+            "messageTitle": "Update Instructions for Manual Testing in DG",
+            "messageBody": "",
+            "insertions": 29,
+            "deletions": 0
+          },
+          {
+            "hash": "07b3991f7ffebe632f5ee710db8c1c04718f1f53",
+            "messageTitle": "Update Instructions for Manual Testing in DG",
+            "messageBody": "",
+            "insertions": 15,
+            "deletions": 0
+          },
+          {
+            "hash": "11f4a3c43efbbed7f350a1b5613efaa901df4efc",
+            "messageTitle": "Update Set in Command Summary of UG",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "94c9099468f415bc03169c5c1504ca173963fee0",
+            "messageTitle": "Update Instructions for Manual Testing in DG",
+            "messageBody": "",
+            "insertions": 15,
+            "deletions": 3
+          },
+          {
+            "hash": "cba7581f8d86d5d3a66af64170a2f976dbb508bb",
+            "messageTitle": "Update Instructions for Manual Testing in DG",
+            "messageBody": "",
+            "insertions": 17,
+            "deletions": 1
+          },
+          {
+            "hash": "f689c481c970da841e20ae7b81810628ea7f23f1",
+            "messageTitle": "Update Instructions for Manual Testing in DG",
+            "messageBody": "",
+            "insertions": 65,
+            "deletions": 15
+          },
+          {
+            "hash": "8c87232125620aa8d8adb59cb1baac4a9e36789a",
+            "messageTitle": "Minor change from Sort to Sorting",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "cbd39ee3c06124fbb4ee774834e3f438ad3a4d70",
+            "messageTitle": "Minor changes",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 0
+          },
+          {
+            "hash": "e665479b8fe26f8ed976d935a2cb53521d52fdc1",
+            "messageTitle": "Add exmaple of GUI in DG",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 0
+          }
+        ]
       }
     ],
     "dingyuchen": [
@@ -3044,8 +3681,8 @@
         ]
       },
       {
-        "insertions": 364,
-        "deletions": 61,
+        "insertions": 365,
+        "deletions": 62,
         "date": "2019-11-08",
         "commitResults": [
           {
@@ -3096,6 +3733,195 @@
             "messageBody": "",
             "insertions": 0,
             "deletions": 0
+          },
+          {
+            "hash": "de9e0be00ad460c9f259561e3fb567036017115a",
+            "messageTitle": "Update build version",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 2,
+        "date": "2019-11-10",
+        "commitResults": [
+          {
+            "hash": "03fff49fc28c4cdf79321d6a4f91b4fd49772c42",
+            "messageTitle": "Fix #247",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 398,
+        "deletions": 159,
+        "date": "2019-11-11",
+        "commitResults": [
+          {
+            "hash": "cd238946311c6ed8f004753939f9b93dcf39fdc8",
+            "messageTitle": "Include PPP",
+            "messageBody": "",
+            "insertions": 98,
+            "deletions": 0
+          },
+          {
+            "hash": "2b893238494959a705fba21372d1b348ff24b443",
+            "messageTitle": "Update PPP",
+            "messageBody": "",
+            "insertions": 23,
+            "deletions": 15
+          },
+          {
+            "hash": "10f87eff9889d60900ba906275b1887f20fe458e",
+            "messageTitle": "Include link in PPP",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 0
+          },
+          {
+            "hash": "88a1518662e9381da3c43ddf9f70127089ce1af2",
+            "messageTitle": "Update PPP",
+            "messageBody": "",
+            "insertions": 13,
+            "deletions": 2
+          },
+          {
+            "hash": "eb70416ddb0bd69598fb50fd2c68baec0803b589",
+            "messageTitle": "Fix #217",
+            "messageBody": "",
+            "insertions": 26,
+            "deletions": 3
+          },
+          {
+            "hash": "721998251fc285000e0a972f08046507f077effc",
+            "messageTitle": "Fix failing tests",
+            "messageBody": "",
+            "insertions": 23,
+            "deletions": 9
+          },
+          {
+            "hash": "abe0437d01d900c6738a2347dae50176af1caa07",
+            "messageTitle": "Update Ding\u0027s PPP",
+            "messageBody": "",
+            "insertions": 85,
+            "deletions": 31
+          },
+          {
+            "hash": "de3de707378678bb49a18e9ce02bf9763cc7797f",
+            "messageTitle": "Include compiled UGDG and Ding\u0027s PPP",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 9
+          },
+          {
+            "hash": "2495dc431faa36d67f76fe9336dd63c96ed4ac54",
+            "messageTitle": "Update UG Features",
+            "messageBody": "",
+            "insertions": 11,
+            "deletions": 4
+          },
+          {
+            "hash": "5e8861d7250d6dda1fab96ecfb3c5cee7be7e35e",
+            "messageTitle": "Conform Split to convention",
+            "messageBody": "",
+            "insertions": 13,
+            "deletions": 16
+          },
+          {
+            "hash": "3cdc6cc3f3c1eb6034c7ca5289164ee4d8ae53b1",
+            "messageTitle": "Conform Receive to convention",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 5
+          },
+          {
+            "hash": "dc5ce3a2d4ea6e1a352df19b1c6b052e981e9612",
+            "messageTitle": "Get better captions",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 4
+          },
+          {
+            "hash": "7d8922339eeeb32bf140ccbd0d2677e1059c45b0",
+            "messageTitle": "Update StorageClassDiagram",
+            "messageBody": "",
+            "insertions": 15,
+            "deletions": 11
+          },
+          {
+            "hash": "489514c053ae698300ab7017dc31164273f4c459",
+            "messageTitle": "Capitalize all \"diagrams\"",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 5
+          },
+          {
+            "hash": "8ca094c8224e62c7d7a38f9fefdc48af5614db4e",
+            "messageTitle": "Complete captions in DG",
+            "messageBody": "",
+            "insertions": 14,
+            "deletions": 7
+          },
+          {
+            "hash": "bdfa686907e18a270f56585f052f625647458d06",
+            "messageTitle": "Update",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 6
+          },
+          {
+            "hash": "8f7dc74dd88748035de1aeb13eaa3d280d8f040f",
+            "messageTitle": "Recompile PPP",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "9306724dcdc2e59a5a051c1c51f91a6367db67fb",
+            "messageTitle": "Fix AboutUs link",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 3
+          },
+          {
+            "hash": "fa4f2bb28f452ddf761e3fd2f9d243f1b026ea97",
+            "messageTitle": "Change colour to color",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 3
+          },
+          {
+            "hash": "604fa898dabc3742f04874f4c2b4f1159f5b06e3",
+            "messageTitle": "Update",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 0
+          },
+          {
+            "hash": "7e0fff60bf49a58418f7bbb94655a03d9bea6a30",
+            "messageTitle": "Recompile UGDG",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "4c94d0961ff3e28837ac0bd82d74529a16b40ef8",
+            "messageTitle": "Update DG",
+            "messageBody": "",
+            "insertions": 10,
+            "deletions": 8
+          },
+          {
+            "hash": "4a02f57cb189f9320c736c52650f92f66026937c",
+            "messageTitle": "Update to release 1.4",
+            "messageBody": "",
+            "insertions": 21,
+            "deletions": 18
           }
         ]
       }
@@ -3620,8 +4446,8 @@
         ]
       },
       {
-        "insertions": 66,
-        "deletions": 45,
+        "insertions": 366,
+        "deletions": 275,
         "date": "2019-11-08",
         "commitResults": [
           {
@@ -3637,32 +4463,221 @@
             "messageBody": "",
             "insertions": 41,
             "deletions": 26
+          },
+          {
+            "hash": "8cfcc9c1d327da9af0066e62ca8100b8904164e1",
+            "messageTitle": "Add ceiling checks for ProjectCommand daysFromNow, add tests for ProjectCommand",
+            "messageBody": "",
+            "insertions": 139,
+            "deletions": 58
+          },
+          {
+            "hash": "0d5279e2e46c9ad1ad8c26c36d397039e6c3b39f",
+            "messageTitle": "Refactor Projection, sort budget whenever rendering graph",
+            "messageBody": "",
+            "insertions": 16,
+            "deletions": 8
+          },
+          {
+            "hash": "86399e027bb9a41b6f26e3cf00c77b5786576968",
+            "messageTitle": "fix checkstyle errors",
+            "messageBody": "",
+            "insertions": 28,
+            "deletions": 33
+          },
+          {
+            "hash": "3639331bcc911862c726c6efc256b0698c07f5a5",
+            "messageTitle": "Improve code quality",
+            "messageBody": "",
+            "insertions": 68,
+            "deletions": 103
+          },
+          {
+            "hash": "bd502d897e89d4ab9e5845c2d11b442ad88fab4d",
+            "messageTitle": "Fix checkstyleMain errors",
+            "messageBody": "",
+            "insertions": 23,
+            "deletions": 14
+          },
+          {
+            "hash": "930a6d71061b2fdbb818b3bb3e18bf0685fb44b9",
+            "messageTitle": "Fix broken test cases",
+            "messageBody": "",
+            "insertions": 26,
+            "deletions": 14
+          }
+        ]
+      },
+      {
+        "insertions": 177,
+        "deletions": 108,
+        "date": "2019-11-09",
+        "commitResults": [
+          {
+            "hash": "4a16d266e412d865f025decd34ea09a39d5a16ed",
+            "messageTitle": "Update UserGuide for Project / Display",
+            "messageBody": "",
+            "insertions": 49,
+            "deletions": 23
+          },
+          {
+            "hash": "67a4183a5d3531e91519382dec15c25764d26c36",
+            "messageTitle": "Minor edits to UG/DG",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 3
+          },
+          {
+            "hash": "f066faadc66a9e1aaad6257a60daf7870d4b4dc8",
+            "messageTitle": "Add Projection to ModelClassDiagram, add DisplayActivityDiagram, modify ProjectionSequenceDiagram\"",
+            "messageBody": "",
+            "insertions": 119,
+            "deletions": 82
+          }
+        ]
+      },
+      {
+        "insertions": 240,
+        "deletions": 67,
+        "date": "2019-11-10",
+        "commitResults": [
+          {
+            "hash": "b9768ba519ef80bde8a24ea7c70eea2209964767",
+            "messageTitle": "Edit Project feature in DeveloperGuide, add ProjectActivityDiagram, refactor Projection",
+            "messageBody": "",
+            "insertions": 103,
+            "deletions": 46
+          },
+          {
+            "hash": "2522475eb58ee32f2f9d6666fac2c429e14881d2",
+            "messageTitle": "Edit project feature in DeveloperGuide",
+            "messageBody": "",
+            "insertions": 21,
+            "deletions": 5
+          },
+          {
+            "hash": "d1bb18bfda00e907d805b73cf930450b750a803b",
+            "messageTitle": "Fix ProjectCommand MESSAGE_USAGE",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 2
+          },
+          {
+            "hash": "8ed62f64dec7cf5b121823b55e04ee8956514848",
+            "messageTitle": "Edit Project/Display command in DeveloperGuide",
+            "messageBody": "",
+            "insertions": 112,
+            "deletions": 14
+          }
+        ]
+      },
+      {
+        "insertions": 646,
+        "deletions": 185,
+        "date": "2019-11-11",
+        "commitResults": [
+          {
+            "hash": "7228f24660cf4f20635b264f70473edaa2c4a0d0",
+            "messageTitle": "Update UG",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 0
+          },
+          {
+            "hash": "38fe0aad5823fa6895124244532beb448b769222",
+            "messageTitle": "Fix updateProjectionAfterUpdate for UpdateCommand",
+            "messageBody": "",
+            "insertions": 70,
+            "deletions": 9
+          },
+          {
+            "hash": "bd6cdc6ab3f55652ad0c6237e9706f6b184eca0c",
+            "messageTitle": "Edit Project command in UG",
+            "messageBody": "",
+            "insertions": 109,
+            "deletions": 57
+          },
+          {
+            "hash": "b55a115412d746d792ae0dbf79d474a3ca05f6d1",
+            "messageTitle": "Update Display command in UG",
+            "messageBody": "",
+            "insertions": 37,
+            "deletions": 23
+          },
+          {
+            "hash": "148ca5be299878ef4851d33b327038ffa6147418",
+            "messageTitle": "Update Display command in UG",
+            "messageBody": "",
+            "insertions": 130,
+            "deletions": 13
+          },
+          {
+            "hash": "b1ed96e6c4f8b43a59679266477a862af4afee3c",
+            "messageTitle": "Edit UG",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 1
+          },
+          {
+            "hash": "11d1a7ba2ffdd7df47902b5ff4899ca565a56ca0",
+            "messageTitle": "Fix gradle tests",
+            "messageBody": "",
+            "insertions": 7,
+            "deletions": 1
+          },
+          {
+            "hash": "2d8fd19b862112cf8c5b0fbd0ef71c85da584149",
+            "messageTitle": "Edit UG/DG",
+            "messageBody": "",
+            "insertions": 185,
+            "deletions": 15
+          },
+          {
+            "hash": "df6abbbac5ced3b61ab97926fe0a06f69d342e05",
+            "messageTitle": "edit UG",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 3
+          },
+          {
+            "hash": "65060c080089025af9faf0a6aa4051b9515c8e91",
+            "messageTitle": "Add captions to Update images in UG",
+            "messageBody": "",
+            "insertions": 11,
+            "deletions": 0
+          },
+          {
+            "hash": "af491c65dd4e26ad462b98b7a1413ff975f82d76",
+            "messageTitle": "Add captions to images for Undo/Redo in UG",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 0
+          },
+          {
+            "hash": "a3e7cabd1d83c277221311a2a27fbb295110912a",
+            "messageTitle": "update PPP",
+            "messageBody": "",
+            "insertions": 55,
+            "deletions": 50
+          },
+          {
+            "hash": "ee8f11061bd58dbd38b7916e3d648e3fa5fdb429",
+            "messageTitle": "Fix language errors in PPP",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "51d80b7dd200187b44bcf1593a310c2570b90343",
+            "messageTitle": "Fix InvocationException in ModelManager",
+            "messageBody": "",
+            "insertions": 28,
+            "deletions": 11
           }
         ]
       }
     ],
     "Berttwm": [
-      {
-        "insertions": 57,
-        "deletions": 2,
-        "date": "2019-10-08",
-        "commitResults": [
-          {
-            "hash": "accda2b473bae82930e987c3b87c0d3ff74d4f8b",
-            "messageTitle": "tentative SplitTranscation and SplitCommand created. (Not completed)",
-            "messageBody": "",
-            "insertions": 8,
-            "deletions": 0
-          },
-          {
-            "hash": "34a2f554224068aa74584dd6106afac92d711c51",
-            "messageTitle": "Tentative SplitTransaction and SplitCommand created. (Not completed)",
-            "messageBody": "",
-            "insertions": 49,
-            "deletions": 2
-          }
-        ]
-      },
       {
         "insertions": 24,
         "deletions": 34,
@@ -4194,48 +5209,371 @@
             "deletions": 5
           }
         ]
+      },
+      {
+        "insertions": 370,
+        "deletions": 80,
+        "date": "2019-11-10",
+        "commitResults": [
+          {
+            "hash": "266b23b7f2a8eb3701527d3e09e58e1a1f94cab4",
+            "messageTitle": "fix parseAmount",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 3
+          },
+          {
+            "hash": "774e3caa8b3ca1ca9729ea97735a12b5ed5304b1",
+            "messageTitle": "Fix ParseAmount to handle empty values. Test cases fixed",
+            "messageBody": "",
+            "insertions": 12,
+            "deletions": 3
+          },
+          {
+            "hash": "c0b8797a602ffc0d1b4d9e628a0367f71d534e01",
+            "messageTitle": "UG for in command",
+            "messageBody": "",
+            "insertions": 41,
+            "deletions": 5
+          },
+          {
+            "hash": "41460de249e4ee12bc0a92708742a5bb0de34521",
+            "messageTitle": "outcommand UG",
+            "messageBody": "",
+            "insertions": 49,
+            "deletions": 8
+          },
+          {
+            "hash": "74bb6859caee081baaebe9ad9aeee0766ec275d3",
+            "messageTitle": "UG delete",
+            "messageBody": "",
+            "insertions": 26,
+            "deletions": 5
+          },
+          {
+            "hash": "3ca94cf7b4791031eef05fbcc84e080439f0f9bb",
+            "messageTitle": "UG Update",
+            "messageBody": "",
+            "insertions": 21,
+            "deletions": 8
+          },
+          {
+            "hash": "cf63122f7e65de8ac2ac0071a65e9ededc0f9ef9",
+            "messageTitle": "UG",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 0
+          },
+          {
+            "hash": "16fb96f459cc75fc91005bbe79e08208c7b72f3b",
+            "messageTitle": "UG update",
+            "messageBody": "",
+            "insertions": 3,
+            "deletions": 5
+          },
+          {
+            "hash": "993633828092030763c4488bbd37b742183c58ed",
+            "messageTitle": "Update UG",
+            "messageBody": "",
+            "insertions": 12,
+            "deletions": 6
+          },
+          {
+            "hash": "c88297da1152d5ffeeaafdfa63178451d29f2085",
+            "messageTitle": "no message",
+            "messageBody": "",
+            "insertions": 51,
+            "deletions": 13
+          },
+          {
+            "hash": "fe6b78276b5dc9291e3ca280f61e44173f7d88b9",
+            "messageTitle": "UG update command",
+            "messageBody": "",
+            "insertions": 13,
+            "deletions": 9
+          },
+          {
+            "hash": "d09228a87fc67a03aae8b86bdce43d5c4e38027d",
+            "messageTitle": "DG update for in/out",
+            "messageBody": "",
+            "insertions": 136,
+            "deletions": 15
+          }
+        ]
+      },
+      {
+        "insertions": 821,
+        "deletions": 295,
+        "date": "2019-11-11",
+        "commitResults": [
+          {
+            "hash": "76bde920a5c3deba41d4a544cc78f3f8ad3218c1",
+            "messageTitle": "DG updates",
+            "messageBody": "",
+            "insertions": 35,
+            "deletions": 15
+          },
+          {
+            "hash": "f3788326a72473786313de43d3b1650588b72708",
+            "messageTitle": "DG updates",
+            "messageBody": "",
+            "insertions": 86,
+            "deletions": 16
+          },
+          {
+            "hash": "73888e44056bfd45944662f61cd2d1f8d736bcf4",
+            "messageTitle": "Updated DG",
+            "messageBody": "",
+            "insertions": 87,
+            "deletions": 6
+          },
+          {
+            "hash": "e2633cc3a55c3659925b827223c9fd96c2855bad",
+            "messageTitle": "DG updates",
+            "messageBody": "",
+            "insertions": 16,
+            "deletions": 16
+          },
+          {
+            "hash": "84ab3ae2e328e7c4d34eecc51e979b06d12674d6",
+            "messageTitle": "DG Activity diagram updated",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 8
+          },
+          {
+            "hash": "b253277d31126f51d4921c3c31ca640d84d933d2",
+            "messageTitle": "Activity Diagram update",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "e56ae66dc6d908b98141c44e07590296857d74cb",
+            "messageTitle": "UG Update",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 5
+          },
+          {
+            "hash": "5ed99ddd9e746030aed77725756299fe2fc10e5e",
+            "messageTitle": "UG update",
+            "messageBody": "",
+            "insertions": 30,
+            "deletions": 4
+          },
+          {
+            "hash": "c54a185a1fcb942c3af44383bb95abef52e23a39",
+            "messageTitle": "UG update",
+            "messageBody": "",
+            "insertions": 82,
+            "deletions": 40
+          },
+          {
+            "hash": "46d2bb13beb29a62fe2dfd250ea19681bffff6a0",
+            "messageTitle": "Update DG",
+            "messageBody": "",
+            "insertions": 90,
+            "deletions": 32
+          },
+          {
+            "hash": "b9b794d21a9fc4fdc106e9dd524481094e92d4b9",
+            "messageTitle": "DG update",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "6d0daba530ecf25cfad5082e412c7f631a4a286c",
+            "messageTitle": "DG updates",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 5
+          },
+          {
+            "hash": "fc5aade5d49314152de49fabc94af57f50c0be32",
+            "messageTitle": "DG UG update",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 6
+          },
+          {
+            "hash": "fd01386af6555a5c730de7f2ad818fd58c844125",
+            "messageTitle": "UG Updates",
+            "messageBody": "",
+            "insertions": 8,
+            "deletions": 13
+          },
+          {
+            "hash": "5b71ea85b7eef36682ff36234debbf0f8c106a14",
+            "messageTitle": "UG update",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 0
+          },
+          {
+            "hash": "91f45ecd44fa2f69fa9f6ed192b25307a2217db9",
+            "messageTitle": "UG updates",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 12
+          },
+          {
+            "hash": "ce6cac8dded2e24f1be864f36666075a999dae85",
+            "messageTitle": "UG PPP",
+            "messageBody": "",
+            "insertions": 130,
+            "deletions": 0
+          },
+          {
+            "hash": "610f490c6b7ee9d52d045f3a9a8fbcbf1e2c31d6",
+            "messageTitle": "DG update",
+            "messageBody": "",
+            "insertions": 59,
+            "deletions": 4
+          },
+          {
+            "hash": "99dd4ea970fb97ae3f54bff6778914f3e39d2d28",
+            "messageTitle": "UG",
+            "messageBody": "",
+            "insertions": 4,
+            "deletions": 5
+          },
+          {
+            "hash": "f7f8d7de2db5bb02e761be28360eb5192c44d376",
+            "messageTitle": "UG",
+            "messageBody": "",
+            "insertions": 22,
+            "deletions": 15
+          },
+          {
+            "hash": "90301c289a1bdd9ed74c8d190da0779deb04456c",
+            "messageTitle": "UG",
+            "messageBody": "",
+            "insertions": 25,
+            "deletions": 27
+          },
+          {
+            "hash": "1c1276440be17e1e74a9277cbe5550deeef52f12",
+            "messageTitle": "UG",
+            "messageBody": "",
+            "insertions": 7,
+            "deletions": 4
+          },
+          {
+            "hash": "8ccf34b06369f2feaf3c69ca7494c65a599f340d",
+            "messageTitle": "UG",
+            "messageBody": "",
+            "insertions": 26,
+            "deletions": 26
+          },
+          {
+            "hash": "6b5308ecf8c596b19578bf4850b617544fe74540",
+            "messageTitle": "PPP",
+            "messageBody": "",
+            "insertions": 19,
+            "deletions": 2
+          },
+          {
+            "hash": "09348841aaa9c1ac3ad766c9cb370027f1d1704a",
+            "messageTitle": "PPP _|_",
+            "messageBody": "",
+            "insertions": 46,
+            "deletions": 23
+          },
+          {
+            "hash": "0a6162e3fb78aa83c2f7b914d240d675678e682e",
+            "messageTitle": "PPP",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "0f11d48df8b5506743842001f364fe5a82c8aced",
+            "messageTitle": "PPP",
+            "messageBody": "",
+            "insertions": 6,
+            "deletions": 6
+          },
+          {
+            "hash": "c28c0899a1195caa2cd656a57933ec58765a585c",
+            "messageTitle": "PPP",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "ac050bf205a8e6f999155cb48bf2c4f6f7c5fe9f",
+            "messageTitle": "PPP",
+            "messageBody": "",
+            "insertions": 5,
+            "deletions": 2
+          },
+          {
+            "hash": "b7aa25f747d24ce5f9ddffc22098fb3f8c5e614f",
+            "messageTitle": "Last Min shiz",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "70f34a729bc534f61000c827af995b19a026c48b",
+            "messageTitle": "PPP",
+            "messageBody": "",
+            "insertions": 0,
+            "deletions": 0
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yewon0303": 1968,
-    "joloong": 5796,
-    "dingyuchen": 3290,
-    "wallacelim97": 2716,
-    "Berttwm": 1673
+    "yewon0303": 7463,
+    "joloong": 6384,
+    "dingyuchen": 9020,
+    "wallacelim97": 3508,
+    "Berttwm": 2386
   },
   "authorFileTypeContributionMap": {
     "yewon0303": {
-      "adoc": 146,
-      "adoc": 83,
-      "puml": 3,
+      "adoc": 116,
+      "adoc": 141,
+      "puml": 4,
       "puml": 14,
       "puml": 12,
-      "puml": 3,
-      "puml": 106,
-      "puml": 10,
-      "puml": 16,
-      "java": 3,
+      "puml": 6,
+      "puml": 86,
+      "puml": 2,
+      "puml": 33,
+      "drawio": 1,
+      "puml": 23,
+      "html": 1103,
+      "html": 1007,
+      "html": 1149,
+      "html": 1143,
+      "adoc": 113,
+      "html": 871,
       "java": 3,
       "java": 7,
       "java": 19,
       "java": 13,
       "java": 1,
+      "java": 1,
       "java": 45,
       "java": 2,
-      "java": 16,
+      "java": 24,
       "java": 2,
       "java": 3,
-      "java": 9,
+      "java": 32,
       "java": 6,
       "java": 52,
       "java": 2,
-      "java": 53,
-      "java": 17,
+      "java": 59,
+      "java": 20,
       "java": 18,
       "java": 3,
       "java": 20,
-      "java": 186,
+      "java": 185,
       "java": 6,
       "java": 5,
       "java": 3,
@@ -4244,10 +5582,10 @@
       "java": 16,
       "java": 7,
       "java": 11,
-      "java": 6,
+      "java": 5,
       "java": 1,
       "java": 81,
-      "java": 90,
+      "java": 95,
       "java": 46,
       "java": 1,
       "java": 7,
@@ -4256,7 +5594,7 @@
       "fxml": 35,
       "fxml": 8,
       "fxml": 1,
-      "css": 34,
+      "css": 44,
       "fxml": 1,
       "fxml": 1,
       "fxml": 1,
@@ -4266,12 +5604,13 @@
       "java": 8,
       "java": 115,
       "java": 2,
+      "java": 6,
       "java": 2,
       "java": 52,
-      "java": 120,
+      "java": 128,
       "java": 121,
       "java": 56,
-      "java": 68,
+      "java": 67,
       "java": 30,
       "java": 9,
       "fxml": 1
@@ -4279,24 +5618,32 @@
     "joloong": {
       "adoc": 4,
       "json": 39,
-      "gradle": 3,
+      "gradle": 2,
       "adoc": 6,
-      "adoc": 11,
-      "adoc": 167,
-      "adoc": 4,
       "adoc": 12,
-      "adoc": 4,
-      "adoc": 240,
-      "puml": 82,
+      "adoc": 503,
+      "adoc": 5,
+      "adoc": 20,
+      "adoc": 5,
+      "adoc": 273,
+      "puml": 19,
+      "puml": 103,
+      "puml": 4,
+      "puml": 4,
+      "puml": 4,
+      "puml": 4,
+      "puml": 4,
+      "puml": 5,
+      "puml": 14,
+      "puml": 37,
       "drawio": 1,
-      "drawio": 1,
-      "adoc": 84,
+      "adoc": 118,
       "java": 13,
       "java": 2,
-      "java": 27,
-      "java": 11,
+      "java": 26,
       "java": 10,
-      "java": 1,
+      "java": 13,
+      "java": 3,
       "java": 25,
       "java": 15,
       "java": 1,
@@ -4304,15 +5651,15 @@
       "java": 66,
       "java": 1,
       "java": 23,
-      "java": 2,
-      "java": 10,
+      "java": 5,
+      "java": 9,
       "java": 2,
       "java": 5,
-      "java": 30,
+      "java": 27,
       "java": 6,
-      "java": 49,
+      "java": 57,
       "java": 11,
-      "java": 30,
+      "java": 27,
       "java": 32,
       "java": 45,
       "java": 22,
@@ -4321,45 +5668,45 @@
       "java": 1,
       "java": 119,
       "java": 13,
-      "java": 47,
+      "java": 44,
       "java": 7,
-      "java": 70,
+      "java": 77,
       "java": 7,
       "java": 5,
       "java": 36,
-      "java": 27,
+      "java": 25,
       "java": 37,
-      "java": 58,
+      "java": 56,
       "java": 16,
-      "java": 69,
-      "java": 48,
+      "java": 68,
+      "java": 80,
       "java": 10,
       "java": 1,
       "java": 3,
       "java": 12,
       "java": 19,
-      "java": 94,
+      "java": 152,
       "java": 57,
       "java": 1,
-      "java": 65,
+      "java": 64,
       "java": 2,
       "java": 12,
       "java": 16,
-      "java": 21,
+      "java": 20,
       "java": 4,
       "java": 2,
       "java": 19,
       "java": 2,
       "java": 14,
       "java": 48,
-      "java": 120,
+      "java": 121,
       "java": 40,
       "java": 11,
       "java": 11,
       "java": 7,
-      "java": 51,
+      "java": 41,
       "java": 6,
-      "java": 3,
+      "java": 2,
       "java": 79,
       "java": 14,
       "java": 14,
@@ -4373,7 +5720,7 @@
       "java": 4,
       "java": 44,
       "java": 44,
-      "java": 57,
+      "java": 59,
       "java": 16,
       "java": 7,
       "java": 1,
@@ -4397,23 +5744,23 @@
       "json": 62,
       "json": 33,
       "json": 15,
-      "java": 20,
+      "java": 18,
       "java": 1,
       "java": 74,
-      "java": 8,
       "java": 6,
       "java": 74,
-      "java": 43,
-      "java": 29,
+      "java": 30,
+      "java": 30,
       "java": 2,
       "java": 89,
       "java": 17,
       "java": 18,
+      "java": 5,
       "java": 6,
-      "java": 44,
+      "java": 42,
       "java": 3,
       "java": 76,
-      "java": 40,
+      "java": 38,
       "java": 58,
       "java": 56,
       "java": 41,
@@ -4421,18 +5768,19 @@
       "java": 1,
       "java": 1,
       "java": 46,
-      "java": 190,
+      "java": 183,
       "java": 191,
       "java": 50,
       "java": 53,
-      "java": 90,
+      "java": 86,
       "java": 52,
-      "java": 179,
+      "java": 177,
       "java": 62,
+      "java": 1,
       "java": 65,
       "java": 40,
       "java": 64,
-      "java": 19,
+      "java": 27,
       "java": 4,
       "java": 10,
       "java": 1,
@@ -4449,19 +5797,28 @@
       "java": 19,
       "java": 3,
       "java": 2,
-      "java": 76
+      "java": 75
     },
     "dingyuchen": {
       "gitignore": 6,
-      "adoc": 75,
-      "adoc": 71,
+      "gradle": 1,
+      "adoc": 3,
+      "adoc": 87,
+      "html": 2947,
+      "adoc": 88,
+      "html": 2612,
       "puml": 51,
       "puml": 3,
+      "puml": 4,
       "puml": 107,
-      "puml": 17,
-      "java": 11,
-      "java": 2,
-      "java": 17,
+      "puml": 21,
+      "puml": 12,
+      "puml": 6,
+      "adoc": 108,
+      "adoc": 3,
+      "java": 12,
+      "java": 1,
+      "java": 15,
       "java": 22,
       "java": 2,
       "java": 15,
@@ -4469,10 +5826,11 @@
       "java": 3,
       "java": 3,
       "java": 61,
+      "java": 1,
       "java": 2,
-      "java": 5,
-      "java": 42,
-      "java": 2,
+      "java": 3,
+      "java": 39,
+      "java": 1,
       "java": 59,
       "java": 2,
       "java": 2,
@@ -4480,16 +5838,16 @@
       "java": 2,
       "java": 4,
       "java": 1,
-      "java": 69,
+      "java": 61,
       "java": 1,
       "java": 54,
       "java": 73,
       "java": 11,
       "java": 1,
-      "java": 53,
+      "java": 56,
       "java": 127,
-      "java": 55,
-      "java": 73,
+      "java": 61,
+      "java": 82,
       "java": 19,
       "java": 32,
       "java": 8,
@@ -4522,13 +5880,12 @@
       "java": 60,
       "java": 42,
       "java": 16,
-      "java": 41,
+      "java": 40,
       "java": 2,
       "java": 9,
       "java": 53,
       "java": 41,
       "java": 1,
-      "css": 1,
       "fxml": 2,
       "fxml": 4,
       "fxml": 19,
@@ -4539,34 +5896,34 @@
       "json": 1,
       "json": 1,
       "json": 2,
+      "java": 2,
       "java": 11,
-      "java": 5,
       "java": 4,
-      "java": 7,
+      "java": 6,
       "java": 9,
-      "java": 4,
+      "java": 3,
       "java": 16,
       "java": 3,
       "java": 9,
-      "java": 3,
+      "java": 8,
       "java": 4,
       "java": 2,
-      "java": 3,
-      "java": 7,
+      "java": 8,
+      "java": 5,
       "java": 6,
       "java": 5,
       "java": 4,
       "java": 2,
-      "java": 78,
-      "java": 146,
-      "java": 38,
+      "java": 77,
+      "java": 145,
+      "java": 36,
       "java": 2,
       "java": 17,
       "java": 2,
       "java": 1,
       "java": 4,
       "java": 10,
-      "java": 8,
+      "java": 19,
       "java": 79,
       "java": 13,
       "java": 34,
@@ -4580,62 +5937,68 @@
       "java": 8,
       "java": 3,
       "java": 12,
-      "java": 38,
+      "java": 28,
       "java": 35
     },
     "wallacelim97": {
       "gradle": 4,
       "adoc": 5,
-      "adoc": 27,
-      "puml": 93,
+      "adoc": 139,
+      "adoc": 193,
+      "puml": 14,
+      "puml": 69,
+      "puml": 20,
+      "puml": 29,
+      "puml": 117,
+      "adoc": 121,
       "java": 3,
-      "java": 6,
+      "java": 12,
       "java": 3,
       "java": 6,
       "java": 27,
-      "java": 13,
-      "java": 71,
+      "java": 12,
+      "java": 59,
       "java": 3,
       "java": 1,
+      "java": 3,
+      "java": 142,
       "java": 1,
-      "java": 108,
-      "java": 1,
-      "java": 4,
+      "java": 3,
       "java": 8,
       "java": 1,
       "java": 31,
       "java": 9,
-      "java": 38,
+      "java": 35,
       "java": 1,
-      "java": 26,
-      "java": 48,
+      "java": 25,
+      "java": 49,
       "java": 2,
-      "java": 45,
-      "java": 20,
-      "java": 136,
+      "java": 44,
+      "java": 26,
+      "java": 245,
       "java": 7,
       "java": 1,
       "java": 13,
       "java": 2,
-      "java": 235,
-      "java": 205,
-      "java": 135,
+      "java": 161,
+      "java": 234,
+      "java": 217,
+      "java": 113,
       "java": 11,
       "java": 7,
       "java": 17,
       "java": 2,
-      "java": 15,
+      "java": 21,
       "java": 4,
-      "java": 83,
-      "java": 173,
-      "java": 30,
-      "java": 54,
-      "java": 9,
+      "java": 84,
+      "java": 29,
+      "java": 55,
+      "java": 8,
       "java": 2,
       "java": 107,
       "java": 20,
       "java": 2,
-      "java": 9,
+      "java": 8,
       "java": 12,
       "java": 75,
       "java": 25,
@@ -4649,45 +6012,57 @@
       "fxml": 38,
       "fxml": 9,
       "java": 17,
+      "java": 1,
       "java": 15,
       "java": 11,
-      "java": 104,
+      "java": 131,
       "java": 21,
-      "java": 1,
+      "java": 4,
+      "java": 4,
+      "java": 2,
+      "java": 2,
       "java": 11,
       "java": 10,
+      "java": 6,
+      "java": 6,
       "java": 67,
-      "java": 199,
+      "java": 205,
       "java": 2,
-      "java": 88
+      "java": 88,
+      "java": 32
     },
     "Berttwm": {
-      "adoc": 27,
-      "adoc": 37,
-      "java": 1,
-      "java": 12,
+      "adoc": 191,
+      "adoc": 323,
+      "puml": 23,
+      "puml": 96,
+      "puml": 35,
+      "puml": 42,
+      "puml": 57,
+      "adoc": 129,
+      "java": 11,
       "java": 6,
       "java": 53,
       "java": 1,
       "java": 1,
       "java": 1,
-      "java": 20,
-      "java": 193,
+      "java": 3,
+      "java": 191,
       "java": 13,
-      "java": 17,
+      "java": 14,
       "java": 61,
-      "java": 15,
+      "java": 25,
       "java": 3,
       "java": 2,
-      "java": 52,
+      "java": 54,
       "java": 40,
       "java": 6,
-      "java": 5,
+      "java": 6,
       "java": 3,
       "java": 5,
       "java": 13,
       "java": 2,
-      "java": 43,
+      "java": 41,
       "java": 39,
       "java": 4,
       "java": 4,
@@ -4703,9 +6078,10 @@
       "java": 1,
       "java": 54,
       "java": 115,
-      "java": 169,
-      "java": 118,
-      "java": 118,
+      "java": 62,
+      "java": 117,
+      "java": 117,
+      "java": 3,
       "java": 43,
       "java": 11,
       "java": 48,
@@ -4718,11 +6094,11 @@
     }
   },
   "authorContributionVariance": {
-    "yewon0303": 31951.182,
-    "joloong": 344376.62,
-    "dingyuchen": 125853.18,
-    "wallacelim97": 225612.38,
-    "Berttwm": 48041.29
+    "yewon0303": 1126116.6,
+    "joloong": 884477.6,
+    "dingyuchen": 126811.99,
+    "wallacelim97": 238221.92,
+    "Berttwm": 81132.49
   },
   "authorDisplayNameMap": {
     "yewon0303": "PARK... E WON",
